@@ -1,5 +1,4 @@
 from mpi4py import MPI
-import numpy
 import urllib.request
 
 from bs4 import BeautifulSoup
@@ -14,22 +13,22 @@ def main():
   comm = MPI.COMM_WORLD
   rank = comm.Get_rank()
 
-  if rank == 0:
+  if rank == 0: # Slave 0
     url = "https://www.hepsiburada.com/apple-watch-seri-3-gps-42-mm-uzay-grisi-aluminyum-kasa-ve-siyah-spor-kordon-mtf32tu-a-p-HBV00000F8RFL"
     #data = {'some key': 5, 'another key': 10.5}
     comm.send(save(url), dest=3)
 
 
-  elif rank == 1:
+  elif rank == 1: # Slave 1
     url = "https://www.hepsiburada.com/iphone-11-128-gb-p-HBV0000122JCQ"
     comm.send(save(url), dest=3)
       
 
-  elif rank == 2:
+  elif rank == 2: # Slave 2
     url = "https://www.hepsiburada.com/asus-rog-strix-g513qm-hn081-amd-ryzen-7-5800h-16gb-1tb-ssd-rtx-3060-freedos-15-6-fhd-tasinabilir-bilgisayar-p-HBCV000004E3F3"
     comm.send(save(url), dest=3)
 
-  elif rank == 3:
+  elif rank == 3: # The master process
     sources=[0,1,2]
     data = comm.recv(source=sources[0])
     df = pd.DataFrame({'Ratings':data['ratings'],'Comments':data['comments']}) 
@@ -43,6 +42,7 @@ def main():
     df = pd.DataFrame({'Ratings':data['ratings'],'Comments':data['comments']}) 
     df.to_csv('hepsiburada'+str(sources[2])+'.csv', index=False, encoding='utf-8')
 
+    print("Finished!\nPlease check the contents of the .csv files created to see the results!")
 
 
 def save(url):
@@ -60,23 +60,20 @@ def save(url):
   request=urllib.request.Request(url,None,headers) #The assembled request
   resp = urllib.request.urlopen(request, timeout=10)
 
-  # Check the status
-  status_code = resp.status
-  print(status_code) 
 
   comments=[]
   ratings=[]
-  # if no error, then read the response contents
-  if status_code >= 200 and status_code < 300:
-      #print(resp.headers['Content-Type'])
+  
+  # if no error indicated by the status, then read the response content.
+  status = resp.status
+  if status >= 200 and status < 300:
       content=resp.read()
-      
       soup = BeautifulSoup(content, features='lxml') # features='html.parser'
-      #for a in soup.findAll('a', attrs={'class':'hermes-ReviewCard-module-34AJ_', 'itemprop':'review'}):
-      for a in soup.findAll('span', attrs={'itemprop':'description'}):
-        #print(a.text.encode('utf-8'))
-        #comment=a.find('span', attrs={'itemprop':'description'})
-        comments.append(a.text)
+      #for comment in soup.findAll('a', attrs={'class':'hermes-ReviewCard-module-34AJ_', 'itemprop':'review'}):
+      for comment in soup.findAll('span', attrs={'itemprop':'description'}):
+        #print(comment.text.encode('utf-8'))
+        #comment=soup.find('span', attrs={'itemprop':'description'})
+        comments.append(comment.text)
         ratings.append(5) # will be modified to add real rating later if needed
 
   return {'ratings':ratings, 'comments':comments}
