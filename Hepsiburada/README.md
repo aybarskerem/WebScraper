@@ -1,12 +1,12 @@
 ------------------------------
-#DESCRIPTION:
+# DESCRIPTION:
 
 A simple parallel webscraper for the Turkish shopping site HepsiBurada (https://www.hepsiburada.com/)  is added.
 Three example "url"s are hard-coded in the code. Please change the variables named "url" to your own choices.
 This webscraper is expected to run on 4 different cpu threads and uses "MPI" for parallelization.
 
 ------------------------------
-#DEPENDENCIES:
+# DEPENDENCIES:
 
 1) Python3
 
@@ -26,7 +26,7 @@ pip install selenium
 pip install pandas
 ```
 ------------------------------
-#HOW TO RUN:
+# HOW TO RUN:
 Run it as below:
 ```
 mpiexec -n 4 python parallel_webscraper.py
