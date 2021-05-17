@@ -20,11 +20,14 @@ https://docs.microsoft.com/en-us/archive/blogs/windowshpc/how-to-compile-and-run
 b) Add both C:\Program Files (x86)\Microsoft SDKs\MPI and C:\Program Files\Microsoft MPI\Bin to system PATH.
 
 3) Library Installations (download pip3 first if not installed already):
-    pip install numpy
-    pip install selenium
-    pip install pandas
-
+```
+pip install numpy
+pip install selenium
+pip install pandas
+```
 ------------------------------
 #HOW TO RUN:
 Run it as below:
-    mpiexec -n 4 python parallel_webscraper.py
+```
+mpiexec -n 4 python parallel_webscraper.py
+```
