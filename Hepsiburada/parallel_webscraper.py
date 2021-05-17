@@ -6,7 +6,7 @@ import pandas as pd
 
 # We can use Selenium's webdriver if urllib.request is not favored.
 #from selenium import webdriver
-#driver = webdriver.Chrome() # enter tha chrome executable path as a parameter to Chrome function
+#driver = webdriver.Chrome() # enter the chrome executable path as a parameter to Chrome function
 #driver.get("https://www.hepsiburada.com/apple-watch-seri-3-gps-42-mm-uzay-grisi-aluminyum-kasa-ve-siyah-spor-kordon-mtf32tu-a-p-HBV00000F8RFL")
 
 def main():
