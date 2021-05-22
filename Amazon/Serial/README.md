@@ -1,9 +1,9 @@
 ------------------------------
 # DESCRIPTION:
 
-A simple webscraper for the shopping site of Amazon (https://www.amazon.com/).
-One example "url" is hard-coded in the code. Using this url, the code automatically checks other search results by tracking the urls embedded in the "next buttons" at the end of the search pages traversing all the results in the end. 
-Note that this script assumes a certain tag to exist on the Amazon webpage's html (accessed by the url) and if Amazon changes taggings; the script should be updated accordingly in the html parsing part.
+- A simple webscraper for the shopping site of Amazon (https://www.amazon.com/).
+- One example "url" is hard-coded in the code. Using this url, the code automatically checks other search results by tracking the urls embedded in the "next buttons" at the end of the search pages traversing all the results in the end. 
+- Note that this script assumes a certain tag to exist on the Amazon webpage's html (accessed by the url) and if Amazon changes taggings; the script should be updated accordingly in the html parsing part.
 ------------------------------
 # DEPENDENCIES:
 

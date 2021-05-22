@@ -1,11 +1,11 @@
 ------------------------------
 # DESCRIPTION:
 
-A simple parallel webscraper for the Turkish shopping site HepsiBurada (https://www.hepsiburada.com/).
-Five example "url"s are hard-coded in the code. Please change the variables named "urls" to fit your own choices.
-This webscraper is expected to run on multiple cpu threads and uses "MPI" for parallelization.  
-The results of running the script with 5 example urls can be found in .csv files.  
-One of the cpu threads are chosen as the master and creating the .csv files and the rest are slaves processing the urls. The urls to process are assigned to the cpus in a round-robin fashion meaning for 4 processes (3 slave) and 5 urls to process; the url indexed 0,1,2,3,4 are assigned to cpu 0,1,2,0,1 respectively.
+- A simple parallel webscraper for the Turkish shopping site HepsiBurada (https://www.hepsiburada.com/).
+- Five example "url"s are hard-coded in the code. Please change the variables named "urls" to fit your own choices.
+- This webscraper is expected to run on multiple cpu threads and uses "MPI" for parallelization.  
+- The results of running the script with 5 example urls can be found in .csv files.  
+- One of the cpu threads are chosen as the master and creating the .csv files and the rest are slaves processing the urls. The urls to process are assigned to the cpus in a round-robin fashion meaning for 4 processes (3 slave) and 5 urls to process; the url indexed 0,1,2,3,4 are assigned to cpu 0,1,2,0,1 respectively.
 
 ------------------------------
 # DEPENDENCIES:

@@ -1,9 +1,9 @@
 ------------------------------
 # DESCRIPTION:
 
-A simple webscraper for the Turkish shopping site HepsiBurada (https://www.hepsiburada.com/).
-Five example "url"s are hard-coded in the code. Please change the variables named "urls" to fit your own choices.  
-The results of running the script with 5 example urls can be found in .csv files.  
+- A simple webscraper for the Turkish shopping site HepsiBurada (https://www.hepsiburada.com/).
+- Five example "url"s are hard-coded in the code. Please change the variables named "urls" to fit your own choices.  
+- The results of running the script with 5 example urls can be found in .csv files.  
 
 ------------------------------
 # DEPENDENCIES:
