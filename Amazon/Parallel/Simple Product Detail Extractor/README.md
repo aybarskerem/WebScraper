@@ -4,6 +4,7 @@
 - A simple parallel webscraper for the shopping site of Amazon (https://www.amazon.com/).
 - One example "url" is hard-coded in the code. Using this url, the code automatically checks other search results by tracking the urls embedded in the "next buttons" at the end of the search pages traversing all the results in the end.
 - This webscraper is expected to run on 4 different cpu threads and uses "MPI" for parallelization.  
+- The code extracts the general product information as can be seen in the .csv files.
 - Note that this script assumes a certain tag to exist on the Amazon webpage's html (accessed by the url) and if Amazon changes taggings; the script should be updated accordingly in the html parsing part.
 ------------------------------
 # DEPENDENCIES:
@@ -28,17 +29,17 @@ pip install pandas
 # HOW TO RUN:
 Run it as below to see how to set the command line parameter(s):
 ```
-mpiexec -n 4 python parallel_product_detail_extractor.py
+mpiexec -n 4 python parallel_simpleProductDetail_Extractor.py
 ```
 An example call is:  
 ```
-mpiexec -n 4 python parallel_product_detail_extractor.py 10
+mpiexec -n 4 python parallel_simpleProductDetail_Extractor.py 10
 ```
 ------------------------------
 # EXAMPLE COMMAND LINE OUTPUT FOR THE EXAMPLE RUN:
 
 ```
-> mpiexec -n 4 python parallel_product_detail_extractor.py 10
+> mpiexec -n 4 python parallel_simpleProductDetail_Extractor.py 10
 ```
 
 The current url being processed by process 2 to find the product details is: https://www.amazon.com/s?i=computers&rh=n%3A565108&fs=true&page=8&qid=1621708131&ref=sr_pg_7  
