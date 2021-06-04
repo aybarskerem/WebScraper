@@ -6,6 +6,7 @@ import pandas as pd
 import sys
 from time import sleep 
 from datetime import datetime
+import re
 
 
 def main():
@@ -27,10 +28,11 @@ def main():
         currResultDict=processUrl_or_returnNextUrl(url=url, proc_index=rank, mode="processUrl")
         for key, value in currResultDict.items(): # Add the current result to the overall list to be written to a csv file 
           combinedDict_forThisProcess.setdefault(key,[]).extend(value) # create keys according to what exists in currResultDict
+        #break #remove this
       comm.send(combinedDict_forThisProcess, dest=nprocs-1)
 
   else: # if master process
-    allUrlsToProcess=get_all_search_urls_recursively(url=MAIN_URL_TO_PROCESS, proc_index=rank, maxNumberOfPagesToTraverse)
+    allUrlsToProcess=get_all_search_urls_recursively(url=MAIN_URL_TO_PROCESS, proc_index=rank, maxNumberOfPagesToTraverse=maxNumberOfPagesToTraverse)
     number_of_urls=len(allUrlsToProcess)
     # Load balance the urls across multiple CPUs
 
@@ -55,7 +57,7 @@ def main():
     for proc_index in range(nprocs-1):
         data = comm.recv(source=proc_index)
         if data != {}: # if data is empty; then so no url has been processed by the process that sent this data
-          df = pd.DataFrame({'Product Names':data['product_names'],'Product Prices':data['product_prices'],'User Reviews':data['user_reviews']}) 
+          df = pd.DataFrame({'Product Names':data['product_names'],'Product Prices':data['product_prices'],'Product Ratings':data['product_ratings'],'User Reviews':data['user_reviews']}) 
           df.to_csv('amazon_parallel'+str(proc_index)+'.csv', index=False, encoding='utf-8')
 
     print("Finished!\nPlease check the contents of the .csv files created to see the results!")
@@ -72,7 +74,7 @@ def get_all_search_urls_recursively(url, proc_index, maxNumberOfPagesToTraverse)
   while urlToProcess is not None:
     # do the load balancing
     allUrlsToProcess+=[urlToProcess]
-    urlToProcess=processUrl_or_returnNextUrl(url=urlToProcess, proc_index=proc_index, mode="returnNextUrl", maxNumberOfPagesToTraverse)
+    urlToProcess=processUrl_or_returnNextUrl(url=urlToProcess, proc_index=proc_index, mode="returnNextUrl", maxNumberOfPagesToTraverse=maxNumberOfPagesToTraverse)
   return allUrlsToProcess
 
 
@@ -93,10 +95,11 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
       print("The current url being processed by process " + str(proc_index) + " to find the product details is: " + str(url))
       product_names=[]
       product_prices=[]
+      product_ratings=[]
       user_reviews=[]
       for index, product_item in enumerate(soup.find_all('div', attrs={'data-component-type':'s-search-result'})):
         product_name=product_item.find('span', attrs={'class':'a-size-base-plus a-color-base a-text-normal'}).text
-        print("Name is: " + str(product_name))
+        #print("Name is: " + str(product_name))
         #print(product_item.find('span',attrs={'class':'a-price','data-a-color':'base'}))
 
         product_price_item=product_item.find('span',attrs={'class':'a-price'})
@@ -104,17 +107,32 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
           product_price=product_price_item.find('span',attrs={'class':'a-offscreen'}).text
         else:
           product_price="NA"
-        print("product_price is: " + str(product_price))
+        #print("product_price is: " + str(product_price))
+
+        # re.compile("(?<=>).*(?= out of 5 stars)") -> the text we like to match is preceded by ">" (lookbehind) and and succeeded by " out of 5 start" (lookahead)
+        product_rating_text=product_item.find('span', attrs={'aria-label':re.compile("out of 5 stars")}).text
+        product_rating=product_rating_text.replace('out of 5 stars','')
+        #print("product_rating is : " + str(product_rating))
 
         link_item=product_item.find('a', attrs={'class':'a-link-normal s-no-outline'})
         user_review_url="https://www.amazon.com"+link_item['href']
-        user_review=get_user_review_from_url(user_review_url)
-    
-        product_names.append(product_name)
-        product_prices.append(product_price)   
-        user_reviews.append(user_review)
+        # for each rating and user review added, duplicate the product name and price count
+        numberOfRatingsBefore=len(product_ratings)
+        numberOfUserReviewsBefore=len(user_reviews)
+        get_ratings_and_user_reviews_from_url(user_review_url, product_ratings=product_ratings, user_reviews=user_reviews)
+        numberOfRatingsAfter=len(product_ratings)
+        numberOfUserReviewsAfter=len(user_reviews)
+        numberOfRatingsAdded=numberOfRatingsAfter-numberOfRatingsBefore
+        numberOfUserReviewsAdded=numberOfUserReviewsAfter-numberOfUserReviewsBefore
+
+        assert numberOfRatingsAdded==numberOfUserReviewsAdded,"#of ratings and #of user reviews added do not match"
+        for _ in range(numberOfRatingsAdded):
+          product_names.append(product_name)
+          product_prices.append(product_price)    
+
+        #break #remove this
       
-      return {'product_names':product_names, 'product_prices':product_prices, 'user_reviews':user_reviews}
+      return {'product_names':product_names, 'product_prices':product_prices, 'product_ratings':product_ratings, 'user_reviews':user_reviews}
 
     elif mode=="returnNextUrl":
       # Search results are paged and there are numbers at the end of the amazon webpage directing us to those pages; we click on each of them programmatically and extract the information there.
@@ -139,24 +157,31 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
     print("Request was unsuccessful, aborting the function...")
     return None
 
-def get_user_review_from_url(url):
-  review=""
+def get_ratings_and_user_reviews_from_url(url,product_ratings,user_reviews):
+  '''
+  fills product_ratings and user_reviews arrays.
+  '''
   soup=get_url_parser(url)
   if soup is not None:  
-    for product_review_item in soup.find_all('div', attrs={'data-hook':'review-collapsed', 'aria-expanded':'false', 'class':'a-expander-content reviewText review-text-content a-expander-partial-collapse-content'}):
-      review = product_review_item.find("span" , recursive=False).text # there should be only one child like this
-      #print(review)
+    for product_review_element in soup.find_all('div', attrs={'data-hook':'review', 'class':'a-section review aok-relative'}):
+      rating_item = product_review_element.find("a" , attrs={'class':'a-link-normal', 'title':re.compile(" out of 5 stars")})
+      rating_item=rating_item.attrs['title']
+      rating=rating_item.replace(' out of 5 stars','')
+      product_ratings.append(rating)
+
+      review_item = product_review_element.find("div" , attrs={'data-hook':'review-collapsed', 'aria-expanded':'false', 'class':'a-expander-content reviewText review-text-content a-expander-partial-collapse-content'})
+      review=review_item.span.text
+      user_reviews.append(review)
   else:
     print("The Request to the url to get comments was unsuccessful, aborting the function...")
 
-  return review
 
 def get_url_parser(url):
   '''
     returns the "soup" object to parse the given url's html 
     returns None the url request is not successful
   '''
-  sleep(0.5) # sleep around 500ms between each url request not to send too many request in a short time (so as not to get blocked)
+  sleep(10) # sleep around 10 seconds between each url request not to send too many request in a short time (so as not to get blocked)
 
   user_agents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
@@ -225,4 +250,5 @@ if __name__ == "__main__":
       mpiexec -n <#of processes to run> python " + sys.argv[0] + " <Max #of Pages To Traverse> \n" + \
       "If you like to traverse all pages without a limit with 4 processes for example, run the script as: \n\
       mpiexec - n 4 python " + sys.argv[0] +  " -1")
+    exit(1)
   main()
