@@ -37,7 +37,9 @@ An example call is:
 mpiexec -n 4 python parallel_advancedProductDetail_Extractor.py 7
 ```
 ------------------------------
-# EXAMPLE COMMAND LINE OUTPUT FOR THE EXAMPLE RUN (No need to read, it is just to give an idea):
+# EXAMPLE COMMAND LINE OUTPUT FOR THE EXAMPLE RUN
+
+No need to read this section, this is just to give an idea
 
 ```
 > mpiexec -n 4 python parallel_advancedProductDetail_Extractor.py 7
