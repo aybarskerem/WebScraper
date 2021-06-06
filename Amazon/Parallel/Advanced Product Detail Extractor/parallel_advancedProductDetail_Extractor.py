@@ -6,13 +6,36 @@ import pandas as pd
 import sys
 from time import sleep 
 from datetime import datetime
+import random
 import re
 
 
 def main():
 
   # MAIN PARAMETERS TO BE USED IN THE PROGRAM (Note that these constants are only used in the master process)
+  ########################################## EXAMPLE CATEGORY SECTION STARTED ##########################################
+
+  # Please fill in the url to process and optinally CATEGORY variable specifying the category of the products we are going to process to be input into the .csv file
+
+  # NOTE: Use each example category below one at a time
+  ########################################## EXAMPLE CATEGORY 1 ##########################################
+
+  #MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?bbn=16225014011&rh=n%3A%2116225014011%2Cn%3A10971181011&dc&fst=as%3Aoff&pf_rd_i=16225014011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=a3460e00-9eac-4cab-9814-093998a3f6d8&pf_rd_r=JXKT0E53MMQJ11T35FG8&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1489014608&rnid=16225014011&ref=s9_acss_bw_cts_AESPORVN_T2_w" # for SPORTS category example
+  #CATEGORY="SPORTS"
+  
+  ########################################## EXAMPLE CATEGORY 2 ##########################################
+
+  #MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?rh=n%3A256643011&fs=true&ref=lp_256643011_sar"
+  #CATEGORY="TOOLS & HOME IMPROVEMENT"
+  
+  ########################################## EXAMPLE CATEGORY 3 ##########################################
+
   MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?rh=n%3A565108&fs=true&ref=lp_565108_sar"
+  CATEGORY="ELECTRONICS (LAPTOPS)"
+
+  ########################################## EXAMPLE CATEGORY SECTION ENDED ##########################################
+
+
   maxNumberOfPagesToTraverse=int(sys.argv[1])
 
   # COMM VARIABLES
@@ -57,8 +80,8 @@ def main():
     for proc_index in range(nprocs-1):
         data = comm.recv(source=proc_index)
         if data != {}: # if data is empty; then so no url has been processed by the process that sent this data
-          df = pd.DataFrame({'Product Names':data['product_names'],'Product Prices':data['product_prices'],'Product Ratings':data['product_ratings'],'User Reviews':data['user_reviews']}) 
-          df.to_csv('amazon_parallel'+str(proc_index)+'.csv', index=False, encoding='utf-8')
+          df = pd.DataFrame({'Processor ID':proc_index, 'Category':CATEGORY, 'Product Names':data['product_names'],'Product Prices':data['product_prices'],'Product Ratings':data['product_ratings'],'User Reviews':data['user_reviews']}) 
+          df.to_csv('amazon_parallel.csv', index=False, encoding='utf-8', mode='a') # append to file
 
     print("Finished!\nPlease check the contents of the .csv files created to see the results!")
 
@@ -110,8 +133,8 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
         #print("product_price is: " + str(product_price))
 
         # re.compile("(?<=>).*(?= out of 5 stars)") -> the text we like to match is preceded by ">" (lookbehind) and and succeeded by " out of 5 start" (lookahead)
-        product_rating_text=product_item.find('span', attrs={'aria-label':re.compile("out of 5 stars")}).text
-        product_rating=product_rating_text.replace('out of 5 stars','')
+        #product_rating_text=product_item.find('span', attrs={'aria-label':re.compile("out of 5 stars")}).text
+        #product_rating=product_rating_text.replace('out of 5 stars','')
         #print("product_rating is : " + str(product_rating))
 
         link_item=product_item.find('a', attrs={'class':'a-link-normal s-no-outline'})
@@ -181,7 +204,8 @@ def get_url_parser(url):
     returns the "soup" object to parse the given url's html 
     returns None the url request is not successful
   '''
-  sleep(10) # sleep around 10 seconds between each url request not to send too many request in a short time (so as not to get blocked)
+  randomSleepAmount=random.randint(10,30)
+  sleep(randomSleepAmount) # sleep around 10-30 seconds between each url request not to send too many request in a short time (so as not to get blocked). Randomness is important as well so that the server does not detect a pattern among the requests
 
   user_agents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
@@ -208,8 +232,12 @@ def get_url_parser(url):
   ]
   no_of_user_agents=len(user_agents)
 
-  # at each minute, use a different user agent from the list by rotating in a round-robin fashion
-  user_agent_index=datetime.now().minute%no_of_user_agents
+  # at each 10 minutes, use a different user agent from the list by rotating in a round-robin fashion
+  now=datetime.now()
+  user_agent_index=((now.hour*60+now.minute)//10)%no_of_user_agents
+
+  # randomly choose an user agent from the list for each 
+
   headers = {
     #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93  Safari/537.36',
     #'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
