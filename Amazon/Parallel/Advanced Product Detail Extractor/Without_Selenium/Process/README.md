@@ -28,13 +28,13 @@ mpiexec -n 4 python process_csv.py
 ```
 # INPUTS and OUTPUTS
   
-1) INPUTS  
+## 1) INPUTS  
   
  - electronics.csv  
  - sports.csv  
  - tools.csv  
   
-2) OUTPUTS  
+## 2) OUTPUTS  
   
  - electronics_all_stars_combined.png  
  - electronics_bag_of_words.txt  
