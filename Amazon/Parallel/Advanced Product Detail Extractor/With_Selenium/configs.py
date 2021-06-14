@@ -1,5 +1,6 @@
 
 # ############################# ELECTRONICS CATEGORY #############################
+# HP AND Dell not processed yet
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_89%3AApple&s=price-asc-rank&dc&fs=true&qid=1623510594&rnid=2528832011&ref=sr_st_price-asc-rank"
 # BRAND_NAME="Apple"
 # CATEGORY="ELECTRONICS (LAPTOPS)"
@@ -24,16 +25,18 @@
 # BRAND_NAME="Microsoft"
 # CATEGORY="ELECTRONICS (LAPTOPS)"
 
-MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_36%3A30000-%2Cp_n_condition-type%3A2224371011%2Cp_89%3ADell&s=price-asc-rank&dc&fs=true&qid=1623583668&rnid=2528832011&ref=sr_nr_p_89_7"
-BRAND_NAME="Dell"
-CATEGORY="ELECTRONICS (LAPTOPS)"
+# MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_36%3A30000-%2Cp_n_condition-type%3A2224371011%2Cp_89%3ADell&s=price-asc-rank&dc&fs=true&qid=1623583668&rnid=2528832011&ref=sr_nr_p_89_7"
+# BRAND_NAME="Dell"
+# CATEGORY="ELECTRONICS (LAPTOPS)"
 
 
 # ############################# TOOLS & HOME IMPROVEMENT CATEGORY #############################
+# Command, GE and Bissell not processed completely yet.
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3AEveryDrop+by+Whirlpool&s=price-asc-rank&dc&fs=true&qid=1623583866&rnid=2528832011&ref=sr_nr_p_89_1"
 # BRAND_NAME="EveryDrop by Whirlpool"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
 
+# skipped for now (halfy done only)
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3ACommand&s=price-asc-rank&dc&fs=true&qid=1623583997&rnid=2528832011&ref=sr_nr_p_89_2"
 # BRAND_NAME="Command"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
@@ -47,6 +50,7 @@ CATEGORY="ELECTRONICS (LAPTOPS)"
 # BRAND_NAME="Flux Phenom"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
 
+# There are 111 pages, so many; skipped for now
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3AGE&s=price-asc-rank&dc&fs=true&qid=1623584332&rnid=2528832011&ref=sr_nr_p_89_5"
 # BRAND_NAME="GE"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
@@ -55,13 +59,14 @@ CATEGORY="ELECTRONICS (LAPTOPS)"
 # BRAND_NAME="Brita"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
 
-
-# MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3ABissell&s=price-asc-rank&dc&fs=true&qid=1623584381&rnid=2528832011&ref=sr_nr_p_89_7"
-# BRAND_NAME="Bissell"
-# CATEGORY="TOOLS & HOME IMPROVEMENT"
+# there are 31 pages, not processed for now
+MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3ABissell&s=price-asc-rank&dc&fs=true&qid=1623584381&rnid=2528832011&ref=sr_nr_p_89_7"
+BRAND_NAME="Bissell"
+CATEGORY="TOOLS & HOME IMPROVEMENT"
 
 
 # ############################# SPORTS CATEGORY #############################
+# All processed separately.
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=sporting-intl-ship&bbn=16225014011&rh=n%3A16225014011%2Cn%3A10971181011%2Cp_n_condition-type%3A6503254011%2Cp_89%3AFitbit&s=price-asc-rank&dc&fst=as%3Aoff&pf_rd_i=16225014011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=a3460e00-9eac-4cab-9814-093998a3f6d8&pf_rd_r=JXKT0E53MMQJ11T35FG8&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1623593252&rnid=2528832011&ref=sr_nr_p_89_1"
 # BRAND_NAME="Fitbit"
 # CATEGORY="SPORTS"

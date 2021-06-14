@@ -11,7 +11,7 @@ import json # use json dumps to format dictionaries while printing
 from nltk.sentiment import SentimentIntensityAnalyzer
 import os
 
-files_ro_read=['electronics', 'sports', 'tools' ]
+files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ]
 
 lemma = nltk.wordnet.WordNetLemmatizer()
 def main():
@@ -40,48 +40,65 @@ def main():
     myDict[file]=OrderedDict()
     sentiment_analysis_dict[file]=OrderedDict()
     df=pd.read_csv(file+".csv",  quotechar='"')
-    rating_sorted_df=df.sort_values('Product Ratings', ascending=False)
-    merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
+    # filtering out the rows with `POSITION_T` value in corresponding column
+    df = df[df['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv file)
 
+    df['Product Ratings']=pd.to_numeric(df['Product Ratings'], downcast='integer')
+    for rating in range(5,0,-1):
     
-    category_wise_user_reviews=""
-    for _, row in merged_df.iterrows():
-      rating              = row['Product Ratings']
-      user_reviews_merged = row['User Reviews']
-      category_wise_user_reviews+=user_reviews_merged
-      myDict[file][rating]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
-      cloud(user_reviews_merged, category=file, rating=rating)     
-    cloud(category_wise_user_reviews, category=file, rating=None)
+      # iterate thru each brand while all the corresponding user reviews for a particular brand are put into a list
+      sentiment_analysis_dict[file][rating]={}
+      df_brand_and_corresponding_reviews_list=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(list).reset_index()
+      #print(df_brand_and_corresponding_reviews_list)
+      for _,row in df_brand_and_corresponding_reviews_list.iterrows():
+        user_reviews_list = row['User Reviews']
+        brand_name        = row['Brand Name']
+        for sentence in user_reviews_list:
+          sentiment_analysis_dict[file][rating].setdefault(brand_name,[]).append(get_overall_sentiment(sentence))
+
+      # iterate thru each brand while the reviews are merged for each brand (there is only one entry for each brand name and all the corresponding user reviews for a particular brand are merged into a single string)
+      myDict[file][rating]={}
+      df_brand_and_corresponding_reviews_combined=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(' '.join).reset_index()
+      for _,row in df_brand_and_corresponding_reviews_combined.iterrows():
+        user_reviews_merged = row['User Reviews']
+        brand_name          = row['Brand Name']
+        myDict[file][rating][brand_name]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
 
     #print(myDict)
     with open(file+"_bag_of_words.txt", 'w') as outputFile:
       outputFile.write(json.dumps(myDict,indent=2))
 
-    
-    for _, row in rating_sorted_df.iterrows():
-      rating       = row['Product Ratings']
-      user_reviews = row['User Reviews']
-      sentiment_analysis_dict[file].setdefault(rating,[]).append(get_overall_sentiment(user_reviews))
-   
+
     for rating in sentiment_analysis_dict[file]:
       no_of_positives = 0
-      no_of_neutrals  = 0
+      no_of_neutrals   = 0
       no_of_negatives = 0
-      for sentiment_value in sentiment_analysis_dict[file][rating]:
-        if sentiment_value == 'positive':
-          no_of_positives+=1
-        elif sentiment_value == 'neutral':
-          no_of_neutrals+=1 
-        elif sentiment_value == 'negative':
-          no_of_negatives+=1
-      sentiment_analysis_dict[file][rating][0:0]= [
-      "#of positives: " + str(no_of_positives),
-      "#of neutrals:  " + str(no_of_neutrals), 
-      "#of negatives: " + str(no_of_negatives)]
+      for brand_name in sentiment_analysis_dict[file][rating]:
+        for sentiment_value in sentiment_analysis_dict[file][rating][brand_name]:
+          if sentiment_value == 'positive':
+            no_of_positives+=1
+          elif sentiment_value == 'neutral':
+            no_of_neutrals+=1 
+          elif sentiment_value == 'negative':
+            no_of_negatives+=1
+        sentiment_analysis_dict[file][rating][brand_name][0:0]= [
+        "#of positives: " + str(no_of_positives),
+        "#of neutrals:  " + str(no_of_neutrals), 
+        "#of negatives: " + str(no_of_negatives)]
 
     with open(file+"_sentiment_analysis.txt", 'w') as outputFile:
       outputFile.write(json.dumps(sentiment_analysis_dict,indent=2))
 
+
+    # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
+    merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
+    category_wise_user_reviews=""
+    for _, row in merged_df.iterrows():
+      user_reviews_merged = row['User Reviews']
+      rating              = row['Product Ratings']
+      category_wise_user_reviews+=user_reviews_merged
+      cloud(user_reviews_merged, category=file, rating=rating)     
+    cloud(category_wise_user_reviews, category=file, rating=None)
 
 def is_noun(tag):
   return tag in ['NN', 'NNS', 'NNP', 'NNPS']

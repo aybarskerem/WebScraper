@@ -208,28 +208,33 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
       # Search results are paged and there are numbers at the end of the amazon webpage directing us to those pages; we click on each of them programmatically and extract the information there.
       
       print("url is: " + url)
-      #print(UnicodeDammit.detwingle(soup).decode("utf-8") )
-      currPage=int(soup.find('li', attrs={'class':'a-selected'}).text)
-      #totalNumberOfPages=max(int(soup.find_all('li', attrs={'class':'a-normal'})[-1].text), currPage)
-      #totalNumberOfPages=max(int(soup.find_all('li', attrs={'class':'a-disabled', 'aria-disabled':'true'})[-1].text), currPage)
-      #unicode_safe_print(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling)
-      totalNumberOfPages=max(int(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling.text),currPage)
-      print("total number of pages is: " + str(totalNumberOfPages))
-      
-      if maxNumberOfPagesToTraverse!=-1:
-        numberOfPagesToTraverse=min(totalNumberOfPages, maxNumberOfPagesToTraverse)
-      else:
-        numberOfPagesToTraverse=totalNumberOfPages
+      selectedPageItem=soup.find('li', attrs={'class':'a-selected'})
+      if selectedPageItem is not None:
+        #print(UnicodeDammit.detwingle(soup).decode("utf-8") )
+        currPage=int(selectedPageItem.text)
+        #totalNumberOfPages=max(int(soup.find_all('li', attrs={'class':'a-normal'})[-1].text), currPage)
+        #totalNumberOfPages=max(int(soup.find_all('li', attrs={'class':'a-disabled', 'aria-disabled':'true'})[-1].text), currPage)
+        #unicode_safe_print(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling)
+        totalNumberOfPages=max(int(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling.text),currPage)
+        print("total number of pages is: " + str(totalNumberOfPages))
+        
+        if maxNumberOfPagesToTraverse!=-1:
+          numberOfPagesToTraverse=min(totalNumberOfPages, maxNumberOfPagesToTraverse)
+        else:
+          numberOfPagesToTraverse=totalNumberOfPages
 
-      print("Current page being processed by process " + str(proc_index) + " to find the next page url is: ", str(currPage) + " out of " + str(totalNumberOfPages) + " pages.")
-      if currPage!=numberOfPagesToTraverse:
-        # find the li element with the class "a-last", then find its a tagged element's href value which is the link to the next search result
-        nextButtonUrl=soup.find('li',attrs={'class':'a-last'}).a['href'] # by clicking next find all results
-        fullUrlToSearch= "https://www.amazon.com"+nextButtonUrl
-        print("Next search url is: " +fullUrlToSearch)
-        return fullUrlToSearch
+        print("Current page being processed by process " + str(proc_index) + " to find the next page url is: ", str(currPage) + " out of " + str(totalNumberOfPages) + " pages.")
+        if currPage!=numberOfPagesToTraverse:
+          # find the li element with the class "a-last", then find its a tagged element's href value which is the link to the next search result
+          nextButtonUrl=soup.find('li',attrs={'class':'a-last'}).a['href'] # by clicking next find all results
+          fullUrlToSearch= "https://www.amazon.com"+nextButtonUrl
+          print("Next search url is: " +fullUrlToSearch)
+          return fullUrlToSearch
+        else:
+          return None # we are already at the last page
       else:
-        return None # we are already at the last page
+        print("Either this product only has one page or url request is unsuccessful, please check the url to verify: " + url)
+        return None  
   else:
     print("Request was unsuccessful, aborting the function...")
     return None
