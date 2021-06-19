@@ -56,17 +56,17 @@ def main():
         for sentence in user_reviews_list:
           sentiment_analysis_dict[file][rating].setdefault(brand_name,[]).append([get_overall_sentiment(sentence), sentence ])
 
-      # # iterate thru each brand while the reviews are merged for each brand (there is only one entry for each brand name and all the corresponding user reviews for a particular brand are merged into a single string)
-      # myDict[file][rating]={}
-      # df_brand_and_corresponding_reviews_combined=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(' '.join).reset_index()
-      # for _,row in df_brand_and_corresponding_reviews_combined.iterrows():
-      #   user_reviews_merged = row['User Reviews']
-      #   brand_name          = row['Brand Name']
-      #   myDict[file][rating][brand_name]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
+      # iterate thru each brand while the reviews are merged for each brand (there is only one entry for each brand name and all the corresponding user reviews for a particular brand are merged into a single string)
+      myDict[file][rating]={}
+      df_brand_and_corresponding_reviews_combined=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(' '.join).reset_index()
+      for _,row in df_brand_and_corresponding_reviews_combined.iterrows():
+        user_reviews_merged = row['User Reviews']
+        brand_name          = row['Brand Name']
+        myDict[file][rating][brand_name]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
 
-    # #print(myDict)
-    # with open(file+"_bag_of_words.txt", 'w') as outputFile:
-    #   outputFile.write(json.dumps(myDict,indent=2))
+    #print(myDict)
+    with open(file+"_bag_of_words.txt", 'w') as outputFile:
+      outputFile.write(json.dumps(myDict,indent=2))
 
 
     for rating in sentiment_analysis_dict[file]:
@@ -90,15 +90,15 @@ def main():
       outputFile.write(json.dumps(sentiment_analysis_dict,indent=2))
 
 
-    # # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
-    # merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
-    # category_wise_user_reviews=""
-    # for _, row in merged_df.iterrows():
-    #   user_reviews_merged = row['User Reviews']
-    #   rating              = row['Product Ratings']
-    #   category_wise_user_reviews+=user_reviews_merged
-    #   cloud(user_reviews_merged, category=file, rating=rating)     
-    # cloud(category_wise_user_reviews, category=file, rating=None)
+    # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
+    merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
+    category_wise_user_reviews=""
+    for _, row in merged_df.iterrows():
+      user_reviews_merged = row['User Reviews']
+      rating              = row['Product Ratings']
+      category_wise_user_reviews+=user_reviews_merged
+      cloud(user_reviews_merged, category=file, rating=rating)     
+    cloud(category_wise_user_reviews, category=file, rating=None)
 
 def is_noun(tag):
   return tag in ['NN', 'NNS', 'NNP', 'NNPS']
