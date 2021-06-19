@@ -50,4 +50,4 @@ mpiexec -n 2 python parallel_advancedProductDetail_Extractor.py -1
 
 # OUTPUT:  
 
-- An example output file ELECTRONICS (LAPTOPS).csv can be found which is produced as a result of running "parallel_advancedProductDetail_Extractor.py" script with the parameter blocks with the BRAND_NAME parameters of "Apple", "Lenovo", "Asus" and "Microsoft" in the config file (config.py).
+- ELECTRONICS (LAPTOPS).csv, SPORT.csv and TOOLS & HOME IMPROVEMENT.csv files which are produced as a result of running "parallel_advancedProductDetail_Extractor.py" script with the parameter blocks in the config.py file separately.
