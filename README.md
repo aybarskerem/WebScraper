@@ -4,8 +4,11 @@
 - Please refer to the readme files inside each folder for the correspoding code/program explanations.
 
 ## Keywords:
-- Message Passing Interface (MPI) 
-- Natural Language Processing (NLP)
-- Selenium Framework
 - Webscraping
 - Parallel Programming
+- Message Passing Interface (MPI) 
+- Natural Language Processing (NLP)
+- Sentiment Analysis
+- Selenium Framework
+
+
