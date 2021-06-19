@@ -54,19 +54,19 @@ def main():
         user_reviews_list = row['User Reviews']
         brand_name        = row['Brand Name']
         for sentence in user_reviews_list:
-          sentiment_analysis_dict[file][rating].setdefault(brand_name,[]).append(get_overall_sentiment(sentence))
+          sentiment_analysis_dict[file][rating].setdefault(brand_name,[]).append([get_overall_sentiment(sentence), sentence ])
 
-      # iterate thru each brand while the reviews are merged for each brand (there is only one entry for each brand name and all the corresponding user reviews for a particular brand are merged into a single string)
-      myDict[file][rating]={}
-      df_brand_and_corresponding_reviews_combined=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(' '.join).reset_index()
-      for _,row in df_brand_and_corresponding_reviews_combined.iterrows():
-        user_reviews_merged = row['User Reviews']
-        brand_name          = row['Brand Name']
-        myDict[file][rating][brand_name]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
+      # # iterate thru each brand while the reviews are merged for each brand (there is only one entry for each brand name and all the corresponding user reviews for a particular brand are merged into a single string)
+      # myDict[file][rating]={}
+      # df_brand_and_corresponding_reviews_combined=df[df['Product Ratings']==rating].groupby('Brand Name')['User Reviews'].apply(' '.join).reset_index()
+      # for _,row in df_brand_and_corresponding_reviews_combined.iterrows():
+      #   user_reviews_merged = row['User Reviews']
+      #   brand_name          = row['Brand Name']
+      #   myDict[file][rating][brand_name]=list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
 
-    #print(myDict)
-    with open(file+"_bag_of_words.txt", 'w') as outputFile:
-      outputFile.write(json.dumps(myDict,indent=2))
+    # #print(myDict)
+    # with open(file+"_bag_of_words.txt", 'w') as outputFile:
+    #   outputFile.write(json.dumps(myDict,indent=2))
 
 
     for rating in sentiment_analysis_dict[file]:
@@ -74,7 +74,7 @@ def main():
       no_of_neutrals   = 0
       no_of_negatives = 0
       for brand_name in sentiment_analysis_dict[file][rating]:
-        for sentiment_value in sentiment_analysis_dict[file][rating][brand_name]:
+        for sentiment_value, sentence in sentiment_analysis_dict[file][rating][brand_name]:
           if sentiment_value == 'positive':
             no_of_positives+=1
           elif sentiment_value == 'neutral':
@@ -90,15 +90,15 @@ def main():
       outputFile.write(json.dumps(sentiment_analysis_dict,indent=2))
 
 
-    # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
-    merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
-    category_wise_user_reviews=""
-    for _, row in merged_df.iterrows():
-      user_reviews_merged = row['User Reviews']
-      rating              = row['Product Ratings']
-      category_wise_user_reviews+=user_reviews_merged
-      cloud(user_reviews_merged, category=file, rating=rating)     
-    cloud(category_wise_user_reviews, category=file, rating=None)
+    # # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
+    # merged_df=df.groupby('Product Ratings')['User Reviews'].apply(' '.join).reset_index()
+    # category_wise_user_reviews=""
+    # for _, row in merged_df.iterrows():
+    #   user_reviews_merged = row['User Reviews']
+    #   rating              = row['Product Ratings']
+    #   category_wise_user_reviews+=user_reviews_merged
+    #   cloud(user_reviews_merged, category=file, rating=rating)     
+    # cloud(category_wise_user_reviews, category=file, rating=None)
 
 def is_noun(tag):
   return tag in ['NN', 'NNS', 'NNP', 'NNPS']
@@ -132,6 +132,7 @@ def get_overall_sentiment(sentence):
     return 'neutral'
   
 
+# remove \u2019 -> utf-16 ; convert this to utf-8
 def sentiment_analysis(sentence):
   '''
   Output positive, negative, neutral and compound value
@@ -157,6 +158,7 @@ def bag_of_words(sentence, sortTheOutput=False):
   counts = dict()
   bag = []
 
+   #remove /n u2019 etc 
   bag.extend([
     lemmatize_word(word).upper().translate(str.maketrans('','',string.punctuation)) 
     for word in ( nltk.word_tokenize(sentence) ) 

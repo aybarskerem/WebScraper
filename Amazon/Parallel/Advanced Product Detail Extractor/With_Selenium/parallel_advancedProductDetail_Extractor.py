@@ -245,15 +245,33 @@ def get_ratings_and_user_reviews_from_url(url,product_ratings,user_reviews):
   '''
   soup=get_url_parser(url)
   if soup is not None:  
-    for product_review_element in soup.find_all('div', attrs={'data-hook':'review', 'class':'a-section review aok-relative'}):
-      rating_item = product_review_element.find("a" , attrs={'class':'a-link-normal', 'title':re.compile(" out of 5 stars")})
-      rating_item=rating_item.attrs['title']
-      rating=rating_item.replace(' out of 5 stars','')
-      product_ratings.append(rating)
+    product_review_elements=soup.find_all('div', attrs={'data-hook':'review', 'class':'a-section review aok-relative'})
+    if product_review_elements:
+      for product_review_element in product_review_elements:
+        rating=0
+        review=""
+        rating_item = product_review_element.find("a" , attrs={'class':'a-link-normal', 'title':re.compile(" out of 5 stars")})
+        if rating_item and hasattr(rating_item, 'title'):
+          rating_item=rating_item.attrs['title']
+          rating=rating_item.replace(' out of 5 stars','')        
+        else:
+          print("Could not retrieve a rating for the url " + url)
+          continue # could not retrieve rating for this element
 
-      review_item = product_review_element.find("div" , attrs={'data-hook':'review-collapsed', 'aria-expanded':'false', 'class':'a-expander-content reviewText review-text-content a-expander-partial-collapse-content'})
-      review=review_item.span.text
-      user_reviews.append(review)
+        review_item = product_review_element.find("div" , attrs={'data-hook':'review-collapsed', 'aria-expanded':'false', 'class':'a-expander-content reviewText review-text-content a-expander-partial-collapse-content'})
+
+        # if there is only an image; then there would be no review body and hence no span or no span.text (but there would be only review title and rating; but we need reviews)
+        if review_item and \
+        hasattr(review_item, 'span') and review_item.span and \
+        hasattr(review_item.span, 'text'):
+          review=review_item.span.text       
+        else:
+          print("Could not retrieve a review for the url " + url)
+          continue  
+        
+        product_ratings.append(rating)
+        user_reviews.append(review)    
+
   else:
     print("The Request to the url to get comments was unsuccessful, aborting the function...")
 
