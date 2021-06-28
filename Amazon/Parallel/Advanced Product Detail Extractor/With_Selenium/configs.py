@@ -57,10 +57,6 @@ CATEGORY="ELECTRONICS (LAPTOPS)"
 # BRAND_NAME="Flux Phenom"
 # CATEGORY="TOOLS & HOME IMPROVEMENT"
 
-# There are 111 pages, so many; skipped for now
-# MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3AGE&s=price-asc-rank&dc&fs=true&qid=1623584332&rnid=2528832011&ref=sr_nr_p_89_5"
-# BRAND_NAME="GE"
-# CATEGORY="TOOLS & HOME IMPROVEMENT"
 
 # MAIN_URL_TO_PROCESS = "https://www.amazon.com/s?i=tools-intl-ship&bbn=256643011&rh=n%3A256643011%2Cp_n_condition-type%3A6358196011%2Cp_89%3ABrita&s=price-asc-rank&dc&fs=true&qid=1623584350&rnid=2528832011&ref=sr_nr_p_89_6"
 # BRAND_NAME="Brita"
