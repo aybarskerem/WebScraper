@@ -7,28 +7,29 @@ from wordcloud import WordCloud
 import string
 from collections import OrderedDict
 import json # use json dumps to format dictionaries while printing
-from nltk.sentiment import SentimentIntensityAnalyzer
+
 import re # we can do "import regex" if needed since python re module does not support \K which is a regex resetting the beginning of a match and starts from the current point 
 import functools
+from nltk.corpus import stopwords
+import stanza # pip install stanza
+from aspect_sentiment_analysis   import aspectBased_sentiment_analysis
+from polarity_sentiment_analysis import get_overall_sentimentPolarity
+import traceback
+from unicode_safe_print import unicode_safe_print 
+from enum import Enum
+
 print = functools.partial(print, flush=True) #flush print functions by default (needed to see outputs of multiple processes in a more correct order)
 
-
 files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ]
-lemma = nltk.wordnet.WordNetLemmatizer()
-tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+
+
+# COMM VARIABLES
+comm = MPI.COMM_WORLD
+nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
+rank = comm.Get_rank()
 
 def main():
 
-    # # send relevant portions of the url list to corresponding processes (e.g. for 299 pages and 3 slave processes:  0:100, 100:200, 200:299 
-    # df = pd.DataFrame({'Processor ID':proc_index, 'Category':CATEGORY, 'Product Names':data['product_names'],'Product Prices':data['product_prices'],'Product Ratings':data['product_ratings'],'User Reviews':data['user_reviews']}) 
-    # df.to_csv('amazon_parallel.csv', index=False, encoding='utf-8', mode='a') # append to category
-
-  #myDict=collections.defaultdict(dict)
-  
-  # COMM VARIABLES
-  comm = MPI.COMM_WORLD
-  nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
-  rank = comm.Get_rank()
 
   bag_of_words_dict={} 
   sentiment_analysis_dict={} 
@@ -39,6 +40,11 @@ def main():
     if rank==0: # downloading only in one process is enough (the master processor)
       # make initializations
       nltk.download('vader_lexicon')
+      stanza.download('en')
+      nltk.download('stopwords')
+      nltk.download('punkt')
+      nltk.download('averaged_perceptron_tagger')
+
       for proc_index in range(1, 4):
         comm.send(True, dest=proc_index)
 
@@ -52,15 +58,20 @@ def main():
           insertHeader = True
           mode = 'w'
 
-        df.to_csv('AllCategories_Sentiments.csv', index=False, encoding='utf-8-sig', header=insertHeader, mode=mode) # append to file
+        df.to_csv('AllCategories_Sentiments.csv', index=False, encoding='utf-8', header=insertHeader, mode=mode) # append to file
     else:
       comm.recv(source=0) # no need to check return value, we only True to indicate initialization is complete
+      
+      global lemma, tokenizer
+
+      lemma = nltk.wordnet.WordNetLemmatizer()
+      tokenizer = nltk.data.load('tokenizers/punkt/english.pickle') 
 
       file_ro_read = files_ro_read[rank-1]
       ''' 
         NOTE: We get category and subcategory information from the file name assuming the information inside the parantheses is a subcategory and the rest indicates the category name. A simple string find method would suffice; but I wanted to use a regex :) 
         
-        1) NOT USED
+        1) NOT USED (This part can be skipped, not used in the code)
         Explanation of the regex "(.*(?=\(.*\)))\(.*\)\K.*":
         NOTE: The regex below works in PHP but not in Python; so instead of the method below, I will just use grouping.
         
@@ -76,7 +87,7 @@ def main():
         2) USED
         Explanation of the regex "(.*)\((.*)\)(.*)" (which is what we use):
         This regex provides what we want like this example: 'ELECTRONICS (LAPTOPS) ITEMS' -> group(1): ELECTRONICS (with possibly trailing spaces), group(2): LAPTOPS, group(3): ITEMS (with possibly leading spaces)
-        '''
+      '''
         
       category = file_ro_read
       category_search = re.search(r'(.*)\((.*)\)(.*)', file_ro_read) # use search instead of match method since match expects the match to be starting from the beginning 
@@ -90,7 +101,7 @@ def main():
       print("subcategory is: " + subcategory)
       bag_of_words_dict[category]=OrderedDict()
       sentiment_analysis_dict[category]=OrderedDict()
-      df=pd.read_csv(file_ro_read+".csv",  quotechar='"')
+      df=pd.read_csv(file_ro_read+".csv",  quotechar='"', encoding='utf-8')
       # filtering out the rows with `POSITION_T` value in corresponding column
       df = df[df['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category)
 
@@ -114,15 +125,17 @@ def main():
           for review in user_reviews_list:
             #print(review)
             review=review.replace("\n","")  
-            review_sentiment_value=get_overall_sentiment(review)
-            if review_sentiment_value == 'positive':
+            review=review.replace("’","'") # change ’ apostrophe to normal one just in case
+
+            review_polarity=get_overall_sentimentPolarity(review)
+            if review_polarity == 'positive':
               no_of_positive_reviews+=1
-            elif review_sentiment_value == 'neutral':
+            elif review_polarity == 'neutral':
               no_of_neutral_reviews+=1 
-            elif review_sentiment_value == 'negative':
+            elif review_polarity == 'negative':
               no_of_negative_reviews+=1 
             
-            review_analysis.append(fillAndGetReviewInformation(review, review_sentiment_value))
+            review_analysis.append(fillAndGetReviewInformation(review, review_polarity))
           
           sentiment_analysis_dict[category][rating][brand_name] = {
             "#of positive reviews":  no_of_positive_reviews,
@@ -158,6 +171,7 @@ def main():
       col_neutral_sentences=[]
       col_negative_sentences=[]
       col_aspectWords=[]
+      col_reviewAspectWords=[]
       for category in sentiment_analysis_dict:
         for rating in sentiment_analysis_dict[category]:
           for brand_name in sentiment_analysis_dict[category][rating]:
@@ -169,7 +183,7 @@ def main():
               col_product_rating.append(rating)
               col_brand_name.append(brand_name)
 
-              col_review_sentiment.append(review_dict['Review sentiment'])
+              col_review_sentiment.append(review_dict['Review polarity-based sentiment'])
               col_review.append(review_dict['Content'])
               ###################################################################
               positive_sentences = '\n'.join(review_dict['Sentences']["Positive sentences"])
@@ -186,8 +200,8 @@ def main():
               ###################################################################
 
               col_aspectWords.append("Cargo\nOriginalty\nPackaging\nQuality")
-
-      df = pd.DataFrame({'Category': col_category, 'Subcategory':col_subcategory, 'Product Ratings': col_product_rating, 'Brand Name': col_brand_name, "Review Sentiment":col_review_sentiment, "Review":col_review, '#of Positive Sentences': col_numberOf_positive_sentences, '#of Neutral Sentences': col_numberOf_neutral_sentences, '#of Negative Sentences': col_numberOf_negative_sentences, 'Positive Sentences':col_positive_sentences , 'Neutral Sentences':col_neutral_sentences, 'Negative Sentences':col_negative_sentences, 'Aspect': col_aspectWords  }) 
+              col_reviewAspectWords.append(review_dict['Review aspect-based sentiment'])
+      df = pd.DataFrame({'Category': col_category, 'Subcategory':col_subcategory, 'Product Ratings': col_product_rating, 'Brand Name': col_brand_name, "Review Sentiment":col_review_sentiment, "Review":col_review, '#of Positive Sentences': col_numberOf_positive_sentences, '#of Neutral Sentences': col_numberOf_neutral_sentences, '#of Negative Sentences': col_numberOf_negative_sentences, 'Positive Sentences':col_positive_sentences , 'Neutral Sentences':col_neutral_sentences, 'Negative Sentences':col_negative_sentences, 'Aspect': col_aspectWords, 'Review Aspect Sentiment': col_reviewAspectWords }) 
       
       comm.send(df, dest=0)
     
@@ -202,18 +216,35 @@ def main():
       # cloud(category_wise_user_reviews, category=category, rating=None)
 
 
-'''
-Gets a review and fills a dictionary to hold the content of the review, an overall review sentiment and sentiment analysis for sentences of this review
-returns a dictionary with the keys 'Review Sentiment, 'Content' and 'Sentences'
-'''
-def fillAndGetReviewInformation(review, review_sentiment_value):
+
+def fillAndGetReviewInformation(review, review_polarity):
+  '''
+    Gets a review and fills a dictionary to hold the content of the review, an overall review polarity and polarity-based sentiment analysis for the sentences of this review
+
+    Parameters:
+      review (str):           A string which contains sentence(s).
+      review_polarity (str):  A string which defines the poloarity of the review. It can be 'positive', 'neutral' or 'negative'.
+
+    Returns a dictionary with the keys 'Review polarity-based sentiment', 'Review aspect-based sentiment', 'Content' and 'Sentences'
+    
+  '''
   review_dict = {}
-  review_dict['Review sentiment'] = review_sentiment_value
+  review_dict['Review polarity-based sentiment'] = review_polarity
+  review_dict['Review aspect-based sentiment'] = aspectBased_sentiment_analysis(review)
   review_dict['Content'] = review
-  review_dict['Sentences'] = sentence_analysis(review)
+  review_dict['Sentences'] = polarityBased_sentiment_analysis(review)
   return review_dict
 
-def sentence_analysis(review):
+def polarityBased_sentiment_analysis(review):
+  '''
+    Returns a dict containing the polarity information of each sentence along with the sentences themselves given the 'review'.
+
+    Parameters:
+      review (str): A string which contains sentence(s).
+
+    Returns:
+      sentence_wise_sentiment_dict: A dictionary containing polarity statistics (positive, neutral, negative) based on each sentence in the 'review' parameter.
+    '''
   no_of_positive_sentences = 0
   no_of_neutral_sentences   = 0
   no_of_negative_sentences = 0
@@ -223,7 +254,7 @@ def sentence_analysis(review):
   sentence_wise_sentiment_dict={}
   sentences=tokenizer.tokenize(review)
   for sentence in sentences:
-    sentence_sentiment_value=get_overall_sentiment(sentence)
+    sentence_sentiment_value=get_overall_sentimentPolarity(sentence)
     if sentence_sentiment_value == 'positive':
       positive_sentences.append(sentence)
       no_of_positive_sentences+=1
@@ -248,7 +279,6 @@ def sentence_analysis(review):
   return sentence_wise_sentiment_dict
   
 
-
 def is_noun(tag):
   return tag in ['NN', 'NNS', 'NNP', 'NNPS']
 
@@ -267,47 +297,11 @@ def lemmatize_word(param_word):
           retVal = lemma.lemmatize(word, wntag)            
       return retVal
 
-
-def get_overall_sentiment(sentence):
-  '''
-    returns positive, neutral or negative as string values depending on the overall sentiment of the sentence
-  '''
-  overall_sentiment_value = sentiment_analysis(sentence)['compound']
-  if(overall_sentiment_value>=0.05):
-    return 'positive'
-  elif(overall_sentiment_value<=-0.05):
-    return 'negative'
-  else:
-    return 'neutral'
   
-
-# remove \u2019 -> utf-16 ; convert this to utf-8
-def sentiment_analysis(sentence):
-  '''
-  Output positive, negative, neutral and compound value
-  We can just look at the compound value to get an overall estimation:
-    positive: compound score >= 0.05
-    neutral:  compound score between -0.05 and 0.05
-    negative: compound score <= -0.05
-  '''
-  sia = SentimentIntensityAnalyzer()
-  return sia.polarity_scores(sentence)
-
-def tf_idf(dataframe):
-  '''
-    Our documents for tf-idf are the words in separate rating values inside each catagory
-    This function calculates td-idf for each category separately. 
-    There are 5 possible ratings; so #of documents are 5
-    tf:  #of rating values that our word exists (just look at the top-15 entries in rating for a word existence)
-    idf: 5 / #of ratings this word is found 
-    tf-idf: tf * idf
-  '''
-  return None
 def bag_of_words(sentence, sortTheOutput=False):
   counts = dict()
   bag = []
 
-   #remove /n u2019 etc 
   bag.extend([
     lemmatize_word(word).upper().translate(str.maketrans('','',string.punctuation)) 
     for word in ( nltk.word_tokenize(sentence) ) 
@@ -345,5 +339,12 @@ def cloud(sentence, category, rating):
     plt.title(category+"_all_stars_combined")
     plt.savefig(category+"_all_stars_combined")
 
+
 if __name__ == "__main__":
   main()
+  # try:  
+  #   main()
+  # except Exception as ex:
+  #   print(ex)
+  #   traceback.print_exc()
+  #   comm.Abort() # if any of the processes throw an error; exit all

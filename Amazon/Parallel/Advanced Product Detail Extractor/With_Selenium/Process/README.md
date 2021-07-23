@@ -36,6 +36,10 @@ mpiexec -n 4 python process_csv.py
   
 ## 2) OUTPUTS  
 
+Output files below can be found in OUTPUTS folder.  
+
+- AllCategories_Sentiments.csv  
+  
 - ELECTRONICS (LAPTOPS)_all_stars_combined.png  
 - ELECTRONICS (LAPTOPS)_bag_of_words.txt  
 - ELECTRONICS (LAPTOPS)_sentiment_analysis.txt  

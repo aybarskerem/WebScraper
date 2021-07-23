@@ -76,7 +76,7 @@ def main():
   options.add_argument('--ignore-certificate-errors')
   options.add_argument('--incognito')
   options.add_argument("start-maximized")
-  options.add_experimental_option("excludeSwitches",["disable-popup-blocking"]) # disable pop-ups
+  options.add_experimental_option("excludeSwitches", ["disable-popup-blocking"]) # disable pop-ups
   options.add_experimental_option("excludeSwitches", ["enable-automation"]) # to get rid of "Google being controlled by automated software info bar"
   #options.add_argument('--headless')
   global driver
