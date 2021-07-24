@@ -1,0 +1,742 @@
+{
+  "TOOLS & HOME IMPROVEMENT": {
+    "General": {
+      "5": {
+        "Bissell": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "PRICE": [
+                  "GOOD"
+                ],
+                "FIT": [
+                  "TIGHT"
+                ]
+              },
+              "Content": "  Getting harder to find my belt. Found them here for a good price. Arrived a couple of days earlier than expected. A little softer than the old belt but tighter fit, worked well and expect them to last. Will buy again and refer others.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  3 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "Found them here for a good price.",
+                  "A little softer than the old belt but tighter fit, worked well and expect them to last."
+                ],
+                "Neutral sentences": [
+                  "  Getting harder to find my belt.",
+                  "Arrived a couple of days earlier than expected.",
+                  "Will buy again and refer others."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Brita": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  Fits perfectly and does the job.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  Fits perfectly and does the job."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Command": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  Used these on my apartment balcony to hang lights non-permanently. It's been over a month and they still are holding strong. This was the highest weight rated outdoor hook I could find which is why I purchased.The hook actually moves which was not specified in the product description. You can see in my photo the metal hook is not flat to the plastic back. This works in my application as it actually moves in the breeze vs. being more rigid. If it didnt move it would add tension on the plastic back and break easier.If this hook can hold decorative lights on a patio ceiling it definitely can hold some tongs. Just be sure to follow the pre cleaning instructions.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  3 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "It's been over a month and they still are holding strong.",
+                  "If it didnt move it would add tension on the plastic back and break easier.If this hook can hold decorative lights on a patio ceiling it definitely can hold some tongs.",
+                  "Just be sure to follow the pre cleaning instructions."
+                ],
+                "Neutral sentences": [
+                  "  Used these on my apartment balcony to hang lights non-permanently.",
+                  "This was the highest weight rated outdoor hook I could find which is why I purchased.The hook actually moves which was not specified in the product description.",
+                  "You can see in my photo the metal hook is not flat to the plastic back."
+                ],
+                "Negative sentences": [
+                  "This works in my application as it actually moves in the breeze vs. being more rigid."
+                ]
+              }
+            }
+          ]
+        },
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  This Every Drop Whirlpool Refrigerator filter fit my refrigerator perfectly. I was concerned since Whilrlpool no longer makes their own filters. I had tried a generic one previously and it became stuck in the housing. The whole housing needed to be replaced so I won't try that again.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  1 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "  This Every Drop Whirlpool Refrigerator filter fit my refrigerator perfectly."
+                ],
+                "Neutral sentences": [
+                  "The whole housing needed to be replaced so I won't try that again."
+                ],
+                "Negative sentences": [
+                  "I was concerned since Whilrlpool no longer makes their own filters.",
+                  "I had tried a generic one previously and it became stuck in the housing."
+                ]
+              }
+            }
+          ]
+        },
+        "Flux Phenom": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  This makes it so much easier for my dogs to go in and out with no bugs getting in. Works great for me.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  This makes it so much easier for my dogs to go in and out with no bugs getting in.",
+                  "Works great for me."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Tenmiro": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  We hooked these up to our Tenmiro 65 foot set for an extension and they work perfectly. The connectors are the same match and the remote control works for these too. From what I can tell they are exactly the same spools.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  We hooked these up to our Tenmiro 65 foot set for an extension and they work perfectly."
+                ],
+                "Neutral sentences": [
+                  "The connectors are the same match and the remote control works for these too.",
+                  "From what I can tell they are exactly the same spools."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      },
+      "4": {
+        "Bissell": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "DEAL": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  Probably the best deal on these belts.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  Probably the best deal on these belts."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Brita": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  works well",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  works well"
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Command": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  These work great on any metal surfaces or doors. However, I was trying to use them to hang some lights on my balcony. Definitely do not stick to stucco. I figured but wanted to try anyway. Only buy these if you're going to adhere them to any FLAT surfaces. Work great but not for what I needed.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  3 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  These work great on any metal surfaces or doors.",
+                  "Definitely do not stick to stucco.",
+                  "Work great but not for what I needed."
+                ],
+                "Neutral sentences": [
+                  "However, I was trying to use them to hang some lights on my balcony.",
+                  "I figured but wanted to try anyway.",
+                  "Only buy these if you're going to adhere them to any FLAT surfaces."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "PRICE": [
+                  "COMPETITIVE"
+                ]
+              },
+              "Content": "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators.  The price on Amazon was competitive and delivery can't be beat.  I only gave 4 stars because it didn't fit up quite as good as in the past.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "The price on Amazon was competitive and delivery can't be beat.",
+                  "I only gave 4 stars because it didn't fit up quite as good as in the past."
+                ],
+                "Neutral sentences": [
+                  "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Tenmiro": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "INSTALLATION": [
+                  "NOT BRIGHT",
+                  "GOOD",
+                  "NICE"
+                ],
+                "SENSOR": [
+                  "WEIRD"
+                ],
+                "MOTION": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  installation is so simple and I like that is USB so it can be removed and charge or place it in different places, not bright as I trough but still good, motion sensor is weird sometimes it works really good, many times you think that it has not charge cause don't react and you have to wave closer to make it work, but when it works is really nice you just have to move closer and they turn on, that's convenient and helpful when you cooking or cleaning.Pros: so easy to use and you can place it anywhere, is bright enough as a second light like for late nite kitchen uses, maybe in a closet can be really helpful.Cons: not so bright so if you have a long kitchen you will need more then one, motion can be better, a little ticker.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  installation is so simple and I like that is USB so it can be removed and charge or place it in different places, not bright as I trough but still good, motion sensor is weird sometimes it works really good, many times you think that it has not charge cause don't react and you have to wave closer to make it work, but when it works is really nice you just have to move closer and they turn on, that's convenient and helpful when you cooking or cleaning.Pros: so easy to use and you can place it anywhere, is bright enough as a second light like for late nite kitchen uses, maybe in a closet can be really helpful.Cons: not so bright so if you have a long kitchen you will need more then one, motion can be better, a little ticker."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "Bissell": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  The two belts had NO numbers or writing on them so how do you know that they are #32015 OEM ?I hope they last & don't break after brief use !",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  The two belts had NO numbers or writing on them so how do you know that they are #32015 OEM ?I hope they last & don't break after brief use !"
+                ]
+              }
+            }
+          ]
+        },
+        "Brita": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "COST": [
+                  "WORTH"
+                ]
+              },
+              "Content": "  Tbh I was skeptical of these from the beginning with the way they were packaged when they came and the fact that they were bone dry (which does not necessarily mean they are bad). But I used them none the same. I thought it was my imagination that the water tasted different which perhaps it is, but since the filter hardly lasted 2 months before being at 0% (not 25%) I think I would've been better off to go directly with the Brita filters.  The filters I got directly from Brita each lasted 4-6 months, the water tasted cleaner and they were damp when I got them not sure if that makes a difference in the quality (I did some reading and the verdict was split). They were not that much more so the extra cost would be worth the extra life. It's also not like I just increased my water intake if anything I've been drinking less water.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  1 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "I thought it was my imagination that the water tasted different which perhaps it is, but since the filter hardly lasted 2 months before being at 0% (not 25%) I think I would've been better off to go directly with the Brita filters.",
+                  "The filters I got directly from Brita each lasted 4-6 months, the water tasted cleaner and they were damp when I got them not sure if that makes a difference in the quality (I did some reading and the verdict was split).",
+                  "They were not that much more so the extra cost would be worth the extra life."
+                ],
+                "Neutral sentences": [
+                  "But I used them none the same."
+                ],
+                "Negative sentences": [
+                  "  Tbh I was skeptical of these from the beginning with the way they were packaged when they came and the fact that they were bone dry (which does not necessarily mean they are bad).",
+                  "It's also not like I just increased my water intake if anything I've been drinking less water."
+                ]
+              }
+            }
+          ]
+        },
+        "Command": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I suppose these would work in a 100% dry environment, but I got these to hang some very lightweight things on the walls in my bathroom (a showercap, headband, and a small handheld mirror). The walls in there are the same as the walls in my room, with the same type of paint on them etc. However this is my bathroom I use every day, and when the shower is used obvi there is going to be steam in the room, like in any normal bathroom when someone takes a shower. I put up one, left it to settle for 24hrs as per the instructions, and then hung the small mirror on it, probably weighing less than 1lbs, and the package for the hooks say it holds 2lbs. It stayed up and stayed put just fine, no issue (yet). I then put up another one in a different location in the bathroom, but still on same type of wall. I left it to settle, but then heard it fall not five mins later. I went and put it back up with a new sticky tab, and same thing happened, so I gave up on that one. Took a shower today for the first time since hanging up the first hook with the mirror, and maybe 20min after my shower I've just heard that one fall too...luckily the mirror is both cheap and sturdy...I think even the mirror part is made of plastic lol, and I didn't hear it break, so I'm sure it's fine. But these hooks just do not stay up at all in the bathroom.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  7 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "However this is my bathroom I use every day, and when the shower is used obvi there is going to be steam in the room, like in any normal bathroom when someone takes a shower.",
+                  "Took a shower today for the first time since hanging up the first hook with the mirror, and maybe 20min after my shower I've just heard that one fall too...luckily the mirror is both cheap and sturdy...I think even the mirror part is made of plastic lol, and I didn't hear it break, so I'm sure it's fine."
+                ],
+                "Neutral sentences": [
+                  "  I suppose these would work in a 100% dry environment, but I got these to hang some very lightweight things on the walls in my bathroom (a showercap, headband, and a small handheld mirror).",
+                  "The walls in there are the same as the walls in my room, with the same type of paint on them etc.",
+                  "I put up one, left it to settle for 24hrs as per the instructions, and then hung the small mirror on it, probably weighing less than 1lbs, and the package for the hooks say it holds 2lbs.",
+                  "I then put up another one in a different location in the bathroom, but still on same type of wall.",
+                  "I left it to settle, but then heard it fall not five mins later.",
+                  "I went and put it back up with a new sticky tab, and same thing happened, so I gave up on that one.",
+                  "But these hooks just do not stay up at all in the bathroom."
+                ],
+                "Negative sentences": [
+                  "It stayed up and stayed put just fine, no issue (yet)."
+                ]
+              }
+            }
+          ]
+        },
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "TASTE": [
+                  "FINE"
+                ],
+                "LEAK": [
+                  "FINE"
+                ]
+              },
+              "Content": "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400. Product arrived in like-new condition and appeared to have not been installed, as I had suspected. On attempting to install the filter, it would insert but not rotate into place. Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place. No leaks and water tastes fine. Without having to hand fit, it would be 5 stars.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  3 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400."
+                ],
+                "Neutral sentences": [
+                  "On attempting to install the filter, it would insert but not rotate into place.",
+                  "Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place.",
+                  "Without having to hand fit, it would be 5 stars."
+                ],
+                "Negative sentences": [
+                  "Product arrived in like-new condition and appeared to have not been installed, as I had suspected.",
+                  "No leaks and water tastes fine."
+                ]
+              }
+            }
+          ]
+        },
+        "Flux Phenom": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "KIT": [
+                  "FINE"
+                ]
+              },
+              "Content": "  Last Spring I purchased a magnetic screen for my  96\" by 36\" patio door.  It was easy to install; basically just adhering the Velcro tape and using a several tacks to reinforce it. A few months later we hired a painter to paint and refinish all exterior doors. This required taking down the Velcro tape holding up the screen door. I ordered the 20 feet new installation kit to reinstall my screen door. It was fine except IT WAS ONLY 17 FEET, not the 20 feet it was supposed to be. I needed a total of 19.5 feet for my installation. I literally had to salvage several small pieces of the old Velcro tape to make it 19.5 linear feet that I needed to reinstall my magnetic screen door. The kit itself was fine if it had actually contained 20 feet, rather than 17 feet. Now I have the worry that instead of using three long new Velcro pieces, I have three new long pieces and three reused short pieces of Velcro holding up my screen door. I hope the used pieces last but it would not have been necessary if they had not shorted me 36 inches of Velcro tape.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 4 - #of neutral sentences:  6 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "It was easy to install; basically just adhering the Velcro tape and using a several tacks to reinforce it.",
+                  "It was fine except IT WAS ONLY 17 FEET, not the 20 feet it was supposed to be.",
+                  "The kit itself was fine if it had actually contained 20 feet, rather than 17 feet.",
+                  "I hope the used pieces last but it would not have been necessary if they had not shorted me 36 inches of Velcro tape."
+                ],
+                "Neutral sentences": [
+                  "  Last Spring I purchased a magnetic screen for my  96\" by 36\" patio door.",
+                  "A few months later we hired a painter to paint and refinish all exterior doors.",
+                  "This required taking down the Velcro tape holding up the screen door.",
+                  "I ordered the 20 feet new installation kit to reinstall my screen door.",
+                  "I needed a total of 19.5 feet for my installation.",
+                  "I literally had to salvage several small pieces of the old Velcro tape to make it 19.5 linear feet that I needed to reinstall my magnetic screen door."
+                ],
+                "Negative sentences": [
+                  "Now I have the worry that instead of using three long new Velcro pieces, I have three new long pieces and three reused short pieces of Velcro holding up my screen door."
+                ]
+              }
+            }
+          ]
+        },
+        "Tenmiro": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  Easy to install! The connection between the remote and sensor pad can be a little glitchy. It's not as bright as we wanted but gives off some light. Not meant for illumination, more of an added affect",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  Easy to install!"
+                ],
+                "Neutral sentences": [
+                  "The connection between the remote and sensor pad can be a little glitchy.",
+                  "Not meant for illumination, more of an added affect"
+                ],
+                "Negative sentences": [
+                  "It's not as bright as we wanted but gives off some light."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "Bissell": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 1,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "neutral",
+              "Review aspect-based sentiment": {},
+              "Content": "  Brand new vacuum and I am breaking at least one of these belts a month",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [],
+                "Neutral sentences": [
+                  "  Brand new vacuum and I am breaking at least one of these belts a month"
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Brita": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "FILTER": [
+                  "ORIGINAL",
+                  "NOT ORIGINAL"
+                ]
+              },
+              "Content": "  I was a little skeptical when I saw the picture of these on Amazon, because the top of these filters slightly vary to the original filter that came with the pitcher, but as the product states that it is a replacement for Brita pitchers, I thought this would work just as well (I think the incompatibility exception was only in relation to a more specialized pitcher unit, which I don't have). However, as others customers have noted, the filter does not have a sealed/tight fit at all. In fact, if the pitcher is filled to 3/4 or more full, the water displaces the filter, so that it actually rises out of the slot. In addition, I am suspicious of the fact that the water filters a lot quicker than the original filter. End result is that it is a pain. I wouldn't buy these again.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 3",
+                "Positive sentences": [
+                  "  I was a little skeptical when I saw the picture of these on Amazon, because the top of these filters slightly vary to the original filter that came with the pitcher, but as the product states that it is a replacement for Brita pitchers, I thought this would work just as well (I think the incompatibility exception was only in relation to a more specialized pitcher unit, which I don't have)."
+                ],
+                "Neutral sentences": [
+                  "In fact, if the pitcher is filled to 3/4 or more full, the water displaces the filter, so that it actually rises out of the slot.",
+                  "I wouldn't buy these again."
+                ],
+                "Negative sentences": [
+                  "However, as others customers have noted, the filter does not have a sealed/tight fit at all.",
+                  "In addition, I am suspicious of the fact that the water filters a lot quicker than the original filter.",
+                  "End result is that it is a pain."
+                ]
+              }
+            }
+          ]
+        },
+        "Command": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "THING": [
+                  "CERTAIN"
+                ]
+              },
+              "Content": "  The adhesion and strudiness of these clips seem to be pretty good, but the shape of the hooks actually prevent you from using them to hang certain things from them. Towels, clothes, and similar items slip right off due to the fact that the hooks have not much of an angle. They only slightly point upwards",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  The adhesion and strudiness of these clips seem to be pretty good, but the shape of the hooks actually prevent you from using them to hang certain things from them."
+                ],
+                "Neutral sentences": [
+                  "Towels, clothes, and similar items slip right off due to the fact that the hooks have not much of an angle.",
+                  "They only slightly point upwards"
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "FILTER": [
+                  "ORIGINAL"
+                ]
+              },
+              "Content": "  This replacement filter did not last as long as our original filter which came with the ice machine. Our original filter lasted 7 months, this one only lasted 4 months. We had a repair man come to service our ice machine because it stopped making ice. We thought our ice machine was broken but turned out this filter was already clogged. He said these filters have problems with clogging too soon. He also said you can run the ice machine without the filter. This is what we will do because buying a filter every four months is not economical.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  2 - #of negative sentences: 3",
+                "Positive sentences": [
+                  "  This replacement filter did not last as long as our original filter which came with the ice machine.",
+                  "Our original filter lasted 7 months, this one only lasted 4 months."
+                ],
+                "Neutral sentences": [
+                  "He also said you can run the ice machine without the filter.",
+                  "This is what we will do because buying a filter every four months is not economical."
+                ],
+                "Negative sentences": [
+                  "We had a repair man come to service our ice machine because it stopped making ice.",
+                  "We thought our ice machine was broken but turned out this filter was already clogged.",
+                  "He said these filters have problems with clogging too soon."
+                ]
+              }
+            }
+          ]
+        },
+        "Tenmiro": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "LIGHT": [
+                  "NOT BRIGHT"
+                ]
+              },
+              "Content": "  The power box stopped working after one night of use and the lights were not nearly as bright as they should have been.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  The power box stopped working after one night of use and the lights were not nearly as bright as they should have been."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "1": {
+        "Bissell": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  Compatibility system says this filter fits my Bissell 6700 vacuum. I bought it and it doesn't fit. It is flimsy, thin, and too small on both dimensions. I would recommend contacting the seller before purchasing anything and verifying that the filter will work on your vacuum as the compatibility system apparently cannot be trusted. (If you rely on the compatibility system, and the filter won't fit, it's your fault, apparently, when dealing with a return.)",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  3 - #of negative sentences: 2",
+                "Positive sentences": [],
+                "Neutral sentences": [
+                  "  Compatibility system says this filter fits my Bissell 6700 vacuum.",
+                  "It is flimsy, thin, and too small on both dimensions.",
+                  "I would recommend contacting the seller before purchasing anything and verifying that the filter will work on your vacuum as the compatibility system apparently cannot be trusted."
+                ],
+                "Negative sentences": [
+                  "I bought it and it doesn't fit.",
+                  "(If you rely on the compatibility system, and the filter won't fit, it's your fault, apparently, when dealing with a return.)"
+                ]
+              }
+            }
+          ]
+        },
+        "Brita": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "PLASTIC": [
+                  "TOP"
+                ]
+              },
+              "Content": "  The top plastic broke off when I was cleaning it",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  The top plastic broke off when I was cleaning it"
+                ]
+              }
+            }
+          ]
+        },
+        "Command": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "GRIEF": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  I purchased a massive amount of different types of command strips in the first part of 2019.  We were painting the inside of our old house to sell it.  I wanted to put things back up on the wall so there were no holes when I took them down.We moved to our new house in July 2019.  I used Command Strips on almost everything that went on the wall except for the very heaviest things.  My walls have a texture but it is mostly flat so I did my best to make sure the Strips were placed where they would have a flat surface.  I also wiped down the walls with alcohol per the instructions.  3M says they are only for use on flat surfaces.  Good grief!  Where does any house have a completely flat surface other than on cabinets?Anyway, I overestimated the weight of everything and used bigger Command Strips and put a Strip on every corner of everything, except for the hooks.  In October 2020 my things began falling off the walls.  I wrote to 3M and, basically, it was my fault for using them on textured walls.  I proceeded to screw and nail up my wall decor.  However, I had a temporary, light-weight decoration to hang so I peeled a Command Strip and found it had no more adhesive whatsoever!  I pulled out a different size and it was the same thing!  I started checking them all and most of them had no more adhesive!  No wonder my things were falling!There's no expiration date on them so should they poop out like that?  I don't think so.  I wrote back to 3M saying I no longer wanted to use their product and wanted to send everything I had left to them so they could send me a refund.  They sent me a label so I'm returning everything!By the way, I kept them inside the house so they weren't exposed to sunlight or temperature extremes.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  8 - #of negative sentences: 9",
+                "Positive sentences": [
+                  "My walls have a texture but it is mostly flat so I did my best to make sure the Strips were placed where they would have a flat surface.",
+                  "They sent me a label so I'm returning everything!By the way, I kept them inside the house so they weren't exposed to sunlight or temperature extremes."
+                ],
+                "Neutral sentences": [
+                  "  I purchased a massive amount of different types of command strips in the first part of 2019.",
+                  "We were painting the inside of our old house to sell it.",
+                  "I used Command Strips on almost everything that went on the wall except for the very heaviest things.",
+                  "I also wiped down the walls with alcohol per the instructions.",
+                  "3M says they are only for use on flat surfaces.",
+                  "Where does any house have a completely flat surface other than on cabinets?Anyway, I overestimated the weight of everything and used bigger Command Strips and put a Strip on every corner of everything, except for the hooks.",
+                  "I pulled out a different size and it was the same thing!",
+                  "I don't think so."
+                ],
+                "Negative sentences": [
+                  "I wanted to put things back up on the wall so there were no holes when I took them down.We moved to our new house in July 2019.",
+                  "Good grief!",
+                  "In October 2020 my things began falling off the walls.",
+                  "I wrote to 3M and, basically, it was my fault for using them on textured walls.",
+                  "I proceeded to screw and nail up my wall decor.",
+                  "However, I had a temporary, light-weight decoration to hang so I peeled a Command Strip and found it had no more adhesive whatsoever!",
+                  "I started checking them all and most of them had no more adhesive!",
+                  "No wonder my things were falling!There's no expiration date on them so should they poop out like that?",
+                  "I wrote back to 3M saying I no longer wanted to use their product and wanted to send everything I had left to them so they could send me a refund."
+                ]
+              }
+            }
+          ]
+        },
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I sent back to get credit for this item, it doesn't fit, looking at your info it said it would fit my refreg. , it doesn't  I need a return slip as UPS  won't  accept it , I need you to pick up as I'm 80 years old and not suppose to go out. My friend took it back today and UPS said they need  a return bar, so You need  to pick it up.Please contact me ASAP",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "My friend took it back today and UPS said they need  a return bar, so You need  to pick it up.Please contact me ASAP"
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  I sent back to get credit for this item, it doesn't fit, looking at your info it said it would fit my refreg.",
+                  ", it doesn't  I need a return slip as UPS  won't  accept it , I need you to pick up as I'm 80 years old and not suppose to go out."
+                ]
+              }
+            }
+          ]
+        },
+        "Tenmiro": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  I get adapter I did get a plug how I Connect I don't like it",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  I get adapter I did get a plug how I Connect I don't like it"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

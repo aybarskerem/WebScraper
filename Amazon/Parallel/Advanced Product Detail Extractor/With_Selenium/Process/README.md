@@ -19,13 +19,23 @@ pip install pandas
 pip install wordcloud
 pip install nltk
 pip install matplotlib
+pip install stanza
 ```
+
+3) setup.py  
+Please execute ```python setup.py``` before running the code to install some dependency packages.
 ------------------------------
 # HOW TO RUN:
-An example call is:  
+An example call for multiprocessed execution is (i.e. IS_MULTIPROCESSED config variable is True):  
 ```
 mpiexec -n 4 python process_csv.py
 ```
+  
+The call for a single processed execution is (i.e. IS_MULTIPROCESSED config variable is False):  
+```
+python process_csv.py
+```
+
 # INPUTS and OUTPUTS
   
 ## 1) INPUTS  
@@ -38,31 +48,25 @@ mpiexec -n 4 python process_csv.py
 
 Output files below can be found in OUTPUTS folder.  
 
-- AllCategories_Sentiments.csv  
-  
-- ELECTRONICS (LAPTOPS)_all_stars_combined.png  
-- ELECTRONICS (LAPTOPS)_bag_of_words.txt  
-- ELECTRONICS (LAPTOPS)_sentiment_analysis.txt  
-- ELECTRONICS (LAPTOPS)_with_1 stars.png  
-- ELECTRONICS (LAPTOPS)_with_2 stars.png  
-- ELECTRONICS (LAPTOPS)_with_3 stars.png  
-- ELECTRONICS (LAPTOPS)_with_4 stars.png  
-- ELECTRONICS (LAPTOPS)_with_5 stars.png  
+- ELECTRONICS_LAPTOPS_with_1 stars.png  
+- ELECTRONICS_LAPTOPS_with_2 stars.png  
+- ELECTRONICS_LAPTOPS_with_3 stars.png  
+- ELECTRONICS_LAPTOPS_with_4 stars.png  
+- ELECTRONICS_LAPTOPS_with_5 stars.png  
+- ELECTRONICS_sentiment_analysis.txt 
 
-- SPORTS_all_stars_combined.png  
-- SPORTS_bag_of_words.txt  
+- ExecutionTimingResults.txt  
+
+- SPORTS_General_with_1 stars.png  
+- SPORTS_General_with_2 stars.png  
+- SPORTS_General_with_3 stars.png  
+- SPORTS_General_with_4 stars.png  
+- SPORTS_General_with_5 stars.png  
 - SPORTS_sentiment_analysis.txt  
-- SPORTS_with_1 stars.png  
-- SPORTS_with_2 stars.png  
-- SPORTS_with_3 stars.png  
-- SPORTS_with_4 stars.png  
-- SPORTS_with_5 stars.png  
-  
-- TOOLS & HOME IMPROVEMENT_all_stars_combined.png  
-- TOOLS & HOME IMPROVEMENT_bag_of_words.txt  
+ 
+- TOOLS & HOME IMPROVEMENT_General_with_1 stars.png  
+- TOOLS & HOME IMPROVEMENT_General_with_2 stars.png  
+- TOOLS & HOME IMPROVEMENT_General_with_3 stars.png  
+- TOOLS & HOME IMPROVEMENT_General_with_4 stars.png  
+- TOOLS & HOME IMPROVEMENT_General_with_5 stars.png  
 - TOOLS & HOME IMPROVEMENT_sentiment_analysis.txt  
-- TOOLS & HOME IMPROVEMENT_with_1 stars.png  
-- TOOLS & HOME IMPROVEMENT_with_2 stars.png  
-- TOOLS & HOME IMPROVEMENT_with_3 stars.png  
-- TOOLS & HOME IMPROVEMENT_with_4 stars.png  
-- TOOLS & HOME IMPROVEMENT_with_5 stars.png  

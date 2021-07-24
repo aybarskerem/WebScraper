@@ -1,0 +1,921 @@
+{
+  "SPORTS": {
+    "General": {
+      "5": {
+        "Band-Aid": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  Manufacturers make so many different types of medical tape now that it's hard to keep up with what's on the market. I needed some waterproof tape and I was glad to see that it was the same Johnson & Johnson tape that I remember from my childhood. I do believe it's a little thinner now, but it serves its purpose. It did everything that I required it to do. If you're in need of waterproof medical tape, you can't go wrong with ordering this product.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  2 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "I needed some waterproof tape and I was glad to see that it was the same Johnson & Johnson tape that I remember from my childhood.",
+                  "If you're in need of waterproof medical tape, you can't go wrong with ordering this product."
+                ],
+                "Neutral sentences": [
+                  "I do believe it's a little thinner now, but it serves its purpose.",
+                  "It did everything that I required it to do."
+                ],
+                "Negative sentences": [
+                  "  Manufacturers make so many different types of medical tape now that it's hard to keep up with what's on the market."
+                ]
+              }
+            }
+          ]
+        },
+        "ComfyBrace": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "GLOVE": [
+                  "GOOD"
+                ],
+                "WINNER": [
+                  "DEFINITE"
+                ],
+                "COMPRESSION": [
+                  "PERFECT"
+                ],
+                "GRADE": [
+                  "TOP"
+                ]
+              },
+              "Content": "  UPDATE!!!  February 18, 2019I reviewed these arthritis gloves a couple of months ago, and I feel that an update would be necessary. I think my review underestimated the gloves and that's why I want to clarify. These are the best arthritis gloves around! After trying numerous different brands I can confidently tell you that this one is a definite winner!! It's super soft and comfortable for all day wear. I wear it to work and it doesn't interfere with my typing and paperwork at all.These gloves provide me with the perfect compression in my fingers so I finally have some pain relief when I wear them. I was so excited with this find, I make sure to share this big secret with all my family, friends, and acquaintances that might benefit from it. My cousin doesn't stop thanking me, she says these gloves changed her whole life. I totally believe her.The quality is top grade. I am constantly washing it and drying it, and by just looking at the gloves you would think it's brand new. I am going to place an order right now for an additional pair so I can switch off between the two at night.I recommend these highly and I will continue to do so. I hope with this I can bring relief to soo many people that are desperately looking for it.Don't hesitate! Buy your pair right now!!!",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 9 - #of neutral sentences:  5 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "These are the best arthritis gloves around!",
+                  "After trying numerous different brands I can confidently tell you that this one is a definite winner!!",
+                  "It's super soft and comfortable for all day wear.",
+                  "I wear it to work and it doesn't interfere with my typing and paperwork at all.These gloves provide me with the perfect compression in my fingers so I finally have some pain relief when I wear them.",
+                  "I was so excited with this find, I make sure to share this big secret with all my family, friends, and acquaintances that might benefit from it.",
+                  "My cousin doesn't stop thanking me, she says these gloves changed her whole life.",
+                  "I totally believe her.The quality is top grade.",
+                  "I am going to place an order right now for an additional pair so I can switch off between the two at night.I recommend these highly and I will continue to do so.",
+                  "I hope with this I can bring relief to soo many people that are desperately looking for it.Don't hesitate!"
+                ],
+                "Neutral sentences": [
+                  "  UPDATE!!!",
+                  "February 18, 2019I reviewed these arthritis gloves a couple of months ago, and I feel that an update would be necessary.",
+                  "I am constantly washing it and drying it, and by just looking at the gloves you would think it's brand new.",
+                  "Buy your pair right now!!",
+                  "!"
+                ],
+                "Negative sentences": [
+                  "I think my review underestimated the gloves and that's why I want to clarify."
+                ]
+              }
+            }
+          ]
+        },
+        "Fit Simplify": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "QUALITY": [
+                  "GREAT"
+                ]
+              },
+              "Content": "  The rubber in these bands is great quality and very durable. I purchased another brand before these and it was much thinner and I stretched it out in a matter of a few months.  I feel like the thicker gauge rubber will make these last much longer!  Plus, for a little more money I got a variety pack of band strengths and the other brand I purchased I only got one band!",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  The rubber in these bands is great quality and very durable.",
+                  "I feel like the thicker gauge rubber will make these last much longer!",
+                  "Plus, for a little more money I got a variety pack of band strengths and the other brand I purchased I only got one band!"
+                ],
+                "Neutral sentences": [
+                  "I purchased another brand before these and it was much thinner and I stretched it out in a matter of a few months."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Fitbit": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "REMOVAL": [
+                  "EASY"
+                ],
+                "ATTACHMENT": [
+                  "EASY",
+                  "QUICK"
+                ]
+              },
+              "Content": "  I absolutely love this band.  It has gotten softer the more I wear it and is so easy to get on and off.  I generally use the band my fitbit came with for work outs, kayaking, riding horses etc., so it is important that attachment and removal is quick and easy.  Looks great with any outfit and makes my fitbit look more stylish for dresser events (because I am addicted and MUST wear it all the time!).  Buy the band, you won't regret it.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 5 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  I absolutely love this band.",
+                  "It has gotten softer the more I wear it and is so easy to get on and off.",
+                  "I generally use the band my fitbit came with for work outs, kayaking, riding horses etc., so it is important that attachment and removal is quick and easy.",
+                  "Looks great with any outfit and makes my fitbit look more stylish for dresser events (because I am addicted and MUST wear it all the time!).",
+                  "Buy the band, you won't regret it."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Hoyle": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "LAUGH": [
+                  "FEW"
+                ],
+                "PURCHASE": [
+                  "NOT BAD"
+                ],
+                "DESIGN": [
+                  "FUN"
+                ]
+              },
+              "Content": "  We like these cards, they are able to be used outdoors, in the pool, or inside.  They wash up well, and aren't ruined if you get greasy fingerprints on them during a picnic or while eating.  They are very reasonably priced, however, it takes some getting used to shuffling without spraying cards all over the table (it is good for a few laughs though)!  They are somewhat slippery holding them, especially if you have a lot (10+) in your hand and they slide around in the card holders we have.  Not sure if that is the cards' fault or the holder design.Overall, for the price they are not a bad purchase.  To be honest, we have others, somewhat textured, that we like better.But the design is very fun, and different.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 5 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  We like these cards, they are able to be used outdoors, in the pool, or inside.",
+                  "They wash up well, and aren't ruined if you get greasy fingerprints on them during a picnic or while eating.",
+                  "They are very reasonably priced, however, it takes some getting used to shuffling without spraying cards all over the table (it is good for a few laughs though)!",
+                  "They are somewhat slippery holding them, especially if you have a lot (10+) in your hand and they slide around in the card holders we have.",
+                  "To be honest, we have others, somewhat textured, that we like better.But the design is very fun, and different."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "Not sure if that is the cards' fault or the holder design.Overall, for the price they are not a bad purchase."
+                ]
+              }
+            }
+          ]
+        },
+        "OKELA": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "MATERIA": [
+                  "STRONG"
+                ],
+                "QUALITY": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  This swim cap is Strong materia, good quality, stretches well and holds all of my hair with room, covers my ears well which is great to help prevent water getting in.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  This swim cap is Strong materia, good quality, stretches well and holds all of my hair with room, covers my ears well which is great to help prevent water getting in."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "TaylorMade": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 1,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "neutral",
+              "Review aspect-based sentiment": {},
+              "Content": "  So far so good. I have used it a few times at speeds of up to 40 mph for 45 minutes. The flag and this mount have held up. No problems so far.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  So far so good."
+                ],
+                "Neutral sentences": [
+                  "I have used it a few times at speeds of up to 40 mph for 45 minutes.",
+                  "The flag and this mount have held up."
+                ],
+                "Negative sentences": [
+                  "No problems so far."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "4": {
+        "Band-Aid": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "DESCRIPTION": [
+                  "UNCLEAR"
+                ]
+              },
+              "Content": "  I was not able to view back of box where size is shown.  Some reviews stated 1” x 3”.  Not so.  The width is 3/4”, with actual width of gauze pad being only 1/2”.  Band-Aid brand, so you know they work. Deducting 1 star because of unclear description (size).  I needed a full 1” x 3”.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  6 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [
+                  "  I was not able to view back of box where size is shown.",
+                  "Some reviews stated 1” x 3”.",
+                  "Not so.",
+                  "The width is 3/4”, with actual width of gauze pad being only 1/2”.",
+                  "Band-Aid brand, so you know they work.",
+                  "I needed a full 1” x 3”."
+                ],
+                "Negative sentences": [
+                  "Deducting 1 star because of unclear description (size)."
+                ]
+              }
+            }
+          ]
+        },
+        "Fit Simplify": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I really just wanted bands to help with form and resistance while doing leg press, but with the WAP release of Cardi B, I felt undying need of making the booty pop. I wanted something that would be twerk worthy, but science said that most of that is genetics. I could gain more weight, but that would probably go straight to the tummy and make it stick out farther than my breasts. At least these bands help my booty workout, so someday you'll be able to bounce a quarter off it.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 4 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  I really just wanted bands to help with form and resistance while doing leg press, but with the WAP release of Cardi B, I felt undying need of making the booty pop.",
+                  "I wanted something that would be twerk worthy, but science said that most of that is genetics.",
+                  "I could gain more weight, but that would probably go straight to the tummy and make it stick out farther than my breasts.",
+                  "At least these bands help my booty workout, so someday you'll be able to bounce a quarter off it."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Fitbit": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "REVIEW": [
+                  "NEGATIVE"
+                ]
+              },
+              "Content": "  I'm a bit surprised by the negative reviews here, I am happy with the band. I previously bought a cheap knockoff that was terribly made, and this is much, much nicer (of course, considering the price, it should be good). I haven't had any problems with rashes or the clasp as others mentioned...",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  I'm a bit surprised by the negative reviews here, I am happy with the band.",
+                  "I haven't had any problems with rashes or the clasp as others mentioned..."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "I previously bought a cheap knockoff that was terribly made, and this is much, much nicer (of course, considering the price, it should be good)."
+                ]
+              }
+            }
+          ]
+        },
+        "Hoyle": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "ADDITION": [
+                  "NICE"
+                ],
+                "LOOK": [
+                  "NICE"
+                ]
+              },
+              "Content": "  I thought this deck would be a nice addition to my collection. However, when the deck arrived it didn't look like the photo on the page. It's still a nice-looking deck, as Hoyle/Bicycle decks tend to be, but be advised that it's a standard deck that is a mid-to-dark pink instead of red or blue.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  1 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  I thought this deck would be a nice addition to my collection."
+                ],
+                "Neutral sentences": [
+                  "It's still a nice-looking deck, as Hoyle/Bicycle decks tend to be, but be advised that it's a standard deck that is a mid-to-dark pink instead of red or blue."
+                ],
+                "Negative sentences": [
+                  "However, when the deck arrived it didn't look like the photo on the page."
+                ]
+              }
+            }
+          ]
+        },
+        "OKELA": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "CAP": [
+                  "GREAT"
+                ]
+              },
+              "Content": "  If you want a swim cap that fits, doesn't rip easily, and is just a swim cap... this is great.  I was hoping for a miracle cap to keep my hair dry and protected from the chlorine since I was swimming every day and having to color my hair more often than not due to the chlorine.  Have yet to find one!  But, this cap is truly a great cap for swimmers if your main focus is not protecting your hair as mine is.  :)",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 4 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  If you want a swim cap that fits, doesn't rip easily, and is just a swim cap... this is great.",
+                  "I was hoping for a miracle cap to keep my hair dry and protected from the chlorine since I was swimming every day and having to color my hair more often than not due to the chlorine.",
+                  "But, this cap is truly a great cap for swimmers if your main focus is not protecting your hair as mine is.",
+                  ":)"
+                ],
+                "Neutral sentences": [
+                  "Have yet to find one!"
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "TaylorMade": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  easy to mount",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  easy to mount"
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "Band-Aid": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I used this tape to secure my big toe (turf toe). I wrapped the tape around my foot three times. Not too tight. Unfortunately, when the day was over, I unwrapped my foot and found that the tape tore off my skin.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  I used this tape to secure my big toe (turf toe)."
+                ],
+                "Neutral sentences": [
+                  "I wrapped the tape around my foot three times.",
+                  "Not too tight."
+                ],
+                "Negative sentences": [
+                  "Unfortunately, when the day was over, I unwrapped my foot and found that the tape tore off my skin."
+                ]
+              }
+            }
+          ]
+        },
+        "Fit Simplify": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "BAND": [
+                  "GREAT"
+                ],
+                "WORKOUT": [
+                  "EFFECTIVE"
+                ],
+                "BODY": [
+                  "LOW"
+                ],
+                "EXCERCISE": [
+                  "GREAT"
+                ],
+                "PLUS": [
+                  "NICE"
+                ]
+              },
+              "Content": "  I have had these bands for several weeks, I use them daily, and thus far they have been perfect. I had never really integrated resistance band exercises into my routine but I am glad i did. These bands are great for a bunch of very effective workouts on your upper and lower body. I wasn't sure how best to use them but luckily they come with a very straightforward pamphlet that covers a bunch of great excercises. The carrying case is also a nice plus because without it they would add clutter for sure. I definitely recommend! Edit: unfortunately after a month or so my heavy has ripped...so not quite as durable as I had hoped.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 7 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  I have had these bands for several weeks, I use them daily, and thus far they have been perfect.",
+                  "I had never really integrated resistance band exercises into my routine but I am glad i did.",
+                  "These bands are great for a bunch of very effective workouts on your upper and lower body.",
+                  "I wasn't sure how best to use them but luckily they come with a very straightforward pamphlet that covers a bunch of great excercises.",
+                  "The carrying case is also a nice plus because without it they would add clutter for sure.",
+                  "I definitely recommend!",
+                  "Edit: unfortunately after a month or so my heavy has ripped...so not quite as durable as I had hoped."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Fitbit": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "BAND": [
+                  "GREAT"
+                ]
+              },
+              "Content": "  This band was great for 9 months...until the plastic connectors broke.  I am so frustrated with FitBit bands.  I bought the FitBit Alta HR because I have had 2 FitBit Charge trackers and the bands bubbled up and eventually broke on both of them.  I thought a changeable band would make he tracker last longer.  Well, it did, but now I have to buy a new band every 6-9 months.  I would love for there be a quality product that lasts.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  1 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "  This band was great for 9 months...until the plastic connectors broke.",
+                  "Well, it did, but now I have to buy a new band every 6-9 months.",
+                  "I would love for there be a quality product that lasts."
+                ],
+                "Neutral sentences": [
+                  "I thought a changeable band would make he tracker last longer."
+                ],
+                "Negative sentences": [
+                  "I am so frustrated with FitBit bands.",
+                  "I bought the FitBit Alta HR because I have had 2 FitBit Charge trackers and the bands bubbled up and eventually broke on both of them."
+                ]
+              }
+            }
+          ]
+        },
+        "Hoyle": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "STATE": [
+                  "UNITED"
+                ],
+                "COLOR": [
+                  "INTERESTING"
+                ],
+                "QUALITY": [
+                  "NICE"
+                ],
+                "HOYLE": [
+                  "BEAUTIFUL"
+                ],
+                "DECK": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  These cards look really awesome, however I noticed that the United States playing Card company has not given each jack, queen, and king their own unique look.  Instead the King of Hearts is used for every king, the queen of hearts is used for every queen, and the jack of diamonds is used for every jack.  No one-eyed jack, or one-eyed king, and every king turns suicidal.  The colors are interesting being both orange and lime.  The quality of the cards themselves are also quite nice.  The beautiful Hoyle Shellback is also used.  A good deck, but could be improved upon.MDH",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 5 - #of neutral sentences:  1 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  These cards look really awesome, however I noticed that the United States playing Card company has not given each jack, queen, and king their own unique look.",
+                  "The colors are interesting being both orange and lime.",
+                  "The quality of the cards themselves are also quite nice.",
+                  "The beautiful Hoyle Shellback is also used.",
+                  "A good deck, but could be improved upon.MDH"
+                ],
+                "Neutral sentences": [
+                  "Instead the King of Hearts is used for every king, the queen of hearts is used for every queen, and the jack of diamonds is used for every jack."
+                ],
+                "Negative sentences": [
+                  "No one-eyed jack, or one-eyed king, and every king turns suicidal."
+                ]
+              }
+            }
+          ]
+        },
+        "OKELA": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  Se siente cómodo y es un buen material , pero , se moja mi cabello de todas maneras. He leído otras reseñas que le mantiene el cabello seco , ese no es mi caso. Le daría 5 estrellas , pero no es lo que busco. Quiero un gorro que aunque mantenga la mayoría del cabello seco aunque se moje un poco las esquinas , voy regularmente a la piscina y quiero proteger mi cabello.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  2 - #of negative sentences: 2",
+                "Positive sentences": [],
+                "Neutral sentences": [
+                  "  Se siente cómodo y es un buen material , pero , se moja mi cabello de todas maneras.",
+                  "Quiero un gorro que aunque mantenga la mayoría del cabello seco aunque se moje un poco las esquinas , voy regularmente a la piscina y quiero proteger mi cabello."
+                ],
+                "Negative sentences": [
+                  "He leído otras reseñas que le mantiene el cabello seco , ese no es mi caso.",
+                  "Le daría 5 estrellas , pero no es lo que busco."
+                ]
+              }
+            }
+          ]
+        },
+        "TaylorMade": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I really wanted to like this golf glove, but it wasn't very durable and started coming apart prematurely after just a couple uses. Your mileage may vary...",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  I really wanted to like this golf glove, but it wasn't very durable and started coming apart prematurely after just a couple uses."
+                ],
+                "Neutral sentences": [
+                  "Your mileage may vary..."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "Band-Aid": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "BATCH": [
+                  "BAD"
+                ]
+              },
+              "Content": "  Maybe I got a bad batch or something because every one of these is a pain to get open.  The white removable paper doesn't come off easily, so it requires some fiddling about to get it loose.  One applied, it seems fine.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  0 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "One applied, it seems fine."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  Maybe I got a bad batch or something because every one of these is a pain to get open.",
+                  "The white removable paper doesn't come off easily, so it requires some fiddling about to get it loose."
+                ]
+              }
+            }
+          ]
+        },
+        "Fit Simplify": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  These bands roll up as soon as you put them on and start moving. Making then feel more like a tourniquet than a resistance band.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "Making then feel more like a tourniquet than a resistance band."
+                ],
+                "Neutral sentences": [
+                  "  These bands roll up as soon as you put them on and start moving."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "Fitbit": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  I like the Fitbit and the band but The band keeps coming off. This is my second band on the Fitbit and doing the same thing (last one ordered May18, 2018 through Amazon. At $28 a pop, this isn't cost effective. I may try a cheaper brand to see if it is any better. Luckily I haven't lost the Fitbit but it's scratched from falling on the ground when band suddenly pops off.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 4 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "  I like the Fitbit and the band but The band keeps coming off.",
+                  "This is my second band on the Fitbit and doing the same thing (last one ordered May18, 2018 through Amazon.",
+                  "I may try a cheaper brand to see if it is any better.",
+                  "Luckily I haven't lost the Fitbit but it's scratched from falling on the ground when band suddenly pops off."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "At $28 a pop, this isn't cost effective."
+                ]
+              }
+            }
+          ]
+        },
+        "Hoyle": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "CARD": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  Hoyle, if you're reading this--do two things: add a texture to the cards so they're not so slippery, and make the case slightly taller so the whole deck can sit in the \"well\" while playing or taking a break. These cards look good (but not great, a little cheap looking) but I've gotten similar or better cards for less $. Was hoping the brand-name would bring higher quality.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  0 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "  Hoyle, if you're reading this--do two things: add a texture to the cards so they're not so slippery, and make the case slightly taller so the whole deck can sit in the \"well\" while playing or taking a break.",
+                  "These cards look good (but not great, a little cheap looking) but I've gotten similar or better cards for less $.",
+                  "Was hoping the brand-name would bring higher quality."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "OKELA": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  This is not made for a person with a lot of hair my daughter is Ethnic and has to take swim class that was the reason for the purchase but it broke soon as she tried to put it on.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  This is not made for a person with a lot of hair my daughter is Ethnic and has to take swim class that was the reason for the purchase but it broke soon as she tried to put it on."
+                ]
+              }
+            }
+          ]
+        },
+        "TaylorMade": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "BALL": [
+                  "HARD"
+                ],
+                "GREEN": [
+                  "HARD"
+                ],
+                "LUCK": [
+                  "GOOD"
+                ]
+              },
+              "Content": "  I'm a 8 handicap and was looking to buy some balls that I didn't mind playing when practicing and or when the drives are not going great.  I've used other cheap balls and other than around the green I can't tell much difference than the premium balls.  This one just lacks in all areas to me.And I'm not sure why it carries the \"distance\" logo.  I hit my normal ball at least 10-15 yards further than this hard ball plus it is pretty bad around the green.  It will stop with a lob wedge on soft greens like Bent, but on hard Bermuda greens, good luck.So for me, I definitely will not buy again even if cheap.  I bought two dozen and gave the last dozen away.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  2 - #of negative sentences: 3",
+                "Positive sentences": [
+                  "It will stop with a lob wedge on soft greens like Bent, but on hard Bermuda greens, good luck.So for me, I definitely will not buy again even if cheap."
+                ],
+                "Neutral sentences": [
+                  "I've used other cheap balls and other than around the green I can't tell much difference than the premium balls.",
+                  "I bought two dozen and gave the last dozen away."
+                ],
+                "Negative sentences": [
+                  "  I'm a 8 handicap and was looking to buy some balls that I didn't mind playing when practicing and or when the drives are not going great.",
+                  "This one just lacks in all areas to me.And I'm not sure why it carries the \"distance\" logo.",
+                  "I hit my normal ball at least 10-15 yards further than this hard ball plus it is pretty bad around the green."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "1": {
+        "Band-Aid": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "SPOTS": [
+                  "CLEAR"
+                ],
+                "QUALITY": [
+                  "LOW"
+                ],
+                "JOB": [
+                  "HORRIBLE"
+                ],
+                "DROP": [
+                  "TINY"
+                ]
+              },
+              "Content": "  I purchased a box of Band-Aid Brand Tru-Stay Clear Spots Bandages for Discreet First Aid, All One Size, 50 Count and I was so surprised with the low quality of the product.  I have been buying band-aid brand bandages for years and years and have always been pleased with the results until now. First, it was difficult to open the individual bandages and I had to tear a circle around the whole thing to get it out.  Next, it was challenging to get the plastic things off the bandage.  Third, the band-aid did a horrible job sticking. I understand that these are not waterproof but one tiny drop of water and it came right off.  Again, I have been buying band-aid brand products for years and have been pleased in the past which is why I was surprised with the very low quality.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 4 - #of neutral sentences:  0 - #of negative sentences: 3",
+                "Positive sentences": [
+                  "  I purchased a box of Band-Aid Brand Tru-Stay Clear Spots Bandages for Discreet First Aid, All One Size, 50 Count and I was so surprised with the low quality of the product.",
+                  "I have been buying band-aid brand bandages for years and years and have always been pleased with the results until now.",
+                  "Next, it was challenging to get the plastic things off the bandage.",
+                  "Again, I have been buying band-aid brand products for years and have been pleased in the past which is why I was surprised with the very low quality."
+                ],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "First, it was difficult to open the individual bandages and I had to tear a circle around the whole thing to get it out.",
+                  "Third, the band-aid did a horrible job sticking.",
+                  "I understand that these are not waterproof but one tiny drop of water and it came right off."
+                ]
+              }
+            }
+          ]
+        },
+        "Fit Simplify": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {},
+              "Content": "  Very short and thin, they just roll up and down my limbs and I'm 5'3” so I have no idea how anyone taller could use them and I am very afraid they're going to break and snap me",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  0 - #of negative sentences: 1",
+                "Positive sentences": [],
+                "Neutral sentences": [],
+                "Negative sentences": [
+                  "  Very short and thin, they just roll up and down my limbs and I'm 5'3” so I have no idea how anyone taller could use them and I am very afraid they're going to break and snap me"
+                ]
+              }
+            }
+          ]
+        },
+        "Fitbit": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "RASH": [
+                  "STRANGE"
+                ],
+                "PRODUCT": [
+                  "HORRIBLE"
+                ]
+              },
+              "Content": "  Left a strange rash which a week later I still have. Horrible product! Save your money!!",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  1 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "Save your money!"
+                ],
+                "Neutral sentences": [
+                  "!"
+                ],
+                "Negative sentences": [
+                  "  Left a strange rash which a week later I still have.",
+                  "Horrible product!"
+                ]
+              }
+            }
+          ]
+        },
+        "Hoyle": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 1,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "neutral",
+              "Review aspect-based sentiment": {},
+              "Content": "  The cards that I received are in different packaging than those in the photo representing the product.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 0 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [],
+                "Neutral sentences": [
+                  "  The cards that I received are in different packaging than those in the photo representing the product."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        },
+        "OKELA": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "LIFT": [
+                  "GREAT"
+                ],
+                "APPEARANCE": [
+                  "GREAT"
+                ],
+                "SKIN": [
+                  "DELICATE"
+                ]
+              },
+              "Content": "  This product works too well. It gave a great lift and appearance, & my friend and I wore it on a night out; however when taking the tape off carefully, it ripped not only mine but my friends skin off. I have scars all over my boobs and so does she—my skin has been raw for days. DO NOT use this product if you are unaware of the risks from the adhesive or tape. DO NOT use this product if you have sensitive or delicate skin. Although this product works, I am giving it a 1 star review due to the injury it caused for both of us.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  1 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "  This product works too well.",
+                  "It gave a great lift and appearance, & my friend and I wore it on a night out; however when taking the tape off carefully, it ripped not only mine but my friends skin off.",
+                  "DO NOT use this product if you have sensitive or delicate skin."
+                ],
+                "Neutral sentences": [
+                  "I have scars all over my boobs and so does she—my skin has been raw for days."
+                ],
+                "Negative sentences": [
+                  "DO NOT use this product if you are unaware of the risks from the adhesive or tape.",
+                  "Although this product works, I am giving it a 1 star review due to the injury it caused for both of us."
+                ]
+              }
+            }
+          ]
+        },
+        "TaylorMade": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {},
+              "Content": "  On patrol and flying patrol flag from antenna.  Moving along at 20 knts and flag looked good, several minutes later it's gone.  Would not buy again.  Fastened securely but would not hold.  Surprised for a Taylor Made item.  $9.95 for clips and $26.00 for a new flag. Ouch!",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 3 - #of neutral sentences:  4 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "Moving along at 20 knts and flag looked good, several minutes later it's gone.",
+                  "Fastened securely but would not hold.",
+                  "Surprised for a Taylor Made item."
+                ],
+                "Neutral sentences": [
+                  "  On patrol and flying patrol flag from antenna.",
+                  "Would not buy again.",
+                  "$9.95 for clips and $26.00 for a new flag.",
+                  "Ouch!"
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

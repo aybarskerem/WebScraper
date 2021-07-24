@@ -1,182 +1,8 @@
-from nltk.corpus import stopwords
 import stanza
 from unicode_safe_print import unicode_safe_print
 from polarity_sentiment_analysis import get_overall_sentimentPolarity
 
 stanzaPipeline = stanza.Pipeline('en')
-stop_words = set(stopwords.words('english'))
-
-# txt = "My time and space in Italy were not very enjoyable and not fun."  # when be verbs are used it is hard to know if it is meant were 'very enjoyable and not fun' or meant were not 'very enjoyable and not fun'. We asssume it is the first one; so we do not double negate for these kinds of sentences even though we double negate for 'have not' verbs.
-
-# Before removing non-significant adjectives: {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']}
-# After removing non-significant adjectives:  {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']} since all the adjectives here add negativity or positivity to the nouns that they qualify
-
-# txt = "My time and space in Italy were not very enjoyable and fun." 
-# {'SPACE': ['NOT FUN', 'NOT ENJOYABLE'], 'TIME': ['NOT FUN', 'NOT ENJOYABLE']}
-# {'SPACE': ['NOT FUN', 'NOT ENJOYABLE'], 'TIME': ['NOT FUN', 'NOT ENJOYABLE']}
-
-# txt = "This PC, my room and the universe are not very big but not small or tiny either; also beds are not that big."
-# txt = "This PC, my room and the universe are not very big but not small or tiny either"
-# All adjectives:   {'ROOM': ['NOT TINY', 'NOT SMALL', 'NOT BIG'], 'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'NOT BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'NOT BIG']}
-# Significant ones: {}
-
-# txt = "This PC, my room and the universe are big, not small and tiny"
-# All adjectives:   {'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'BIG'], 'ROOM': ['NOT TINY', 'NOT SMALL', 'BIG']}
-# Significant ones: {}
-
-# txt = "These are good PC, not nice room or universe."
-# Before removing non-significant adjectives: {'ROOM': ['NOT TINY', 'NOT SMALL', 'BIG'], 'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'BIG']}
-# After removing non-significant adjectives: {} since none of the adjectives here add negativity or positivity to the nouns that they qualify
-
-# txt = "this laptop has been great....good speed, nice screen, keyboard...hard to go wrong if one needs a back up laptop, one for a student- child....a lot of oomph at a fabulous price"
-# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE'], 'KEYBOARD': ['NICE'], 'PRICE': ['FABULOUS']}
-
-#txt = "this laptop has been great. It has good speed, a nice screen and keyboard."
-# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE'], 'KEYBOARD': ['NICE']}
-
-# txt = "It has good speed, a nice perfect screen and keyboard."
-# {'SPEED': ['GOOD'], 'SCREEN': ['NICE', 'PERFECT'], 'KEYBOARD': ['NICE', 'PERFECT']}
-
-# txt = "I have a big, large house and not a very good car."
-# All adjectives:   {'HOUSE': ['BIG', 'LARGE'], 'CAR': ['NOT GOOD']}
-# Significant ones: {'CAR': ['NOT GOOD']
-
-# txt = "It has good speed and not a very long cable"
-# All adjectives:   {'SPEED': ['GOOD'], 'CABLE': ['NOT LONG']}
-# Significant ones: {'SPEED': ['GOOD']}
-
-# txt = "It does not have good speed and not a very long cable"
-# All adjectives:   {'SPEED': ['NOT GOOD'], 'CABLE': ['LONG']}
-# Significant ones: {'SPEED': ['NOT GOOD']}
-
-# txt = "It doesn't have good speed and a very long cable"
-# All adjectives:   {'SPEED': ['NOT GOOD'], 'CABLE': ['NOT LONG']}
-# Significant ones: {'SPEED': ['NOT GOOD']
-
-# txt = "It has good speed and not very long cable" 
-# {'SPEED': ['GOOD'], 'CABLE': ['NOT LONG']}
-# {'SPEED': ['GOOD']}
-
-#txt = "this laptop has been great....good speed, nice screen, keyboard... hard to go wrong"
-# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE']}
-
-# txt = "this laptop has not been great....good speed, nice screen, keyboard... hard to go wrong"
-# {'LAPTOP': ['NOT GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE']}
-
-# txt = "this laptop and PC has not been great, good or not nice."  # we do not double negate the nots in sentences like this
-# {'PC': ['GOOD', 'NOT NICE', 'NOT GREAT'], 'LAPTOP': ['GOOD', 'NOT NICE', 'NOT GREAT']}
-
-# txt = "this laptop and PC has not been great, good or nice." 
-# {{'PC': ['NOT NICE', 'NOT GOOD', 'NOT GREAT'], 'LAPTOP': ['NOT NICE', 'NOT GOOD', 'NOT GREAT']}
-
-# txt = "this laptop and PC has been great, not good and nice." # WRONG
-# {'LAPTOP': ['NOT GOOD', 'NOT NICE', 'GREAT'], 'PC': ['NOT GOOD', 'NOT NICE', 'GREAT']}
-
-# txt = "This is not a good idea or a bad one"
-# {'IDEA': ['NOT GOOD'], 'ONE': ['BAD']}
-
-# txt = "This is not a good idea or bad"
-# {'IDEA': ['NOT GOOD', 'NOT BAD']}
-
-# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['GOOD', 'NICE'], 'KEYBOARD': ['GOOD'], 'PRICE': ['FABULOUS']}
-# {('LAPTOP', 2): ['LAPTOP'], ('SPEED', 8): ['SPEED', 'SCREEN', 'KEYBOARD'], ('SCREEN', 11): ['SCREEN'], ('KEYBOARD', 13): ['KEYBOARD'], ('BACK', 23): ['BACK'], ('LAPTOP', 25): ['LAPTOP'], ('STUDENT', 30): ['STUDENT'], ('CHILD', 32): ['CHILD'], ('LOT', 35): ['LOT'], ('OOMPH', 37): ['OOMPH'], ('PRICE', 41): ['PRICE']}
-
-# txt = "The Sound Quality is great but the battery life is very bad."
-# {'QUALITY': ['GREAT'], 'LIFE': ['BAD']}
-
-# txt = "My time and space in Italy were very enjoyable and fun." 
-# {'TIME': ['FUN', 'ENJOYABLE'], 'SPACE': ['FUN', 'ENJOYABLE']}
-
-# txt = "My time and space in Italy were not very enjoyable and fun." 
-# {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']}
-
-# txt = "The PC is so much better than before it was"
-# {'PC': ['GOOD']}
-
-# txt = "I use this product when I am breaking in new shoes. I get new Sperrys all the time and it is so painful the first few weeks trying to break them in, but I put these in the places where it will rub into a blister, and there is no blister! I have also tried other bandaids and this stays on! It molds to the folds of ur skin and becomes a second skin. Great quality and wil continue to keep on buying"
-# {'QUALITY': ['GREAT']}
-
-# txt = "I do not know if this computer is good or bad" # what should we do in this case; include both or none ? We include both for now
-# {'COMPUTER': ['BAD', 'GOOD']}
-
-# txt = "This can turn a bad computer into a good computer" # hard one, we can either include both adjective or none and I chose to add both 
-# {'COMPUTER': ['BAD', 'GOOD']}
-
-# txt = "This is a bad computer"
-# {'COMPUTER': ['BAD']}
-
-# txt = "This computer is bad"
-# {'COMPUTER': ['BAD']}
-
-def get_adjective_nounList_dict(dep_dict):
-  '''
-  Processes to discard adjectives which do not include 'nouns' key. Also,  negate adjectives if they contain 'negation' keyword and remove the ids in the adjectives hence merging the same ones ('BIG',12 ) and ('BIG', 25) would be merged to 'BIG' if they both are non-negated where 12 and 25 are their ids respectively.
-
-  Each element in resulting nounList is unique.
-  Converts
-  {('BIG', 4): {'nouns': ['HOUSE']}, ('LARGE', 6): {'nouns': ['HOUSE']}, ('GOOD', 12): {'nouns': ['NOT CAR']}} 
-  to
-  {'BIG': {'HOUSE'}, 'LARGE': {'HOUSE'}, 'GOOD': {'NOT CAR'}}
-
-  OR 
-  {('BIG', 10): {'nouns': ['PC'], 'adjectives': ['NOT TINY', 'NOT SMALL']}, ('SMALL', 13): {'negation': 'NOT', 'adjectives': ['NOT TINY']}, ('TINY', 15): {'and_or': {'OR'}}} 
-  to
-  {'NOT TINY': {'PC'}, 'NOT SMALL': {'PC'}, 'BIG': {'PC'}}
-
-  OR
-  {'IS_SENTENCE_NEGATED': {'YES'}, ('GOOD', 5): {'nouns': ['SPEED']}, ('LONG', 11): {'nouns': ['CABLE'], 'negation': 'NOT'}}
-  to
-  {'NOT GOOD': {'SPEED'}, 'LONG': {'CABLE'}}
-
-  '''
-
-  IS_SENTENCE_NEGATED = 'IS_SENTENCE_NEGATED' in dep_dict
-  adjective_nounList_dict = {}
-  for adjElem, value in dep_dict.items():
-    if not 'nouns' in value:
-      continue
-    if 'adjectives' in value:
-      for adj in value['adjectives']:
-        if IS_SENTENCE_NEGATED:
-          if adj.startswith('NOT '):
-            adjective_nounList_dict.setdefault(adj[4:], set()).update(value['nouns']) # non-negate (remove the 'NOT ') from the adjective
-          else:
-            adjective_nounList_dict.setdefault('NOT ' + adj, set()).update(value['nouns'])          
-        else:
-          adjective_nounList_dict.setdefault(adj, set()).update(value['nouns'])
-
-    if 'negation' in value:
-      if IS_SENTENCE_NEGATED:
-        adjective_nounList_dict.setdefault(adjElem[0], set()).update(value['nouns'])
-      else:
-        adjective_nounList_dict.setdefault('NOT ' + adjElem[0], set()).update(value['nouns'])
-
-    else:
-      if IS_SENTENCE_NEGATED:
-        adjective_nounList_dict.setdefault('NOT ' + adjElem[0], set()).update(value['nouns'])
-      else:
-        adjective_nounList_dict.setdefault(adjElem[0], set()).update(value['nouns'])
-  
-  return adjective_nounList_dict
-
-def filterOutNonSignificantAdjectives(resulting_noun_adjectiveList_dict):
-  '''
-  Filter out adjectives not contributing any negativity or positivity to the nouns.
-  e.g. Convert
-  {'HOUSE': ['BIG', 'LARGE'], 'CAR': ['NOT GOOD']}
-  to
-  {'CAR': ['NOT GOOD']}
-  since big and large do not add any negativity or positivity to the car.
-  '''
-  retVal = {}
-  for key, value in resulting_noun_adjectiveList_dict.items():
-    for adj in value:
-      noun_with_qualifying_adjective = adj + " " + key # e.g. { QUALITY: [GREAT] } -> GREAT QUALITY
-      adj_sentiment = get_overall_sentimentPolarity(noun_with_qualifying_adjective)
-      if adj_sentiment != 'neutral': # only add if it has importance (i.e. adding positivity or negativity qualification to the name )
-        retVal.setdefault(key, []).append(adj)
-  return retVal
-
 def aspectBased_sentiment_analysis(inputString):
 
   '''
@@ -246,8 +72,8 @@ def aspectBased_sentiment_analysis(inputString):
     # unicode_safe_print('noun_adjectiveList_dict*********************')
     # unicode_safe_print(noun_adjectiveList_dict)
 
-    for key, value in noun_adjectiveList_dict.items(): # update the retVal dictionary with the result of this sentence
-      resulting_noun_adjectiveList_dict.setdefault(key, []).extend(value)
+    for noun, adjList in noun_adjectiveList_dict.items(): # update the retVal dictionary with the result of this sentence
+      resulting_noun_adjectiveList_dict.setdefault(noun, []).extend(adjList)
   
   # unicode_safe_print('*********************')
   # unicode_safe_print(resulting_noun_adjectiveList_dict)
@@ -256,6 +82,80 @@ def aspectBased_sentiment_analysis(inputString):
   # unicode_safe_print('********************* FINAL RESULT *********************')
   # unicode_safe_print(retVal)
   return retVal
+
+def get_adjective_nounList_dict(dep_dict):
+  '''
+  Processes to discard adjectives which do not include 'nouns' key. Also,  negate adjectives if they contain 'negation' keyword and remove the ids in the adjectives hence merging the same ones ('BIG',12 ) and ('BIG', 25) would be merged to 'BIG' if they both are non-negated where 12 and 25 are their ids respectively.
+
+  Each element in resulting nounList is unique.
+  Converts
+  {('BIG', 4): {'nouns': ['HOUSE']}, ('LARGE', 6): {'nouns': ['HOUSE']}, ('GOOD', 12): {'nouns': ['NOT CAR']}} 
+  to
+  {'BIG': {'HOUSE'}, 'LARGE': {'HOUSE'}, 'GOOD': {'NOT CAR'}}
+
+  OR 
+  {('BIG', 10): {'nouns': ['PC'], 'adjectives': ['NOT TINY', 'NOT SMALL']}, ('SMALL', 13): {'negation': 'NOT', 'adjectives': ['NOT TINY']}, ('TINY', 15): {'and_or': {'OR'}}} 
+  to
+  {'NOT TINY': {'PC'}, 'NOT SMALL': {'PC'}, 'BIG': {'PC'}}
+
+  OR
+  {'IS_SENTENCE_NEGATED': {'YES'}, ('GOOD', 5): {'nouns': ['SPEED']}, ('LONG', 11): {'nouns': ['CABLE'], 'negation': 'NOT'}}
+  to
+  {'NOT GOOD': {'SPEED'}, 'LONG': {'CABLE'}}
+
+  '''
+
+  IS_SENTENCE_NEGATED = 'IS_SENTENCE_NEGATED' in dep_dict
+  adjective_nounList_dict = {}
+  for adjElem, value in dep_dict.items():
+    if not 'nouns' in value:
+      continue
+    if 'adjectives' in value:
+      for adj in value['adjectives']:
+        if IS_SENTENCE_NEGATED:
+          if adj.startswith('NOT '):
+            adjective_nounList_dict.setdefault(adj[4:], set()).update(value['nouns']) # non-negate (remove the 'NOT ') from the adjective
+          else:
+            adjective_nounList_dict.setdefault('NOT ' + adj, set()).update(value['nouns'])          
+        else:
+          adjective_nounList_dict.setdefault(adj, set()).update(value['nouns'])
+
+    if 'negation' in value:
+      if IS_SENTENCE_NEGATED:
+        adjective_nounList_dict.setdefault(adjElem[0], set()).update(value['nouns'])
+      else:
+        adjective_nounList_dict.setdefault('NOT ' + adjElem[0], set()).update(value['nouns'])
+
+    else:
+      if IS_SENTENCE_NEGATED:
+        adjective_nounList_dict.setdefault('NOT ' + adjElem[0], set()).update(value['nouns'])
+      else:
+        adjective_nounList_dict.setdefault(adjElem[0], set()).update(value['nouns'])
+  
+  return adjective_nounList_dict
+
+def filterOutNonSignificantAdjectives(resulting_noun_adjectiveList_dict):
+  '''
+  Filter out adjectives not contributing any negativity or positivity to the nouns.
+  e.g. Convert
+  {'HOUSE': ['BIG', 'LARGE'], 'CAR': ['NOT GOOD']}
+  to
+  {'CAR': ['NOT GOOD']}
+  since big and large do not add any negativity or positivity to the car.
+  '''
+  retVal = {}
+  for noun, adjList in resulting_noun_adjectiveList_dict.items():
+    for adj in adjList:
+      noun_with_qualifying_adjective = adj + " " + noun # e.g. { QUALITY: [GREAT] } -> GREAT QUALITY
+      adj_sentiment = get_overall_sentimentPolarity(noun_with_qualifying_adjective)
+      if adj_sentiment != 'neutral': # only add if it has importance (i.e. adding positivity or negativity qualification to the name )
+        retVal.setdefault(noun, set()).add(adj)
+  
+  for noun, adjSet in retVal.items(): # convert sets to lists
+    retVal[noun] = list(adjSet)
+
+  return retVal
+
 
 def convert_to_nameElem_adjList(adjective_nounList_dict):
   '''
@@ -504,4 +404,112 @@ def initialize_dep_dict(dep_dict, sentence):
   if 'NEGATED_NOUNS' in dep_dict:
     del dep_dict['NEGATED_NOUNS']
 
-# unicode_safe_print(aspectBased_sentiment_analysis(txt))
+
+########################### EXAMPLE INPUT STRINGS for aspectBased_sentiment_analysis FUNCTION ###########################
+
+# txt = "My time and space in Italy were not very enjoyable and not fun."  # when be verbs are used it is hard to know if it is meant were 'very enjoyable and not fun' or meant were not 'very enjoyable and not fun'. We asssume it is the first one; so we do not double negate for these kinds of sentences even though we double negate for 'have not' verbs.
+
+# Before removing non-significant adjectives: {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']}
+# After removing non-significant adjectives:  {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']} since all the adjectives here add negativity or positivity to the nouns that they qualify
+
+# txt = "My time and space in Italy were not very enjoyable and fun." 
+# {'SPACE': ['NOT FUN', 'NOT ENJOYABLE'], 'TIME': ['NOT FUN', 'NOT ENJOYABLE']}
+# {'SPACE': ['NOT FUN', 'NOT ENJOYABLE'], 'TIME': ['NOT FUN', 'NOT ENJOYABLE']}
+
+# txt = "This PC, my room and the universe are not very big but not small or tiny either; also beds are not that big."
+# txt = "This PC, my room and the universe are not very big but not small or tiny either"
+# All adjectives:   {'ROOM': ['NOT TINY', 'NOT SMALL', 'NOT BIG'], 'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'NOT BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'NOT BIG']}
+# Significant ones: {}
+
+# txt = "This PC, my room and the universe are big, not small and tiny"
+# All adjectives:   {'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'BIG'], 'ROOM': ['NOT TINY', 'NOT SMALL', 'BIG']}
+# Significant ones: {}
+
+# txt = "These are good PC, not nice room or universe."
+# Before removing non-significant adjectives: {'ROOM': ['NOT TINY', 'NOT SMALL', 'BIG'], 'UNIVERSE': ['NOT TINY', 'NOT SMALL', 'BIG'], 'PC': ['NOT TINY', 'NOT SMALL', 'BIG']}
+# After removing non-significant adjectives: {} since none of the adjectives here add negativity or positivity to the nouns that they qualify
+
+# txt = "this laptop has been great....good speed, nice screen, keyboard...hard to go wrong if one needs a back up laptop, one for a student- child....a lot of oomph at a fabulous price"
+# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE'], 'KEYBOARD': ['NICE'], 'PRICE': ['FABULOUS']}
+
+#txt = "this laptop has been great. It has good speed, a nice screen and keyboard."
+# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE'], 'KEYBOARD': ['NICE']}
+
+# txt = "It has good speed, a nice perfect screen and keyboard."
+# {'SPEED': ['GOOD'], 'SCREEN': ['NICE', 'PERFECT'], 'KEYBOARD': ['NICE', 'PERFECT']}
+
+# txt = "I have a big, large house and not a very good car."
+# All adjectives:   {'HOUSE': ['BIG', 'LARGE'], 'CAR': ['NOT GOOD']}
+# Significant ones: {'CAR': ['NOT GOOD']
+
+# txt = "It has good speed and not a very long cable"
+# All adjectives:   {'SPEED': ['GOOD'], 'CABLE': ['NOT LONG']}
+# Significant ones: {'SPEED': ['GOOD']}
+
+# txt = "It does not have good speed and not a very long cable"
+# All adjectives:   {'SPEED': ['NOT GOOD'], 'CABLE': ['LONG']}
+# Significant ones: {'SPEED': ['NOT GOOD']}
+
+# txt = "It doesn't have good speed and a very long cable"
+# All adjectives:   {'SPEED': ['NOT GOOD'], 'CABLE': ['NOT LONG']}
+# Significant ones: {'SPEED': ['NOT GOOD']
+
+# txt = "It has good speed and not very long cable" 
+# {'SPEED': ['GOOD'], 'CABLE': ['NOT LONG']}
+# {'SPEED': ['GOOD']}
+
+#txt = "this laptop has been great....good speed, nice screen, keyboard... hard to go wrong"
+# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE']}
+
+# txt = "this laptop has not been great....good speed, nice screen, keyboard... hard to go wrong"
+# {'LAPTOP': ['NOT GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['NICE']}
+
+# txt = "this laptop and PC has not been great, good or not nice."  # we do not double negate the nots in sentences like this
+# {'PC': ['GOOD', 'NOT NICE', 'NOT GREAT'], 'LAPTOP': ['GOOD', 'NOT NICE', 'NOT GREAT']}
+
+# txt = "this laptop and PC has not been great, good or nice." 
+# {{'PC': ['NOT NICE', 'NOT GOOD', 'NOT GREAT'], 'LAPTOP': ['NOT NICE', 'NOT GOOD', 'NOT GREAT']}
+
+# txt = "this laptop and PC has been great, not good and nice." # WRONG
+# {'LAPTOP': ['NOT GOOD', 'NOT NICE', 'GREAT'], 'PC': ['NOT GOOD', 'NOT NICE', 'GREAT']}
+
+# txt = "This is not a good idea or a bad one"
+# {'IDEA': ['NOT GOOD'], 'ONE': ['BAD']}
+
+# txt = "This is not a good idea or bad"
+# {'IDEA': ['NOT GOOD', 'NOT BAD']}
+
+# {'LAPTOP': ['GREAT'], 'SPEED': ['GOOD'], 'SCREEN': ['GOOD', 'NICE'], 'KEYBOARD': ['GOOD'], 'PRICE': ['FABULOUS']}
+# {('LAPTOP', 2): ['LAPTOP'], ('SPEED', 8): ['SPEED', 'SCREEN', 'KEYBOARD'], ('SCREEN', 11): ['SCREEN'], ('KEYBOARD', 13): ['KEYBOARD'], ('BACK', 23): ['BACK'], ('LAPTOP', 25): ['LAPTOP'], ('STUDENT', 30): ['STUDENT'], ('CHILD', 32): ['CHILD'], ('LOT', 35): ['LOT'], ('OOMPH', 37): ['OOMPH'], ('PRICE', 41): ['PRICE']}
+
+# txt = "The Sound Quality is great but the battery life is very bad."
+# {'QUALITY': ['GREAT'], 'LIFE': ['BAD']}
+
+# txt = "My time and space in Italy were very enjoyable and fun." 
+# {'TIME': ['FUN', 'ENJOYABLE'], 'SPACE': ['FUN', 'ENJOYABLE']}
+
+# txt = "My time and space in Italy were not very enjoyable and fun." 
+# {'TIME': ['NOT FUN', 'NOT ENJOYABLE'], 'SPACE': ['NOT FUN', 'NOT ENJOYABLE']}
+
+# txt = "The PC is so much better than before it was"
+# {'PC': ['GOOD']}
+
+# txt = "I use this product when I am breaking in new shoes. I get new Sperrys all the time and it is so painful the first few weeks trying to break them in, but I put these in the places where it will rub into a blister, and there is no blister! I have also tried other bandaids and this stays on! It molds to the folds of ur skin and becomes a second skin. Great quality and wil continue to keep on buying"
+# {'QUALITY': ['GREAT']}
+
+# txt = "I do not know if this computer is good or bad" # what should we do in this case; include both or none ? We include both for now
+# {'COMPUTER': ['BAD', 'GOOD']}
+
+# txt = "This can turn a bad computer into a good computer" # hard one, we can either include both adjective or none and I chose to add both 
+# {'COMPUTER': ['BAD', 'GOOD']}
+
+# txt = "This is a bad computer"
+# {'COMPUTER': ['BAD']}
+
+# txt = "This computer is bad"
+# {'COMPUTER': ['BAD']}
+
+if __name__ == "__main__": # if run directly
+
+  txt = "My time and space in Italy were not very enjoyable and not fun." # an example sentence
+  unicode_safe_print(aspectBased_sentiment_analysis(txt))
