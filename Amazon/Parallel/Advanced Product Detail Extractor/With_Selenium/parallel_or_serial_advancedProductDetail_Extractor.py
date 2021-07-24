@@ -171,10 +171,7 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
       product_prices=[]
       product_ratings=[]
       user_reviews=[]
-      for index, product_item in enumerate(soup.find_all('div', attrs={'data-component-type':'s-search-result'})):
-        if IS_TIME_IT and index == 1: # for timing, only getting one item's reviews are enough.
-          break 
-
+      for product_item in soup.find_all('div', attrs={'data-component-type':'s-search-result'}):
         product_name=product_item.find('span', attrs={'class':'a-size-base-plus a-color-base a-text-normal'}).text
         #print("Name is: " + str(product_name))
         #print(product_item.find('span',attrs={'class':'a-price','data-a-color':'base'}))
@@ -207,7 +204,8 @@ def processUrl_or_returnNextUrl(url, proc_index, mode="processUrl", maxNumberOfP
           product_names.append(product_name)
           product_prices.append(product_price)    
 
-        #break #remove this
+        if IS_TIME_IT: # for timing, only getting one item's reviews are enough.
+          break 
       
       return {'product_names':product_names, 'product_prices':product_prices, 'product_ratings':product_ratings, 'user_reviews':user_reviews}
 
