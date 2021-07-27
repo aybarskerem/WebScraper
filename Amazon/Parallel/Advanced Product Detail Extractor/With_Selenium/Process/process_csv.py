@@ -27,9 +27,9 @@ def main():
     comm = MPI.COMM_WORLD
     nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
     rank = comm.Get_rank() 
-    print("Parallel execution time")  
+    print("Parallel execution")  
   else:
-    print("Serial Execution time")
+    print("Serial Execution")
 
   tp = timeit.Timer("process()", "from __main__ import process") 
   average_duration_seconds = tp.timeit(number=NUMBER_OR_REPEATS_TIMEIT) / NUMBER_OR_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OR_REPEATS_TIMEIT times.
@@ -250,7 +250,7 @@ def get_wordCloudDict_forEachRating(df_correspondingRows):
       user_reviews_merged += row['User Reviews']
       if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE:
         break
-    wordCloud_dict[rating] = bag_of_words(user_reviews_merged, sortTheOutput=True, sliceStart=0, sliceEnd=15) # get the most frequent 15 words (if there are >= 15 words ofc)
+    wordCloud_dict[rating] = bag_of_words(user_reviews_merged, sortTheOutput=True)
     
   return wordCloud_dict
 

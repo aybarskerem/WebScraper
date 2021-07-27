@@ -28,3 +28,18 @@ MULTI-PROCESSED (PARALLEL) EXECUTION
 #of repeats is: 1
 Script execution start date: 28/07/2021, 00:09:50
 Average script execution duration: 0 days 0 hours 1 minutes 54.3229616 seconds
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of repeats is: 1
+Script execution start date: 28/07/2021, 00:21:30
+Average script execution duration: 0 days 0 hours 2 minutes 7.647583699999998 seconds
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of repeats is: 1
+Script execution start date: 28/07/2021, 00:27:51
+Average script execution duration: 0 days 0 hours 2 minutes 20.9389568 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of repeats is: 1
+Script execution start date: 28/07/2021, 00:32:21
+Average script execution duration: 0 days 0 hours 1 minutes 53.672804400000004 seconds
