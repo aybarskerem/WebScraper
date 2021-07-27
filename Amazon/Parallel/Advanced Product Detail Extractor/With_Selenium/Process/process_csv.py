@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import string
 from collections import OrderedDict
+from itertools import islice # to be able to slice OrderedDict
 import json # use json dumps to format dictionaries while printing
 import re # we can do "import regex" if needed since python re module does not support \K which is a regex resetting the beginning of a match and starts from the current point 
 import functools
@@ -17,32 +18,31 @@ print = functools.partial(print, flush=True) #flush print functions by default (
 from configs import *
 
 files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ]
-
 startTime = datetime.now()
 
 def main():
   if IS_MULTIPROCESSED:
-    print("Parallel execution time")
-  else:
-    print("Serial Execution time")
-  tp = timeit.Timer("process()", "from __main__ import process")
-  average_duration_seconds = tp.timeit(number=NUMBER_OR_REPEATS_TIMEIT) / NUMBER_OR_REPEATS_TIMEIT
-  output_timing_results(average_duration_seconds, NUMBER_OR_REPEATS_TIMEIT)
-
-def process():
-  if IS_MULTIPROCESSED:
-    
     # COMM VARIABLES
     global comm, nprocs, rank
     comm = MPI.COMM_WORLD
     nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
-    rank = comm.Get_rank()
+    rank = comm.Get_rank() 
+    print("Parallel execution time")  
+  else:
+    print("Serial Execution time")
 
+  tp = timeit.Timer("process()", "from __main__ import process") 
+  average_duration_seconds = tp.timeit(number=NUMBER_OR_REPEATS_TIMEIT) / NUMBER_OR_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OR_REPEATS_TIMEIT times.
+
+  if (not IS_MULTIPROCESSED) or (IS_MULTIPROCESSED and rank == 0): # after all slaves called and finished with the 'process' function (so handed their work to master to be outputted and then master merged these works), we can output the timing )
+    output_timing_results(average_duration_seconds, NUMBER_OR_REPEATS_TIMEIT)
+
+def process():
+
+  if IS_MULTIPROCESSED:
     if rank < nprocs-1: # if slave
       df_correspondingRows = comm.recv(source=nprocs-1) #process the urls assigned to this slave
-      print(df_correspondingRows)
-      sentiment_df = handle_wordCloud_bagOfWords_and_getSentimentAnalysisDict(df_correspondingRows)
-      comm.send(sentiment_df, dest=0)
+      comm.send(get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows) , dest=nprocs-1)
     else: # if master     
       all_dfs = None
       category_for_each_row    = []
@@ -81,20 +81,43 @@ def process():
         comm.send( (all_dfs[start:end]), dest=proc_index)
         start=end
 
-      isFirstTimeOutputting=True
-      for proc_index in range(nprocs-1):
-        sentiment_df = comm.recv(source=proc_index) 
-        insertHeader = False
-        mode = 'a'
-        if isFirstTimeOutputting:
-          isFirstTimeOutputting = False
-          insertHeader = True
-          mode = 'w'
+      df_sentimentAnalysis_merged = None
+      bagOfWords_dict_merged      = None
+      wordCloudDict_merged        = None
 
-        sentiment_df.to_csv('AllCategories_Sentiments.csv', index=False, encoding='utf-8', header=insertHeader, mode=mode)
-      
-      if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE:
-        output_timing_results(numberOfReviewProcessed = sentiment_df.shape[0])
+      for proc_index in range(nprocs-1):
+        wordCloudDict, bagOfWords_dict, df_sentimentAnalysis = comm.recv(source=proc_index) 
+        
+        # merge all sentiment analysis dataframes
+        if df_sentimentAnalysis_merged is not None:
+          df_sentimentAnalysis_merged = df_sentimentAnalysis_merged.append(df_sentimentAnalysis, ignore_index=True)
+        else:
+          df_sentimentAnalysis_merged = df_sentimentAnalysis
+        
+        # update word frequencies/counts in bagOfWords_dict_merged with bagOfWords_dict
+        if bagOfWords_dict_merged is not None:
+          for category in bagOfWords_dict:
+            for subcategory in bagOfWords_dict[category]:
+              for rating in bagOfWords_dict[category][subcategory]:
+                for brand_name in bagOfWords_dict[category][subcategory][rating]:
+                  for word, wordFreq in bagOfWords_dict[category][subcategory][rating][brand_name].items():
+                    bagOfWords_dict_merged.setdefault(category, OrderedDict()).setdefault(subcategory, OrderedDict()).setdefault(rating, OrderedDict()).setdefault(brand_name, {}).setdefault(word, 0) # create all keys if not exist
+                    bagOfWords_dict_merged[category][subcategory][rating][brand_name][word] += wordFreq
+
+                  bagOfWords_dict_merged[category][subcategory][rating][brand_name] = OrderedDict( sorted(bagOfWords_dict_merged[category][subcategory][rating][brand_name].items(), key=lambda key_value_pair: key_value_pair[1], reverse=True) ) # sort the bag of words dictionary according to the new word counts (from highest occurrent word to lowest occurrent)
+        else:
+          bagOfWords_dict_merged = bagOfWords_dict
+
+        # # update wordCloudDict_merged with wordCloudDict
+        if wordCloudDict_merged is not None:
+          for rating in wordCloudDict:
+            for word, wordFreq in wordCloudDict[rating].items():
+              wordCloudDict_merged.setdefault(rating, {}).setdefault(word, 0) # create all keys if not exist
+              wordCloudDict_merged[rating][word] += wordFreq
+        else:
+          wordCloudDict_merged = wordCloudDict
+
+      finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict_merged, bagOfWords_dict_merged, df_sentimentAnalysis_merged)
     
   else: # IF A SINGLE PROCESS RUNS ONLY
     all_dfs = None
@@ -115,44 +138,41 @@ def process():
     all_dfs = all_dfs[all_dfs['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category) 
     all_dfs['Product Ratings']=pd.to_numeric(all_dfs['Product Ratings'], downcast='integer')
 
-    sentiment_df = handle_wordCloud_bagOfWords_and_getSentimentAnalysisDict(all_dfs)
+    wordCloudDict, bagOfWords_dict, df_sentimentAnalysis  = get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(all_dfs)
 
-    isFirstTimeOutputting=True
-    insertHeader = False
-    mode = 'a'
-    if isFirstTimeOutputting:
-      isFirstTimeOutputting = False
-      insertHeader = True
-      mode = 'w'
-
-    sentiment_df.to_csv('AllCategories_Sentiments.csv', index=False, encoding='utf-8', header=insertHeader, mode=mode)
+    finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict, bagOfWords_dict, df_sentimentAnalysis)
     
+def output_timing_results(duration_seconds, numberOfRepeats):
+  days    = duration_seconds // 86400
+  hours   = (duration_seconds % 86400) // 3600
+  minutes = ( (duration_seconds % 86400) % 3600 ) // 60
+  seconds = ( (duration_seconds % 86400) % 3600 ) % 60
 
-if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE:
-  def output_timing_results(duration_seconds, numberOfRepeats):
-    days    = duration_seconds // 86400
-    hours   = (duration_seconds % 86400) // 3600
-    minutes = ( (duration_seconds % 86400) % 3600 ) // 60
-    seconds = ( (duration_seconds % 86400) % 3600 ) % 60
+  days, hours, minutes = map(int, [days, hours, minutes])
 
-    days, hours, minutes = map(int, [days, hours, minutes])
+  with open("ExecutionTimingResults.txt", mode='a') as outputFile:
+    outputFile.write("*************\n")
 
-    with open("ExecutionTimingResults.txt", mode='a') as outputFile:
-      outputFile.write("*************\n")
+    if IS_MULTIPROCESSED:
+      outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n")
+    else:
+      outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n")
 
-      if IS_MULTIPROCESSED:
-        outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n")
-      else:
-        outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n")
+    outputFile.write("#of repeats is: {}\n".format(numberOfRepeats))
+    outputFile.write("Script execution start date: {0}\n".format(startTime.strftime("%d/%m/%Y, %H:%M:%S")) )
+    outputFile.write("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds) )
 
-      outputFile.write("#of repeats is: {}\n".format(numberOfRepeats))
-      outputFile.write("Script execution start date: {0}\n".format(startTime.strftime("%d/%m/%Y, %H:%M:%S")) )
-      outputFile.write("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds) )
+    print("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds))
 
-      print("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds))
+def finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict, bagOfWords_dict, df_sentimentAnalysis ):
+  createCloud_from_wordCloudDict(wordCloudDict)
+      
+  with open("BagOfWords_AllCategories.txt", 'w', encoding='utf-8') as outputFile:
+    outputFile.write(json.dumps(bagOfWords_dict, indent=2, ensure_ascii=False))
 
+  df_sentimentAnalysis.to_csv('AllCategories_Sentiments.csv', index=False, encoding='utf-8', mode='w')
 
-def handle_wordCloud_bagOfWords_and_getSentimentAnalysisDict(df_correspondingRows):
+def get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows):
   global lemma, tokenizer
   lemma = nltk.wordnet.WordNetLemmatizer()
   tokenizer = nltk.data.load('tokenizers/punkt/english.pickle') 
@@ -161,21 +181,17 @@ def handle_wordCloud_bagOfWords_and_getSentimentAnalysisDict(df_correspondingRow
   # print("subcategory is: " + subcategory)
 
   ################# HANDLE WORD CLOUD #################
-  # create_wordCloud(df_correspondingRows)
-
+  wordCloudDict   = get_wordCloudDict_forEachRating(df_correspondingRows)
   ################# HANDLE BAG OF WORDS #################
   bagOfWords_dict = get_bagOfWords_dict(df_correspondingRows)
-  with open("BagOfWords_AllCategories.txt", 'w', encoding='utf-8') as outputFile:
-    outputFile.write(json.dumps(bagOfWords_dict,indent=2, ensure_ascii=False))
-
   ################# HANDLE SENTIMENT ANALYSIS #################
-  sentimentAnalysis_dict = get_sentimentAnalysis_dict( df_correspondingRows)    
+  sentimentAnalysis_dict = get_sentimentAnalysis_dict( df_correspondingRows)   
   # with open(category+"_sentiment_analysis.txt", 'w', encoding='utf-8') as outputFile:
   #   outputFile.write(json.dumps(sentimentAnalysis_dict, indent=2, ensure_ascii=False))
 
   ################# CREATE SENTIMENT ANALYSIS DATAFRAME for a CSV OUTPUT FILE #################
-  df_csv = create_sentimentAnalysis_dataframe(sentimentAnalysis_dict)
-  return df_csv
+  df_sentimentAnalysis = create_sentimentAnalysis_dataframe(sentimentAnalysis_dict)
+  return wordCloudDict, bagOfWords_dict, df_sentimentAnalysis 
 
 def get_category_subcategory(file_to_read):
   ''' 
@@ -221,19 +237,22 @@ def get_category_subcategory(file_to_read):
   return category, subcategory
 
 
-def create_wordCloud(df_correspondingRows):
+def get_wordCloudDict_forEachRating(df_correspondingRows):
    # create the clouds per rating, CURRENTLY IGNORING THE BRAND NAMES
-  groupingCols = ['Category', 'Subcategory' ,'Product Ratings', 'Brand Name']
-  grouped_df = df_correspondingRows.sort_values(by=groupingCols, ascending=[True, True, False, True]).groupby(groupingCols, sort=False)
+  wordCloud_dict = {}
+  groupingCols = ['Product Ratings']
+  grouped_df = df_correspondingRows.sort_values(by=groupingCols, ascending=[True]).groupby(groupingCols, sort=False)
   for name, group in grouped_df:
-    category, subcategory, rating, brand_name = name
+    rating = name
     rating=int(rating) # rating is an int64 object which is not JSON serializable; convert it to python int
     user_reviews_merged = ""
     for _, row in group.iterrows(): 
       user_reviews_merged += row['User Reviews']
       if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE:
         break
-    cloud(user_reviews_merged, category=category, subcategory=subcategory, rating=rating, brand_name=brand_name )
+    wordCloud_dict[rating] = bag_of_words(user_reviews_merged, sortTheOutput=True, sliceStart=0, sliceEnd=15) # get the most frequent 15 words (if there are >= 15 words ofc)
+    
+  return wordCloud_dict
 
 def create_sentimentAnalysis_dataframe(sentiment_analysis_dict):
   col_category=[]
@@ -309,16 +328,15 @@ def get_sentimentAnalysis_dict(df_correspondingRows):
         no_of_negative_reviews+=1 
       
       review_analysis.append(fillAndGetReviewInformation(review, review_polarity))
-      
       if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE:
         break
-  
+
     sentiment_analysis_dict.setdefault(category, OrderedDict()).setdefault(subcategory, OrderedDict()).setdefault(rating, OrderedDict())[brand_name] = {
       "#of positive reviews":  no_of_positive_reviews,
       "#of neutral reviews":   no_of_neutral_reviews,
       "#of negative reviews":  no_of_negative_reviews,
       "Reviews" :              review_analysis}
-      
+    
   return sentiment_analysis_dict
 
 def get_bagOfWords_dict(df_correspondingRows):
@@ -336,7 +354,7 @@ def get_bagOfWords_dict(df_correspondingRows):
       if MINIMAL_SCRIPT_EXECUTION_TIMING_ACTIVE: # if we are timing, process only a review for each brand for each rating (if not process all)
         break
   
-    bag_of_words_dict.setdefault(category, OrderedDict()).setdefault(subcategory, OrderedDict()).setdefault(rating, OrderedDict())[brand_name] = list(bag_of_words(user_reviews_merged, sortTheOutput=True).items())[:15]
+    bag_of_words_dict.setdefault(category, OrderedDict()).setdefault(subcategory, OrderedDict()).setdefault(rating, OrderedDict())[brand_name]  = bag_of_words(user_reviews_merged, sortTheOutput=True, sliceStart=0, sliceEnd=15)
 
   return bag_of_words_dict
 
@@ -421,43 +439,54 @@ def lemmatize_word(param_word):
       return retVal
 
   
-def bag_of_words(sentence, sortTheOutput=False):
-  counts = dict()
-  bag = []
+def bag_of_words(text, sortTheOutput=False, sliceStart=None, sliceEnd=None ):
+  '''
+  Parameters:
+    text (str):    A string which contains sentence(s).
+    sortTheOutput: Whether we should we return OrderedDict where the items sorted from the highest occurrent word to the least or a normal Python dict.
+    sliceStart: Slice start index to slice OrderedDict, only applicable if sortTheOutput == True
+    sliceEnd    Slice end index to slice OrderedDict, only applicable if sortTheOutput == True
 
-  bag.extend([
-    lemmatize_word(word).upper().translate(str.maketrans('','',string.punctuation)) 
-    for word in ( nltk.word_tokenize(sentence) ) 
-    if isWordNoun(lemmatize_word(word))])
-        
+  Returns:
+    A dictionary (string, int)  key/value pairs where key is the word and value is the frequency of this word in the  input parameter 'text' 
+
+  NOTE:
+  Please refer to https://docs.python.org/3/library/itertools.html#itertools.islice to determine sliceStart and sliceEnd values.  
+  '''
+  counts = dict()
+  bag = getProcessedWordArray(text)
   for word in bag:
     if word != "":
-      counts[word] = counts.get(word,0)+1      
+      counts[word] = counts.get(word, 0) + 1      
     
   # sort by values of the dictionary, in an ascending order.
   # We have to use OrderedDict since a normal dict does not preserve orders (sorted returns a list and we have to convert it to a dictionary while preserving the order)
   if sortTheOutput:
-    return OrderedDict(sorted(counts.items(), key=lambda key_value_pair: key_value_pair[1], reverse=True))
+    orderedDict = OrderedDict( sorted(counts.items(), key=lambda key_value_pair: key_value_pair[1], reverse=True) )
+    return OrderedDict( islice(orderedDict.items(), sliceStart, sliceEnd) ) # itemgetter(1) is the same as key=lambda key_value_pair: key_value_pair[1] or itemgetter(1, 3) as key_value_pair: (key_value_pair[1], key_value_pair[3])
   else:
     return counts
 
-# if rating is None, it means all ratings combined.
-def cloud(sentence, category=None, subcategory=None, rating=None, brand_name=None):
-  bag=[]
-
+def getProcessedWordArray(text):
+  bag = []
   bag.extend([
     lemmatize_word(word).upper().translate(str.maketrans('','',string.punctuation)) 
-    for word in ( nltk.word_tokenize(sentence) ) 
+    for word in ( nltk.word_tokenize(text) ) 
     if isWordNoun(lemmatize_word(word))])
-  bag_str=" ".join(bag)
-  wordcloud = WordCloud(background_color="orange").generate(bag_str)
-  
-  plt.imshow(wordcloud)      
-  plt.axis("off")
+  return bag
+  _
 
-  if(category is not None and subcategory is not None and rating is not None and brand_name is not None):
-    plt.title   (category + "_" + subcategory + "_" + brand_name + "_with_" + str(rating) + " stars")
-    plt.savefig (category + "_" + subcategory + "_" + brand_name + "_with_" + str(rating) + " stars")
+def createCloud_from_wordCloudDict(wordCloudDict):
+  '''
+  wordCloudDict: Dictionary of (rating, text) pairs. Output of get_wordCloudDict_forEachRating() function (multiple get_wordCloudDict_forEachRating dicts can be merged as well) 
+  rating: to what rating group (1, 2, 3, 4 or 5) this text belongs to
+  '''
+  for rating in wordCloudDict:
+    wordcloud = WordCloud(background_color="orange").generate_from_frequencies(wordCloudDict[rating])
+    plt.imshow(wordcloud)      
+    plt.axis("off")
+    plt.title   (str(rating) + " stars")
+    plt.savefig (str(rating) + " stars")
 
 if __name__ == "__main__":
   main()

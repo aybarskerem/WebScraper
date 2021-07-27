@@ -15,6 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import functools
 from bs4 import UnicodeDammit
 import traceback
+import timeit
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -24,12 +25,27 @@ from configs import *
 startTime = datetime.now()
 IS_MULTIPROCESSED = False
 IS_TIME_IT = True
+NUMBER_OR_REPEATS_TIMEIT = 1
 
 print = functools.partial(print, flush=True) #flush print functions by default
-
 def main():
+  if IS_MULTIPROCESSED:
+    print("Parallel execution time")
+  else:
+    print("Serial Execution time")
+  tp = timeit.Timer("process()", "from __main__ import process")
+  average_duration_seconds = tp.timeit(number=NUMBER_OR_REPEATS_TIMEIT) / NUMBER_OR_REPEATS_TIMEIT
+  output_timing_results(average_duration_seconds, NUMBER_OR_REPEATS_TIMEIT)
 
-  
+def process():
+
+  if IS_MULTIPROCESSED:
+    # COMM VARIABLES
+    global comm, nprocs, rank
+    comm = MPI.COMM_WORLD
+    nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
+    rank = comm.Get_rank()
+
   global driver_path
   maxNumberOfPagesToTraverse=int(sys.argv[1])
   driver_path=ChromeDriverManager().install()
@@ -358,7 +374,28 @@ def get_url_parser(url, useSelenium=True):
     else:
       return None 
 
+def output_timing_results(duration_seconds, numberOfRepeats):
+  days    = duration_seconds // 86400
+  hours   = (duration_seconds % 86400) // 3600
+  minutes = ( (duration_seconds % 86400) % 3600 ) // 60
+  seconds = ( (duration_seconds % 86400) % 3600 ) % 60
 
+  days, hours, minutes = map(int, [days, hours, minutes])
+
+  with open("ExecutionTimingResults.txt", mode='a') as outputFile:
+    outputFile.write("*************\n")
+
+    if IS_MULTIPROCESSED:
+      outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n")
+    else:
+      outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n")
+
+    outputFile.write("#of repeats is: {}\n".format(numberOfRepeats))
+    outputFile.write("Script execution start date: {0}\n".format(startTime.strftime("%d/%m/%Y, %H:%M:%S")) )
+    outputFile.write("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds) )
+
+    print("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds))
+    
 def unicode_safe_print(string_to_print):
   try:
     print(string_to_print)
