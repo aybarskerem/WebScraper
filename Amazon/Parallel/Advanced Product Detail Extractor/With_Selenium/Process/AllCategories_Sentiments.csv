@@ -1,64 +1,4 @@
 Category,Subcategory,Product Ratings,Brand Name,Review Sentiment,Review,#of Positive Sentences,#of Neutral Sentences,#of Negative Sentences,Positive Sentences,Neutral Sentences,Negative Sentences,Aspect,Review Aspect Sentiment
-ELECTRONICS,LAPTOPS,5,ASUS,positive,  Great,7,0,0,  Great,,,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,5,Acer,positive,"  I had the smaller Acer Chromebook for several years and loved it. It survived a tumble down the stairs, an orange juice bath  and finally succumbed when I dropped it and then stepped on it while on vacation. I bought this laptop based on the performance of the smaller one. The speed is more than adequate and, unlike some computers, is intuitive to operate. This one has dual speakers on the top of the unit which I thought were lousy until I saw that they were covered with a protective plastic layer! For my listening these are more than adequate. The bigger screen is really a plus; when I do a lot of reading I don't have to strain my eyes and it will be more fun to watch a movie. I am amazed that this computer costs less than the smaller one I bought several years ago. Definitely a great buy!",592,65,144,"  I had the smaller Acer Chromebook for several years and loved it.
-It survived a tumble down the stairs, an orange juice bath  and finally succumbed when I dropped it and then stepped on it while on vacation.
-The speed is more than adequate and, unlike some computers, is intuitive to operate.
-For my listening these are more than adequate.
-The bigger screen is really a plus; when I do a lot of reading I don't have to strain my eyes and it will be more fun to watch a movie.
-I am amazed that this computer costs less than the smaller one I bought several years ago.
-Definitely a great buy!",I bought this laptop based on the performance of the smaller one.,This one has dual speakers on the top of the unit which I thought were lousy until I saw that they were covered with a protective plastic layer!,"Cargo
-Originalty
-Packaging
-Quality",{'BUY': ['GREAT']}
-ELECTRONICS,LAPTOPS,5,Apple,positive,"  UPDATE 12-15-2020 - After three weeks, I'm still really impressed with the M1 MacBook Air/8 Core CPU/8 Core GPU/512 SSD/8GB RAM. --- My updated plea: MAKE SURE YOU GET AS MUCH MEMORY & STORAGE AS YOU CAN AFFORD. SPECIAL ORDER ONE TO YOUR PROJECTED FUTURE NEED!Remember, Macs live a very long time and the value it holds will depend on how usable it will be to you or someone else in 5 or even 10 years. Not that long ago, 80 GB hard drives were HUGE... and UPGRADABLE. RAM was upgradable. The SSD and the RAM in these machines is NOT upgradable.The one issue for me has been that I am a memory hog! I tend to have LOTS of tabs open at once (I've caught myself with 50 (Safari) open in one browser and 39 (Chrome) in another!), while running Affinity/Final Cut Pro - and YES, the dreaded Beach Ball has reared it's ugly head. Well, this got me to assess what I will be using the machine for and for how long.Storage can be added with external drives, slower, but it will let you scrape by. RAM is another story. When you constantly use up RAM, the system starts using ""swap memory"" where it uses the SSD to store temporary files. One of the YouTube reviewers (Created Labs) explains it like this: RAM memory is like writing on a white board, it's made to be temporary. Writing to the SSD is like writing on paper with a pencil. It can be erased, but if it's written on and erased for too long, it's going to degrade the medium. It will take years for this to cause problems, but keep in mind that in these M1 MacBooks, none of the parts are replaceable. The SSD and the RAM are soldered onto the board.***As ridiculously expensive as Apple RAM is, when it's not upgradable, get the maximum, in this case, 16 GB.I really doubt that Apple will be making machines with user upgradable RAM after the switch from Intel is complete, except for possibly the very high end Pro models.There is also the fact that if I am going to be doing a decent amount of video editing, a M1 with a fan will be helpful. Upgrading to the cheaper ($699+Upgrades) M1 Mac mini would be the cheapest way to get better performance for the Pro Apps, but I need a laptop, so... So, that is why I'm planning to return this machine and get one (likely the MacBook Pro M1), with 16 GB RAM & 1 TB SSD.***A note on browsers, Safari is by far the BEST browser to run on the M1, at least for now. I always had issues with saving web pages as PDF files in Chrome, where it did not save most of the images/text on the page. In Safari, it's worked perfectly.------I purchased the MacBook Air M1, 8 core GPU, and 8 core CPU model, with 512 GB SSD and 8 GB RAM in person at the Apple Store (11-20-2020), with education pricing. I traded in my (MNYH2LL/A) - 2017 12"" Macbook with the Intel M3 processor, 256 GB SSD, 8 GB Ram. I kept my charging adapter & C-cable (which are both compatible with the M1 Late 2020 Macbook Air), so ended up with a $330 Apple Store instant credit towards the M1.The M1 model has blown me away with its speed and smooth running with a large number of apps open, including Final Cut & Logic Pro. Admittedly the 2017 MB was the bottom of the line and I suffered under frequent overheating issues with too many things open and the single C-port fiasco.I likely would have gone with the 7 core GPU model if one had been in stock at the time of purchase, but I wanted 512 GB of SSD space, so I paid more by going with eh 8 core. From everything that I've seen, the lack of more RAM upgrades is not nearly as important as it was with the Intel x86 processors and is really only useful when you have many GPU intensive ""Pro Apps"" running at the same time.I would never have dreamed of running Final Cut or Logic Pro on the 2017 Macbook, so this has been an amazing upgrade for me.I would say that the bottom line is that if you're someone who only uses a laptop for office & basic web surfing and only has a few tabs open at once, and you never experience overheating or the dreaded beach ball ""not responding"" issues, or if you have non-Apple programs that have not been compiled for the M1 chip, hold off on the upgrade until more apps run natively on the M1. If however, you really need a machine that is MUCH more capable, faster and cooler running than the Intel models, it's a solid buy and an amazing upgrade from any non-upgradable Mac.",1490,1257,1577,"  UPDATE 12-15-2020 - After three weeks, I'm still really impressed with the M1 MacBook Air/8 Core CPU/8 Core GPU/512 SSD/8GB RAM.
---- My updated plea: MAKE SURE YOU GET AS MUCH MEMORY & STORAGE AS YOU CAN AFFORD.
-SPECIAL ORDER ONE TO YOUR PROJECTED FUTURE NEED!Remember, Macs live a very long time and the value it holds will depend on how usable it will be to you or someone else in 5 or even 10 years.
-Well, this got me to assess what I will be using the machine for and for how long.Storage can be added with external drives, slower, but it will let you scrape by.
-One of the YouTube reviewers (Created Labs) explains it like this: RAM memory is like writing on a white board, it's made to be temporary.
-Writing to the SSD is like writing on paper with a pencil.
-Upgrading to the cheaper ($699+Upgrades) M1 Mac mini would be the cheapest way to get better performance for the Pro Apps, but I need a laptop, so...
-***A note on browsers, Safari is by far the BEST browser to run on the M1, at least for now.
-I kept my charging adapter & C-cable (which are both compatible with the M1 Late 2020 Macbook Air), so ended up with a $330 Apple Store instant credit towards the M1.The M1 model has blown me away with its speed and smooth running with a large number of apps open, including Final Cut & Logic Pro.
-If however, you really need a machine that is MUCH more capable, faster and cooler running than the Intel models, it's a solid buy and an amazing upgrade from any non-upgradable Mac.","RAM was upgradable.
-The SSD and the RAM in these machines is NOT upgradable.The one issue for me has been that I am a memory hog!
-I tend to have LOTS of tabs open at once (I've caught myself with 50 (Safari) open in one browser and 39 (Chrome) in another!
-RAM is another story.
-When you constantly use up RAM, the system starts using ""swap memory"" where it uses the SSD to store temporary files.
-The SSD and the RAM are soldered onto the board.
-***As ridiculously expensive as Apple RAM is, when it's not upgradable, get the maximum, in this case, 16 GB.I really doubt that Apple will be making machines with user upgradable RAM after the switch from Intel is complete, except for possibly the very high end Pro models.There is also the fact that if I am going to be doing a decent amount of video editing, a M1 with a fan will be helpful.
-So, that is why I'm planning to return this machine and get one (likely the MacBook Pro M1), with 16 GB RAM & 1 TB SSD.
-In Safari, it's worked perfectly.------I purchased the MacBook Air M1, 8 core GPU, and 8 core CPU model, with 512 GB SSD and 8 GB RAM in person at the Apple Store (11-20-2020), with education pricing.
-I traded in my (MNYH2LL/A) - 2017 12"" Macbook with the Intel M3 processor, 256 GB SSD, 8 GB Ram.","Not that long ago, 80 GB hard drives were HUGE... and UPGRADABLE.
-), while running Affinity/Final Cut Pro - and YES, the dreaded Beach Ball has reared it's ugly head.
-It can be erased, but if it's written on and erased for too long, it's going to degrade the medium.
-It will take years for this to cause problems, but keep in mind that in these M1 MacBooks, none of the parts are replaceable.
-I always had issues with saving web pages as PDF files in Chrome, where it did not save most of the images/text on the page.
-Admittedly the 2017 MB was the bottom of the line and I suffered under frequent overheating issues with too many things open and the single C-port fiasco.I likely would have gone with the 7 core GPU model if one had been in stock at the time of purchase, but I wanted 512 GB of SSD space, so I paid more by going with eh 8 core.
-From everything that I've seen, the lack of more RAM upgrades is not nearly as important as it was with the Intel x86 processors and is really only useful when you have many GPU intensive ""Pro Apps"" running at the same time.I would never have dreamed of running Final Cut or Logic Pro on the 2017 Macbook, so this has been an amazing upgrade for me.I would say that the bottom line is that if you're someone who only uses a laptop for office & basic web surfing and only has a few tabs open at once, and you never experience overheating or the dreaded beach ball ""not responding"" issues, or if you have non-Apple programs that have not been compiled for the M1 chip, hold off on the upgrade until more apps run natively on the M1.","Cargo
-Originalty
-Packaging
-Quality","{'ORDER': ['SPECIAL'], 'DRIVE': ['HARD', 'HUGE'], 'BEACH': ['DREAD'], 'HEAD': ['UGLY'], 'M1': ['HELPFUL'], 'PERFORMANCE': ['GOOD'], 'BROWSER': ['GOOD'], 'CREDIT': ['INSTANT'], 'NUMBER': ['LARGE'], 'CUT': ['FINAL'], 'FIASCO': ['SINGLE'], 'LACK': ['NOT IMPORTANT', 'NOT USEFUL'], 'UPGRADE': ['AMAZING'], 'BUY': ['SOLID']}"
-ELECTRONICS,LAPTOPS,5,HP,positive,"  I chose this chrome book because the case and keys are white. It matches nicely with my air pods and silver/white iPhone 8 Plus. I was able to match a white mouse from Amazon, too. Goes nice with my white decor and vanity table.The chrome book streams well (I mainly use it for streaming YouTube and movies). Excellent battery life.Small Cons: the chrome book is a bit heavy (I have an Acer Spin chrome book and it's not as heavy). But I plan to mainly use this at home. Also, the screen gets ‘darker' (but still decent) when you view at an angle like if you're sharing watching with a friend or two.There is a touch screen version of this chrome book but I chose not to buy that one because I don't want my little children to keep tapping the screen to stop, start or change my videos. They already mess with the mouse and keyboard enough 😅Seems sturdy. Happy with my purchase 🥰",710,102,67,"It matches nicely with my air pods and silver/white iPhone 8 Plus.
-I was able to match a white mouse from Amazon, too.
-Goes nice with my white decor and vanity table.The chrome book streams well (I mainly use it for streaming YouTube and movies).
-Excellent battery life.Small Cons: the chrome book is a bit heavy (I have an Acer Spin chrome book and it's not as heavy).
-Also, the screen gets ‘darker' (but still decent) when you view at an angle like if you're sharing watching with a friend or two.There is a touch screen version of this chrome book but I chose not to buy that one because I don't want my little children to keep tapping the screen to stop, start or change my videos.
-Happy with my purchase 🥰","  I chose this chrome book because the case and keys are white.
-But I plan to mainly use this at home.",They already mess with the mouse and keyboard enough 😅Seems sturdy.,"Cargo
-Originalty
-Packaging
-Quality","{'VANITY': ['WHITE'], 'LIFE': ['EXCELLENT']}"
-ELECTRONICS,LAPTOPS,5,Lenovo,positive,"  I purchased this as a gift for my niece who is a high school student and this has worked very well for her for the last couple of months.  For surfing the web using MS Office Suite to do homework, essays, presentations, etc. this is a wonderful little machine. Feels o f very good quality for the price. I don't think you can add more ram but I haven't checked, if you could this would be awesome. So for a basic use like a student for example this laptop is good at this price point.",399,85,0,"  I purchased this as a gift for my niece who is a high school student and this has worked very well for her for the last couple of months.
-this is a wonderful little machine.
-Feels o f very good quality for the price.
-I don't think you can add more ram but I haven't checked, if you could this would be awesome.
-So for a basic use like a student for example this laptop is good at this price point.","For surfing the web using MS Office Suite to do homework, essays, presentations, etc.",,"Cargo
-Originalty
-Packaging
-Quality","{'MACHINE': ['WONDERFUL'], 'QUALITY': ['GOOD'], 'LAPTOP': ['GOOD']}"
 ELECTRONICS,LAPTOPS,5,MICROSOFT,positive,"  I think the Surface Go is a fantastic device if you don't set your expectations unreasonably high. For reference, I got the 64GB base model, a black type cover, and a Surface pen.After unboxing, setup takes slightly longer than ""just a moment"" as the device likes to say, but if you've already got a Windows 10 device, it's pretty quick and easy. Following the initial startup, the device will need to download a variety of updates, but within 2 hours or so mine was fully up to date after multiple installations, restarts, etc... standard computer update affairs.I switched it out of ""S mode"" almost immediately, because I didn't want to be bootstrapped to the Microsoft store, and it's nice that they give you the option. It doesn't require any restart or anything, and allows you to install apps from anywhere.Regarding performance, I have done email, lots of internet browsing and video watching, movies, drawing, and light photo editing and social networking. The device is not lightning fast and it doesn't need to be. It rarely lags more than a second or 2 to open programs but if you're used to a higher performing desktop or laptop then you will notice. The glossy screen is beautiful and photos and videos look great. There are front firing speakers that sound pretty decent but not much better than your average smartphone speakers, but this is understandable. The device makes zero noise as well, no fans or spinning disks are present here and it rarely gets hot to the touch.Really any light duty thing you would do on a normal Windows 10 PC can be done here. And that's where this thing shines, it's versatility is just head and shoulders above laptops because of how wonderfully portable it is. It feels sturdy, good in the hand or in the lap, and the fully adjustable kickstand is magnificent. In my opinion, the add on keyboard is absolutely essential. It clips on quickly and easily with nice strong magnets. The keys are small and take some getting used to, but having a full keyboard with back-lighting in this form factor is amazing. They are far better than on screen typing. The trackpad is also wonderful, it looks silly large on there but that is a good thing. It's responsive and has a nice clicky feeling.I don't think that the Surface Pen is nearly as essential, but it is fun and works excellent. I could see myself using it for casual note taking, there is virtually no noticeable lag.The charger the device comes with has a proprietary port, but you can also charge it via USB-C, which is great if you have a phone with that port, because you only need one charger while you travel.The only things worth complaining about on this device are made up for by its sturdy build and excellent functionality. It makes a fantastic bridge between the smartphone and PC, perfect for when a smartphone just isn't enough and a full size PC is too much. You don't even need to stow it during takeoff and landing on planes!!! So, set your expectations to a realistic level and the Surface Go, even the base model, will meet them.As an added bonus personally, the Surface Go has helped me use my smartphone less, to the point that I removed most social media from my phone. When you don't have Facebook and Instagram in your pocket at all times, it is pretty amazing how quickly you realize how often you used to mindlessly scroll through your feeds. So you could say it has made me more mindful of my screen time and helped me leave both it and my phone in my pocket or out of reach more often, which we could all use a break from now and then.One more thing... this one is just a tip. Don't buy office! This device has a small enough screen that it qualifies for the free version of MS Office Mobile. Search online for how to get them!UPDATE 2/4/19: I've owned this for several months now and have had zero issues. Changing out of S mode and installing Chrome and other non-Windows store programs has been no problem, no noticeable impact to memory usage or performance. Battery life is still good, just a great little device to have.",2753,1000,299,"  I think the Surface Go is a fantastic device if you don't set your expectations unreasonably high.
 For reference, I got the 64GB base model, a black type cover, and a Surface pen.After unboxing, setup takes slightly longer than ""just a moment"" as the device likes to say, but if you've already got a Windows 10 device, it's pretty quick and easy.
 Following the initial startup, the device will need to download a variety of updates, but within 2 hours or so mine was fully up to date after multiple installations, restarts, etc... standard computer update affairs.I switched it out of ""S mode"" almost immediately, because I didn't want to be bootstrapped to the Microsoft store, and it's nice that they give you the option.
@@ -87,70 +27,36 @@ Search online for how to get them!UPDATE 2/4/19: I've owned this for several mon
 Changing out of S mode and installing Chrome and other non-Windows store programs has been no problem, no noticeable impact to memory usage or performance.","Cargo
 Originalty
 Packaging
-Quality","{'DEVICE': ['FANTASTIC', 'GREAT'], 'SCREEN': ['BEAUTIFUL'], 'FAN': ['PRESENT'], 'THING': ['WORTH', 'GOOD'], 'KICKSTAND': ['MAGNIFICENT'], 'MAGNET': ['STRONG', 'NICE'], 'KEY': ['AMAZING'], 'TRACKPAD': ['WONDERFUL'], 'FEELING': ['NICE', 'CLICKY'], 'NOTE': ['CASUAL'], 'LAG': ['NOTICEABLE'], 'FUNCTIONALITY': ['EXCELLENT'], 'BRIDGE': ['FANTASTIC'], 'SMARTPHONE': ['PERFECT'], 'PC': ['PERFECT'], 'VERSION': ['FREE'], 'LIFE': ['GOOD']}"
-ELECTRONICS,LAPTOPS,4,ASUS,positive,"  Before I begin I must add that I'm a big Chromebook fan boy. I have a Chromebook as my main computer. I bought this and another computer for my siblings as xmas presents and now they think I have favorites. Why? Because the other Chromebook, despite being the same price (if you must know, Acer Chromebook 11) feels and functions better and faster. This ASUS Chromebook looks cool, but the moment you pick it up and feel it buckle under its own weight, you easily realize it's too cheap. I was hoping to give them both a similar device just different colors. Nope. At this price point there are WAAAAY better Chromebooks available. Avoid this one unless you see it at a heavy discount. I would only recommend this specific Chromebook if the price falls to $120.Update: it's been a year of my sibling using this daily for high school and it still works. I've bought him a better computer and this this red Asus has been relegated to a beater computer I take with me when I don't feel like taking my expensive laptop somewhere (pixelbook).It gets the job done, I can't deny it that. I still think there are better options (especially now in 2019), but a year of heavy use has proven that in a pinch, this little red computer works fine.",1130,51,53,"  Before I begin I must add that I'm a big Chromebook fan boy.
-I bought this and another computer for my siblings as xmas presents and now they think I have favorites.
-Because the other Chromebook, despite being the same price (if you must know, Acer Chromebook 11) feels and functions better and faster.
-This ASUS Chromebook looks cool, but the moment you pick it up and feel it buckle under its own weight, you easily realize it's too cheap.
-I was hoping to give them both a similar device just different colors.
-At this price point there are WAAAAY better Chromebooks available.
-I would only recommend this specific Chromebook if the price falls to $120.Update: it's been a year of my sibling using this daily for high school and it still works.
-I've bought him a better computer and this this red Asus has been relegated to a beater computer I take with me when I don't feel like taking my expensive laptop somewhere (pixelbook).It gets the job done, I can't deny it that.
-I still think there are better options (especially now in 2019), but a year of heavy use has proven that in a pinch, this little red computer works fine.","I have a Chromebook as my main computer.
-Why?
-Nope.",Avoid this one unless you see it at a heavy discount.,"Cargo
+Quality","{'DEVICE': ['FANTASTIC', 'GREAT'], 'SCREEN': ['BEAUTIFUL'], 'FAN': ['PRESENT'], 'THING': ['GOOD', 'WORTH'], 'KICKSTAND': ['MAGNIFICENT'], 'MAGNET': ['STRONG', 'NICE'], 'KEY': ['AMAZING'], 'TRACKPAD': ['WONDERFUL'], 'FEELING': ['CLICKY', 'NICE'], 'NOTE': ['CASUAL'], 'LAG': ['NOTICEABLE'], 'FUNCTIONALITY': ['EXCELLENT'], 'BRIDGE': ['FANTASTIC'], 'PC': ['PERFECT'], 'SMARTPHONE': ['PERFECT'], 'VERSION': ['FREE'], 'LIFE': ['GOOD']}"
+ELECTRONICS,LAPTOPS,5,MICROSOFT,positive,"  If you need a PC to do light work and can live with a 10 inch display, you'll love it. Or maybe you want a tablet that can be more than just that. I like the whole philosophy behind it, a device that you can take anywhere and use it in all your activities. After using it at work I can take the keyboard off and watch a movie or browse the web while listening some music or use a pen to do some digital painting as a hobby, It's just so versatile. I think this is the closest thing to what Microsoft wanted to achieve with the Surface line. Even closer than the already great Surface Pro.And there's this premium feel to it. The magnesium body feels very solid, the kickstand doesn't move if you don't want to and if you pair it with the Alcantara keyboard it's just a very different experience that you can feel. And yet it's so light. You'll have a disappointing experience touching a plastic laptop after using one of these.The downside is that it isn't precisely cheap. If you want it to be more than a tablet, you'll have to add the type cover keyboard, around $100 or more if you buy a Microsoft one (it's also great but I'm not reviewing it here). This just happens to be an affordable Surface product, and they're always expensive. But also so versatile and innovative that you'll find they worth it.It's also very sturdy. I found that out yesterday (there was a dog involved), it fell from a feet high right on the edge of the screen. I thought I would find a shattered or cracked display, but there was nothing on it. Not even on the edge, not a single dent or scratch on the whole thing, and it's working like if nothing happened (I'm using it to write this review).Most people complain about relatively short battery life but you can work for hours on it. I get it to work the whole day with the screen at its darkest and the battery saving mode on. Unless you use it outside that's enough brightness and performance for what you'll be using it. Another common complain are the thick bezels, but they're there for a reason, which becomes very obvious when you use it like a tablet.This might not be the device for you if what you want is high performance for CPU or graphic demanding tasks (and of course it's far from being a gamer PC) or if you really hate Windows. But if you're looking for a portable PC/tablet you can't go wrong with this. It's light, sturdy, completelly silent, has a sleek desing and offers a full desktop experience. And if you already own a Surface Pro you'll find this fascinating and even charming. It's a scaled down version of it.",1061,875,636,"  If you need a PC to do light work and can live with a 10 inch display, you'll love it.
+Or maybe you want a tablet that can be more than just that.
+I like the whole philosophy behind it, a device that you can take anywhere and use it in all your activities.
+Even closer than the already great Surface Pro.And there's this premium feel to it.
+The magnesium body feels very solid, the kickstand doesn't move if you don't want to and if you pair it with the Alcantara keyboard it's just a very different experience that you can feel.
+If you want it to be more than a tablet, you'll have to add the type cover keyboard, around $100 or more if you buy a Microsoft one (it's also great but I'm not reviewing it here).
+But also so versatile and innovative that you'll find they worth it.It's also very sturdy.
+Unless you use it outside that's enough brightness and performance for what you'll be using it.
+But if you're looking for a portable PC/tablet you can't go wrong with this.
+And if you already own a Surface Pro you'll find this fascinating and even charming.","After using it at work I can take the keyboard off and watch a movie or browse the web while listening some music or use a pen to do some digital painting as a hobby, It's just so versatile.
+I think this is the closest thing to what Microsoft wanted to achieve with the Surface line.
+And yet it's so light.
+This just happens to be an affordable Surface product, and they're always expensive.
+I found that out yesterday (there was a dog involved), it fell from a feet high right on the edge of the screen.
+Not even on the edge, not a single dent or scratch on the whole thing, and it's working like if nothing happened (I'm using it to write this review).Most people complain about relatively short battery life but you can work for hours on it.
+It's light, sturdy, completelly silent, has a sleek desing and offers a full desktop experience.
+It's a scaled down version of it.","You'll have a disappointing experience touching a plastic laptop after using one of these.The downside is that it isn't precisely cheap.
+I thought I would find a shattered or cracked display, but there was nothing on it.
+I get it to work the whole day with the screen at its darkest and the battery saving mode on.
+Another common complain are the thick bezels, but they're there for a reason, which becomes very obvious when you use it like a tablet.This might not be the device for you if what you want is high performance for CPU or graphic demanding tasks (and of course it's far from being a gamer PC) or if you really hate Windows.","Cargo
 Originalty
 Packaging
-Quality","{'COMPUTER': ['GOOD'], 'FUNCTION': ['GOOD'], 'CHROMEBOOKS': ['GOOD'], 'OPTION': ['GOOD']}"
-ELECTRONICS,LAPTOPS,4,Acer,positive,"  I wanted a decent-sized laptop to use for traveling mainly for emails & some general Internet browsing as well. I went thru the variety of Windows 10 laptops & suddenly realized that Chromebook is a laptop as well, but more limited on what it can do compared to a Windows or Apple laptop. So I got this Acer Chromebook CB3-532 as my first Chromebook. Very nice looking laptop with a 15.6 inch screen, fairly easy to set up with a fairly good picture quality. It has a built-in webcam with mic, SD card reader, 1 USB 3.0 port & 1 USB 2.0 port plus HDMI port. It has 2 gigabytes of memory, 16 drive & headphone/speaker jack.  It does not however have a CD/DVD player/burner.  I attached an external mouse to use on this Chromebook....it works just fine. Laptop seems slightly sluggish but not a major issue for me....yet.  I have had this Acer Chromebook for a month now & still a learning curve as I have been using Windows laptops for over 12 years now......so indeed a big learning curve for me. It has wifi connectivity & you cannot hard wire into the Internet with this Chromebook, just by wifi....which is fine for me.There are no real icons on the desktop of Chromebook. Whatever I used on my Windows 7 laptop & had desktop icons....I simply will have to funnel it through Chrome browser already on this laptop. Battery life seems good at currently 7 hour life on a full charge and for the most part, this nifty Chromebook should do fine for me . 4 stars I give this interesting Chromebook mostly because it's a new thing for me to learn, but similar to my Android Smartphone....so not too bad, no desktop icons like a Android smartphone however. Needless to say, a learning experience for me with this Chromebook...keyboard a bit lacking features compared to a Windows/Apple keyboard. I may attach an external keyboard to see if the delete key works this way since the built-in keyboard does not have a delete key.",634,1039,244,"  I wanted a decent-sized laptop to use for traveling mainly for emails & some general Internet browsing as well.
-Very nice looking laptop with a 15.6 inch screen, fairly easy to set up with a fairly good picture quality.
-I attached an external mouse to use on this Chromebook....it works just fine.
-Battery life seems good at currently 7 hour life on a full charge and for the most part, this nifty Chromebook should do fine for me .
-4 stars I give this interesting Chromebook mostly because it's a new thing for me to learn, but similar to my Android Smartphone....so not too bad, no desktop icons like a Android smartphone however.","So I got this Acer Chromebook CB3-532 as my first Chromebook.
-It has a built-in webcam with mic, SD card reader, 1 USB 3.0 port & 1 USB 2.0 port plus HDMI port.
-It has 2 gigabytes of memory, 16 drive & headphone/speaker jack.
-It does not however have a CD/DVD player/burner.
-I have had this Acer Chromebook for a month now & still a learning curve as I have been using Windows laptops for over 12 years now......so indeed a big learning curve for me.
-It has wifi connectivity & you cannot hard wire into the Internet with this Chromebook, just by wifi....which is fine for me.There are no real icons on the desktop of Chromebook.
-Whatever I used on my Windows 7 laptop & had desktop icons....I simply will have to funnel it through Chrome browser already on this laptop.
-Needless to say, a learning experience for me with this Chromebook...keyboard a bit lacking features compared to a Windows/Apple keyboard.
-I may attach an external keyboard to see if the delete key works this way since the built-in keyboard does not have a delete key.","I went thru the variety of Windows 10 laptops & suddenly realized that Chromebook is a laptop as well, but more limited on what it can do compared to a Windows or Apple laptop.
-Laptop seems slightly sluggish but not a major issue for me....yet.","Cargo
+Quality","{'PRO': ['GREAT'], 'EXPERIENCE': ['DISAPPOINTING'], 'BRIGHTNESS': ['ENOUGH'], 'COMPLAIN': ['COMMON']}"
+ELECTRONICS,LAPTOPS,5,MICROSOFT,positive,"  Great portable computer. I have the Surface Pro 3 so I am familiar with the Surface family. I decided to see how long I can use the Surface Go with windows 10 S OS, which means that you can only install apps from the MS Windows Store...so far, so good. If I have a need to upgrade to Windows 10 Home, the switch is very easy via the Windows Store...just remember, you may have to update the Windows Store app then the upgrade to Windows 10 Home, for free, is available.I use this as a secondary computer to surf web, watch Netflix, work on MS Office documents...works exactly as advertised.",525,66,0,"  Great portable computer.
+I decided to see how long I can use the Surface Go with windows 10 S OS, which means that you can only install apps from the MS Windows Store...so far, so good.
+If I have a need to upgrade to Windows 10 Home, the switch is very easy via the Windows Store...just remember, you may have to update the Windows Store app then the upgrade to Windows 10 Home, for free, is available.I use this as a secondary computer to surf web, watch Netflix, work on MS Office documents...works exactly as advertised.",I have the Surface Pro 3 so I am familiar with the Surface family.,,"Cargo
 Originalty
 Packaging
-Quality","{'LAPTOP': ['NICE', 'EASY'], 'CHROMEBOOK': ['INTERESTING', 'NIFTY'], 'QUALITY': ['GOOD'], 'ICON': ['NOT BAD'], 'FEATURE': ['LACK']}"
-ELECTRONICS,LAPTOPS,4,Apple,positive,"  Liked:- Long battery life (one charge WILL last all day, i.e. 16 hours. Personally tested true)- Speed (the new M1 processor really is fast)- Quiet (no fan but the laptop still does not get hot)- Light and portable- High resolution & bright displayDisliked:- As with other MacBooks, the keyboard is mediocre especially compared to laptops like Lenovo Thinkpad- Incompatible applications (With the M1 processor still being new, you might experience existing programs frequently crash. For example, Chrome keeps crashing) But I would guess there will be a fix soon",411,152,0,"Personally tested true)- Speed (the new M1 processor really is fast)- Quiet (no fan but the laptop still does not get hot)- Light and portable- High resolution & bright displayDisliked:- As with other MacBooks, the keyboard is mediocre especially compared to laptops like Lenovo Thinkpad- Incompatible applications (With the M1 processor still being new, you might experience existing programs frequently crash.","  Liked:- Long battery life (one charge WILL last all day, i.e.
-16 hours.
-For example, Chrome keeps crashing) But I would guess there will be a fix soon",,"Cargo
-Originalty
-Packaging
-Quality","{'SPEED': ['TRUE'], 'DISPLAY': ['BRIGHT']}"
-ELECTRONICS,LAPTOPS,4,HP,positive,"  I would give this Chromebook 5 stars if it weren't for the problems I had ordering it.  Twice I ordered one of the HP 11 Chromebooks, at first the earlier G4 model, and twice I received the incorrect model.  In each case, the packaging had been mislabeled, either by HP or an HP refurbisher/reseller. In the meantime the price kept going up.  I then tried to order the newer and less expensive (!) HP 11 G5.  Amazon offers it new at a serious discount to Prime members.  Sounded good except Amazon was indicating a 3-4 week delivery time.  I finally reordered a ""like new"" G5, received it in 2 days, and am quite happy.  Anyone who orders one of these fabulous Chromebooks should be aware of the significant differences between the G4 And G5 models and should check to be sure he or she receives what was ordered, including the amount of installed memory.  The differences between the G4 and G5 include:The G4 has a slightly faster CPU.The G5 CPU is a more energy efficient processor.The G5 has a redesigned battery.Because of the last two differences, the G5 has a 9-12 hour battery capacity compared to 5-8 hours for the G4.The G5 has a microSD slot; the G4 has a full size SD slot.The G5 has 2 USB3 ports; the G4 has 1 USB2 and 1 USB3 port (I think).The G5 now runs Android apps offered through Google Play.  The G4 does not have this capability.The last capability really sold me on the G5.  I can now play all my Amazon Audible books on this Chromebook, which I couldn't do on my older Chromebooks.  My less versatile Fire tablet is quickly becoming obsolete for my uses.  By the way, Google Play comes up as a pre-installed app on the G5 and is a gateway to many more apps, which I have yet to explore.  I also own an older HP Chromebook 14.  Both the G4 and G5 are significantly lighter and more portable than the HP Chromebook 14 and have no moving parts (no fan, completely noiseless).To be clear, older Chromebooks also have Google Play installed but have limited or no ability to run Android apps.  My Chromebook is running Chrome version 60.0.3112.80.  In the system details (chrome://system) is the additional line ""CHROMEOS_ARC_ANDROID_SDK_VERSION 23"".  That may be the key new element that allows running Android apps.  I do not have that element in my HP Chromebook 14, which cannot run Android programs.",1485,746,71,"  I would give this Chromebook 5 stars if it weren't for the problems I had ordering it.
-Amazon offers it new at a serious discount to Prime members.
-Sounded good except Amazon was indicating a 3-4 week delivery time.
-I finally reordered a ""like new"" G5, received it in 2 days, and am quite happy.
-Anyone who orders one of these fabulous Chromebooks should be aware of the significant differences between the G4 And G5 models and should check to be sure he or she receives what was ordered, including the amount of installed memory.
-The differences between the G4 and G5 include:The G4 has a slightly faster CPU.The G5 CPU is a more energy efficient processor.The G5 has a redesigned battery.Because of the last two differences, the G5 has a 9-12 hour battery capacity compared to 5-8 hours for the G4.The G5 has a microSD slot; the G4 has a full size SD slot.The G5 has 2 USB3 ports; the G4 has 1 USB2 and 1 USB3 port (I think).The G5 now runs Android apps offered through Google Play.
-I can now play all my Amazon Audible books on this Chromebook, which I couldn't do on my older Chromebooks.
-By the way, Google Play comes up as a pre-installed app on the G5 and is a gateway to many more apps, which I have yet to explore.
-Both the G4 and G5 are significantly lighter and more portable than the HP Chromebook 14 and have no moving parts (no fan, completely noiseless).To be clear, older Chromebooks also have Google Play installed but have limited or no ability to run Android apps.","Twice I ordered one of the HP 11 Chromebooks, at first the earlier G4 model, and twice I received the incorrect model.
-In each case, the packaging had been mislabeled, either by HP or an HP refurbisher/reseller.
-In the meantime the price kept going up.
-I then tried to order the newer and less expensive (!)
-HP 11 G5.
-The G4 does not have this capability.The last capability really sold me on the G5.
-I also own an older HP Chromebook 14.
-My Chromebook is running Chrome version 60.0.3112.80.
-In the system details (chrome://system) is the additional line ""CHROMEOS_ARC_ANDROID_SDK_VERSION 23"".
-That may be the key new element that allows running Android apps.
-I do not have that element in my HP Chromebook 14, which cannot run Android programs.",My less versatile Fire tablet is quickly becoming obsolete for my uses.,"Cargo
-Originalty
-Packaging
-Quality","{'DISCOUNT': ['SERIOUS'], 'CHROMEBOOKS': ['FABULOUS'], 'DIFFERENCE': ['SIGNIFICANT'], 'PROCESSOR': ['EFFICIENT'], 'FAN': ['NOISELESS']}"
-ELECTRONICS,LAPTOPS,4,Lenovo,positive,  The battery doesn't last like it says but it is a nice laptop other than than,79,0,0,  The battery doesn't last like it says but it is a nice laptop other than than,,,"Cargo
-Originalty
-Packaging
-Quality",{'LAPTOP': ['NICE']}
+Quality","{'COMPUTER': ['GREAT'], 'SWITCH': ['EASY']}"
 ELECTRONICS,LAPTOPS,4,MICROSOFT,positive,"  Pros:• USB-C, Finally! As a past Surface Pro user, this was never a feature. With a USB-C, like any computer, you can do so much more with this device now. From headphones to connecting external 4k monitors, to charging this and other devices (USB-C chargers are 10x cheaper to get), to even connecting an Ethernet adaptor. About time Microsoft.• It's a very sold machine. I go no flex issues, the frame feels sturdy, and overall I felt that I can throw this in a bag and not worry.• It's light. Not IPad light, but enough that you won't feel worried that you're not going to bend it.• The microphone set up on the Pro is a big upgrade. Skype calls from my parents came crisp and clear in an indoor, TV on, volume. The web video is what it is, but the microphone setup is a thumbs up.• Cortana listens to you pretty well. I'm learning Spanish so translating even simple questions, from English to Spanish, Cortana does a lot better than either using Alexa or Google Assistant. Also questions about directions, weather, and others were spot on.• Excellent display. The screen is bright, outstanding saturation/color balance, and also offers ambient light sensing when it gets dark. When you go to settings you can modify it for a specific time, or it will automatically adjust when the sun goes down in your location.• Microsoft mastered the kickstand on this. Numerous ranges of all angels, and is even quite steady when it's placed on my lap.• microSD reader (for upgraded memory option)• Headphone Jack. I find this feature a must if you're planning to edit videos on this.• Solid State Drive (SDD) on a tablet size is one of the best things. If you have to choose, always an SSD, regardless of memory size. Faster, cooler, and• Charging on this is very fast. From 0 to 50% it took around 45-50 minutes. Note that I was using the charging cords that it came with. Don't expect the same results when using an off-brand.• A lot of horsepower for a tablet. Inside is an Ice Lake processor. To summarize, it features smaller transistors that makes multi-tasking an non-issue. Trying out for the first time with around 10 apps running (Madden, Netflix, Live Maps, Grand Trims Mo, etc.), the machine had no lag or hiccups. Largely the effects of this chip will be appreciated in the next 2 years from when you get this tablet.• The processor allows Wi-Fi 6 to be enforced on this tablet. This area is still new but within the next year, this tablet will already be up to date with the hardware. Meaning stronger upload and download rates.• The speakers shoot sound directly to my face. Turning on Spotify, I got a decent quality in sound. With rock and country, I got a very balanced, and a lot of power in the volume. For the average listener it's quite good. Not IPad level but still good to make the list.• I can see the 3:2 screen a benefit for those who want to read, show notes, and display documents at work. Not many tablets can provide this without losing some quality. For me, I saw no waste in this Surface.Cons and Oks:• The chunky bezel. Stick to the times Microsoft, this can't be ignored in 2019. It's very thick and with competitors providing bezel-less frames, or close to it, this is a major turn off (Not to mention that Microsoft itself has a Surface Pro X with a design that is significantly less in the bezel. (Why not this one?).• With the bezel issue, the screen size makes the tablet look 2 years older than what it is.• Last year's model and this one are 99% the same in design. Remove the USB-C connector and it'll be 100% the same. A very outdated design as I think Microsoft invested all their money on the internals and just forgot about the redesigning.• The battery life isn't great. I'm getting around 8 hours of power. That's having Wi-Fi always on, web surfing, daily YouTube playing, and a couple of hours with Netflix (plus a couple of smaller apps). It can last a whole day if you control your power and your screen display, but it's nowhere near what Microsoft is saying.• Don't take it outside on a sunny day. That sun glare is too powerful for this display brightness.• Keyboard and Surface Pen are sold separately. I didn't test these as you only get the tablet.• Even though USB-C is a great thing to have, we're already in the USB 3.1 world. With also no Thunderbolt 3 (quick file transfer) I wish that Microsoft put more effort into the outside design as much as they put in there hardware on this machine.• I found no issue playing Overwatch on this but trying to play Call of Duty forget it. This isn't for deep gaming and playing Overwatch killed a decent chunk of the battery.Bottom Line:If you're going to buy this, you need to at least invest in there keyboard cover. It's disappointing that to fully experience your Pro, you need to put down money on its keyboard and pen. Without a keyboard, from my experience, you're pretty limited. I used a Logitech Bluetooth keyboard and mouse, but the portably is limited if you can't attach them to the Surface Pro.Also we're in the age of laptops, tablets, and phones trying to reach the goal to be bezel-less.  I have the previous model on hand and I can't tell them apart in any way. Thanks to these 2019 new laptops/tablets, the bezels on this device make it feel like this tablet is from 2017. I'm also irritated that Microsoft didn't at least try to improve the design.But if you can deal with the design (and the battery) issues, you'll know that Microsoft put all their money on what's inside the system. From the new core processors, this tablet is a beast. I found it very fast, reliable, and it will stand its ground for 2+ years. For me that's the beauty of a Surface Pro: a PC in the size of a tablet. I'm always a PC fan and this performs as if I had a laptop on my lap, something an IPad can't do. If you can deal with the generic bezel look, and put money down for their keyboard, you're getting a beast of a computer fitting in a tablet.Overall: An outdated design that packs a lot of power for those who want more than just a generic tablet on the go.Hope I was a help to you.Love,Honest Reviewer",3095,2118,891,"With a USB-C, like any computer, you can do so much more with this device now.
 Not IPad light, but enough that you won't feel worried that you're not going to bend it.• The microphone set up on the Pro is a big upgrade.
 Skype calls from my parents came crisp and clear in an indoor, TV on, volume.
@@ -209,105 +115,6 @@ I used a Logitech Bluetooth keyboard and mouse, but the portably is limited if y
 Originalty
 Packaging
 Quality","{'DISPLAY': ['EXCELLENT'], 'SCREEN': ['BRIGHT'], 'BALANCE': ['OUTSTANDING'], 'STATE': ['SOLID'], 'THING': ['GREAT', 'GOOD'], 'TRIM': ['GRAND'], 'LEVEL': ['NOT GOOD'], 'LIFE': ['NOT GREAT'], 'DAY': ['SUNNY'], 'GLARE': ['POWERFUL'], 'REVIEWER': ['HONEST']}"
-ELECTRONICS,LAPTOPS,3,ASUS,positive,"  I do.  I absolutely love this device and I am so glad I bit the bullet and bought one.  I have had it for a few weeks now and I don't miss my Windows laptop one single bit.  I was worried that my laptop had features with which a Chromebook could not compete.  I haven't come across any.Chromebooks do not come with optical drives or a hard drive with a ton of space.  You also can't load third party software such as MS Office or TurboTax.  There simply isn't the space or computing power to do so, not to mention the OS to support it.Chromebooks do come with the Chrome OS, browser and the ability to download apps from Google Play.  Onboard storage is limited to 16 - 64 GB but Chrome is fully integrated with Google Drive (unlimited storage) and you can easily use an SD card or a thumb drive so you can access files offline.  They also have considerably more battery time than a conventional laptop.  You can easily use the online version of MS Office if your account is associated with a licensed copy of MS Office or you can subscribe to Office 365 and most software applications you would use (e.g. Turbotax) have web-based versions as well.Anyway, back to the review of the ASUS C523.  Its a great device.  The C523 has a full 15.6 inch display so it ""looks"" like any full size laptop.  It is fully integrated with all of my Google resources...mail, Google Drive, Youtube and I can access content from Netflix via the Chrome browser or the app.  I can store files locally if I want but I usually just save them to Google Drive.  Its very portable and light so I can move with as easily as a spiral notebook.  The thing that really wows me is that it is ""instant on"".  I don't have to wait for some convoluted boot process...I open the lid, type my PIN and I am in with no delay.  Updates are done in the background and I have not had to do a reboot yet because of one.  It intefrated with my (wireless) printer in a snap...I have not tried USB connecting the printer so I don't know if that would work.The only negative thing I have to say is regarding battery life.  ASUS says you can get up to 10 hours of battery life.  That is not true.  There is nothing that you can do on this device that is economical enough to get you to 10 hours of battery life.  I would say you can count on about 5 hours MAX if you are just surfing the internet or watching Netflix and the display brightness is kept as low as possible. I usually have to plug it in shortly after four hours; still better than my laptop.",1313,583,589,"I absolutely love this device and I am so glad I bit the bullet and bought one.
-I have had it for a few weeks now and I don't miss my Windows laptop one single bit.
-There simply isn't the space or computing power to do so, not to mention the OS to support it.Chromebooks do come with the Chrome OS, browser and the ability to download apps from Google Play.
-Onboard storage is limited to 16 - 64 GB but Chrome is fully integrated with Google Drive (unlimited storage) and you can easily use an SD card or a thumb drive so you can access files offline.
-You can easily use the online version of MS Office if your account is associated with a licensed copy of MS Office or you can subscribe to Office 365 and most software applications you would use (e.g.
-Its a great device.
-The C523 has a full 15.6 inch display so it ""looks"" like any full size laptop.
-I can store files locally if I want but I usually just save them to Google Drive.
-Its very portable and light so I can move with as easily as a spiral notebook.
-The thing that really wows me is that it is ""instant on"".
-I would say you can count on about 5 hours MAX if you are just surfing the internet or watching Netflix and the display brightness is kept as low as possible.
-I usually have to plug it in shortly after four hours; still better than my laptop.","  I do.
-They also have considerably more battery time than a conventional laptop.
-Turbotax) have web-based versions as well.Anyway, back to the review of the ASUS C523.
-It is fully integrated with all of my Google resources...mail, Google Drive, Youtube and I can access content from Netflix via the Chrome browser or the app.
-Updates are done in the background and I have not had to do a reboot yet because of one.
-ASUS says you can get up to 10 hours of battery life.
-There is nothing that you can do on this device that is economical enough to get you to 10 hours of battery life.","I was worried that my laptop had features with which a Chromebook could not compete.
-I haven't come across any.Chromebooks do not come with optical drives or a hard drive with a ton of space.
-You also can't load third party software such as MS Office or TurboTax.
-I don't have to wait for some convoluted boot process...I open the lid, type my PIN and I am in with no delay.
-It intefrated with my (wireless) printer in a snap...I have not tried USB connecting the printer so I don't know if that would work.The only negative thing I have to say is regarding battery life.
-That is not true.","Cargo
-Originalty
-Packaging
-Quality","{'DRIVE': ['HARD'], 'DEVICE': ['GREAT'], 'THING': ['NEGATIVE']}"
-ELECTRONICS,LAPTOPS,3,Acer,positive,"  Three stars because of the speakers being on top and not at the bottom of the laptop. Also because I function around Google so it's convenient to have a Chromebook. I didn't like that it doesn't have a right click function. It's an okay laptop, especially if you're just using it for simple stuff. I think I'll just spend a little more for more features.",161,135,58,"  Three stars because of the speakers being on top and not at the bottom of the laptop.
-It's an okay laptop, especially if you're just using it for simple stuff.","Also because I function around Google so it's convenient to have a Chromebook.
-I think I'll just spend a little more for more features.",I didn't like that it doesn't have a right click function.,"Cargo
-Originalty
-Packaging
-Quality",{'LAPTOP': ['OKAY']}
-ELECTRONICS,LAPTOPS,3,Apple,neutral,  Excelente,0,11,0,,  Excelente,,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,3,HP,positive,"  First, I'll say that it's an excellent product.  If you don't need to run too many programs, it's a really nice alternative to a PC.  However, apparently there are keyboard issues.  I didn't know about it until it happened to me, but it's widespread based on my googling.  On the bright side, Amazon put me in touch with HP who are doing a free repair on it.  Still, disappointed that the device broke.  I don't type harder than an average person, so for this to happen to me and so many others likely means it's a problem with the keyboard itself.",219,136,187,"  First, I'll say that it's an excellent product.
-If you don't need to run too many programs, it's a really nice alternative to a PC.
-On the bright side, Amazon put me in touch with HP who are doing a free repair on it.","However, apparently there are keyboard issues.
-I didn't know about it until it happened to me, but it's widespread based on my googling.","Still, disappointed that the device broke.
-I don't type harder than an average person, so for this to happen to me and so many others likely means it's a problem with the keyboard itself.","Cargo
-Originalty
-Packaging
-Quality","{'PRODUCT': ['EXCELLENT'], 'ALTERNATIVE': ['NICE'], 'SIDE': ['BRIGHT'], 'REPAIR': ['FREE']}"
-ELECTRONICS,LAPTOPS,3,Lenovo,negative,"  I am particularly not happy that the system becomes too slow, even more than the usual 4G RAM computer, after opting out of the 10S mode.  I could not open two internet tabs at the same time and had to wait endlessly for simple MS document to open. It is simply not acceptable. Highly not recommended, especially if you are looking for moderate system. This is below the bar.",0,132,243,,"I could not open two internet tabs at the same time and had to wait endlessly for simple MS document to open.
-This is below the bar.","  I am particularly not happy that the system becomes too slow, even more than the usual 4G RAM computer, after opting out of the 10S mode.
-It is simply not acceptable.
-Highly not recommended, especially if you are looking for moderate system.","Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,3,MICROSOFT,neutral,  Computer will not charge. Either has an issue with the charging port or the cord that was sent with it has an issue.,0,118,0,,"  Computer will not charge.
-Either has an issue with the charging port or the cord that was sent with it has an issue.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,2,ASUS,negative,  I should have paid more attention to the reviews --- This thing lasted only a month and did exactly what the others in the reviews said it did … Stop turning on.  Not like my Samsung Chromebook I had before. This one was subpar,0,19,208,,This one was subpar,"  I should have paid more attention to the reviews --- This thing lasted only a month and did exactly what the others in the reviews said it did … Stop turning on.
-Not like my Samsung Chromebook I had before.","Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,2,Acer,positive,  My Cricut and Cannon printer aren't compatible. It's not what I expected after having a Mac and a Toshiba laptop. Would not recommend. Pay the extra and get a better computer.,40,115,20,Pay the extra and get a better computer.,"  My Cricut and Cannon printer aren't compatible.
-It's not what I expected after having a Mac and a Toshiba laptop.",Would not recommend.,"Cargo
-Originalty
-Packaging
-Quality",{'COMPUTER': ['GOOD']}
-ELECTRONICS,LAPTOPS,2,Apple,negative,  I'm a fan of apple products and I like almost everything about this new MBA. But it has one huge flaw that nobody talks about. It's the camera hardware and it hasn't been updated in ages. My zoom calls are so grainy and bad even with decent light. A $1000 laptop with 10 year old front camera is unacceptable. Camera is very important to me. Especially now that we all are quarantined at home and making zoom calls all the time.,160,147,121,"  I'm a fan of apple products and I like almost everything about this new MBA.
-But it has one huge flaw that nobody talks about.
-Camera is very important to me.","It's the camera hardware and it hasn't been updated in ages.
-Especially now that we all are quarantined at home and making zoom calls all the time.","My zoom calls are so grainy and bad even with decent light.
-A $1000 laptop with 10 year old front camera is unacceptable.","Cargo
-Originalty
-Packaging
-Quality","{'FLAW': ['HUGE'], 'CALL': ['BAD'], 'LAPTOP': ['UNACCEPTABLE'], 'CAMERA': ['IMPORTANT']}"
-ELECTRONICS,LAPTOPS,2,HP,negative,"  I don't like to write bad reviews but, I do want to share my experience with this. This would be a good computer maybe for a preteen who just wanted to type a few things or surf the web. There is no delete button,  you have to use the back space button to delete.  There is no cap lock button,  you can't do all caps unless you hold the shift. Since it's not windows you can't put certain apps on like zoom. You can use for zoom calls but can't stream them elsewhere.  Maybe I missed the fine print.  I thought I did my homework.  I bought a computer for the same amount a couple of years ago and it was just fine. I thought I was getting the same thing.",336,128,186,"  I don't like to write bad reviews but, I do want to share my experience with this.
-This would be a good computer maybe for a preteen who just wanted to type a few things or surf the web.
-Since it's not windows you can't put certain apps on like zoom.
-I bought a computer for the same amount a couple of years ago and it was just fine.","You can use for zoom calls but can't stream them elsewhere.
-I thought I did my homework.
-I thought I was getting the same thing.","There is no delete button,  you have to use the back space button to delete.
-There is no cap lock button,  you can't do all caps unless you hold the shift.
-Maybe I missed the fine print.","Cargo
-Originalty
-Packaging
-Quality","{'REVIEW': ['BAD'], 'COMPUTER': ['GOOD'], 'APP': ['CERTAIN'], 'PRINT': ['FINE']}"
-ELECTRONICS,LAPTOPS,2,Lenovo,negative,"  Could not stream xfinity video! All video streams are pixelated and lagging while another device (much older) streams just fine. Video was 720p, not even 4k!  The other things: inability to scroll. Can't do it. You have to scroll with the arrow keys. No CAPS lock. You have to hit alt and some other key to enable caps lock. Also makes you log in every time. Using your Google account password every time. I created a PIN# in the settings (a 6 digit number code) but it won't accept it... still have to use Google password. Just needed this to stream video to a tv... can't do it.",0,313,267,,"  Could not stream xfinity video!
-Video was 720p, not even 4k!
-Can't do it.
-You have to scroll with the arrow keys.
-You have to hit alt and some other key to enable caps lock.
-Also makes you log in every time.
-Using your Google account password every time.
-Just needed this to stream video to a tv... can't do it.","All video streams are pixelated and lagging while another device (much older) streams just fine.
-The other things: inability to scroll.
-No CAPS lock.
-I created a PIN# in the settings (a 6 digit number code) but it won't accept it... still have to use Google password.","Cargo
-Originalty
-Packaging
-Quality",{'STREAM': ['FINE']}
 ELECTRONICS,LAPTOPS,2,MICROSOFT,positive,"  Comparing Dell XPS 13, Lenovo Yoga C940 14 and Surface Pro 7 2-in-1's all with i7-1065G7 CPU/GPU.[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3"" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option. The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14"" > XPS 13.4"" > SP7 12.3""-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers. Rotating soundbar with Dolby Atmos sounds amazing! Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large ""chin"" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming. Not available on SP7. eGPU great for gaming, allows modular upgradability of graphics cards in the future, although they lose ~20% FPS compared to PCIe.[PRICING:]For i7, 16GB, 512GB with Windows 10 Home:YOGA 4K $1785 > XPS 4K + pen $1900 > SP7 FHD + type cover + pen $2160[CONCLUSION:]The SP7 was the most expensive when you add the keyboard and pen. The XPS FHD with 32GB RAM came in at $1730. I would like to see a 32GB 4K 512GB option since I don't need that much on-device storage.All have performance improvements over their predecessors thanks to the new 10th gen Intel i7 processors, LPDDR4x RAM and WiFi 6. The Surface Book 2 is too dated to compare here and is clunkier.It's a toss up between the XPS for its 32GB RAM with taller screen, or the Yoga with its USB-A port, better keyboard, and garaged pen, among other things. The extra RAM comes in useful since the integrated graphics will use some of that. The 16GB models easily ran up to 80% CPU, RAM and GPU when driving 2 external monitors and simultaneously running Chrome with tabs, Office apps, iTunes and light gaming. It often sits at 8GB RAM under normal use.Some may appreciate all the ports being on one side as with the Yoga, or having ports on either side as with the XPS. The dedicated volume rockers on the SP7 comes in handy. The lighter weight of the SP7 made it the first to be grabbed on the go for content consumption or note taking, but I prefer the Yoga for content creation with it's larger screen and comfy keyboard. If you're docking all day and only occasionally need to be on the go then I recommend the XPS for its 32GB RAM. The perfect laptop is not quite here yet.",2500,364,825,"The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14"" > XPS 13.4"" > SP7 12.3""-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers.
 Rotating soundbar with Dolby Atmos sounds amazing!
 Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large ""chin"" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming.
@@ -326,46 +133,7 @@ Not available on SP7.
 The XPS FHD with 32GB RAM came in at $1730.","[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3"" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option.","Cargo
 Originalty
 Packaging
-Quality","{'RATIO': ['GOOD'], 'FAN': ['QUIET'], 'LIFE': ['BAD'], 'DISPLAY': ['BAD'], 'KEYBOARD': ['HARD', 'GOOD', 'COMFORTABLE'], 'KEY': ['BETTER'], 'HOME': ['BETTER'], 'LAYOUT': ['BETTER'], 'EGPU': ['GREAT'], 'PEN': ['GOOD'], 'LAPTOP': ['PERFECT']}"
-ELECTRONICS,LAPTOPS,1,ASUS,positive,"  Owned this machine for 2 months and during use shutdown on it's own and would not power up again. Contacted ASUS support to find out I had to pay for the shipping to return a unit that is under warranty. This is the last ASUS product I will buy. The warranty details are not available from the Amazon site  , so it you don't take the time to go and read the manufacturer's warranty on their site you fall prey to substandard warranty practices.",304,141,0,"Contacted ASUS support to find out I had to pay for the shipping to return a unit that is under warranty.
-The warranty details are not available from the Amazon site  , so it you don't take the time to go and read the manufacturer's warranty on their site you fall prey to substandard warranty practices.","  Owned this machine for 2 months and during use shutdown on it's own and would not power up again.
-This is the last ASUS product I will buy.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,1,Acer,negative,"  1st off - the laptop itself looks and feels great. The screen size is nice, it has a nice battery life and it boots/reboots quickly..... which I got to find out pretty early. The 1st time it froze up, it was for about 2 minutes. I figured I'd just go ahead and have less instances of Chrome open next time but to no avail. The 2nd time it froze up when I pulled up the Play Store, stayed frozen for 5 minutes and then reset. I could go on but I'm not going to describe every one of the 10+ instances it froze or the 6+ reboots. But what did it for me? I turned on the laptop, logged in & opened an instance of Chrome. Everything was fine. I took a shower and came back to a dark screen & thought it was just power saving. Nope. Hit the power button, logged in again, fired up Chrome & saw my buddy in the upper right-hand corner : ""Chrome did not close correctly - Restore pages - Start Up Pages"" (paraphrasing). WHAT?!?! The computer locked up while it wasn't even being used?!? That's enough for me! This bad boy is being returned on Monday.Oh, did I mention that all this happened within the first 72 hours of ownership? I'm surprised I was able to type this whole review without it locking up!",373,424,400,"  1st off - the laptop itself looks and feels great.
-The screen size is nice, it has a nice battery life and it boots/reboots quickly..... which I got to find out pretty early.
-The 2nd time it froze up when I pulled up the Play Store, stayed frozen for 5 minutes and then reset.
-Everything was fine.
-I'm surprised I was able to type this whole review without it locking up!","The 1st time it froze up, it was for about 2 minutes.
-I could go on but I'm not going to describe every one of the 10+ instances it froze or the 6+ reboots.
-But what did it for me?
-I turned on the laptop, logged in & opened an instance of Chrome.
-I took a shower and came back to a dark screen & thought it was just power saving.
-Nope.
-WHAT?!?!
-The computer locked up while it wasn't even being used?!?
-That's enough for me!","I figured I'd just go ahead and have less instances of Chrome open next time but to no avail.
-Hit the power button, logged in again, fired up Chrome & saw my buddy in the upper right-hand corner : ""Chrome did not close correctly - Restore pages - Start Up Pages"" (paraphrasing).
-This bad boy is being returned on Monday.Oh, did I mention that all this happened within the first 72 hours of ownership?","Cargo
-Originalty
-Packaging
-Quality","{'LIFE': ['NICE'], 'SIZE': ['NICE'], 'HAND': ['RIGHT'], 'BOY': ['BAD']}"
-ELECTRONICS,LAPTOPS,1,Apple,negative,  I just purchased and I am using it for the first time and it won't charge!!! I am so disappointed because I ordered this for work and it is useless to me,0,78,76,,  I just purchased and I am using it for the first time and it won't charge!!!,I am so disappointed because I ordered this for work and it is useless to me,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,1,HP,positive,"  First of all it  does not have Windows 10,  and the mouse pad sticks. Having a hard time getting mouse pointer where I want it and is NOT touch screen!It is an attractive looking laptop but it too small and i cant use it for the purpose of buying it.",180,71,0,Having a hard time getting mouse pointer where I want it and is NOT touch screen!It is an attractive looking laptop but it too small and i cant use it for the purpose of buying it.,"  First of all it  does not have Windows 10,  and the mouse pad sticks.",,"Cargo
-Originalty
-Packaging
-Quality","{'TIME': ['HARD'], 'LAPTOP': ['ATTRACTIVE']}"
-ELECTRONICS,LAPTOPS,1,Lenovo,negative,  There was newspaper in the box a charger  and q book nothing else !!!! They are not responding to me! I am so upset. This is so much money to me. I was really looking forward to this.,0,170,14,,"  There was newspaper in the box a charger  and q book nothing else !!!!
-They are not responding to me!
-This is so much money to me.
-I was really looking forward to this.",I am so upset.,"Cargo
-Originalty
-Packaging
-Quality",{}
+Quality","{'RATIO': ['GOOD'], 'FAN': ['QUIET'], 'LIFE': ['BAD'], 'DISPLAY': ['BAD'], 'KEYBOARD': ['HARD', 'GOOD', 'COMFORTABLE'], 'KEY': ['BETTER'], 'LAYOUT': ['BETTER'], 'HOME': ['BETTER'], 'EGPU': ['GREAT'], 'PEN': ['GOOD'], 'LAPTOP': ['PERFECT']}"
 ELECTRONICS,LAPTOPS,1,MICROSOFT,negative,"  Let me count the things that don't work....I can't download PDF files from my Gmail account, so much of my email is useless.When I try to login to Steam, no typing interface pops up, so I can't login and access my games.I can't download a Kindle reader, so I can't access my books.I can't access Amazon Prime streaming video, so I can't access videos! NOTHING WORKS!!!In sum, I spent $540 (including tax) on this piece of garbage, and nothing -- absolutely nothing -- I planned to use it for works. Maybe one day Microsoft will work out the kinks. For now, stay away.",0,216,353,,"NOTHING WORKS!!
 !In sum, I spent $540 (including tax) on this piece of garbage, and nothing -- absolutely nothing -- I planned to use it for works.
 Maybe one day Microsoft will work out the kinks.
@@ -373,498 +141,49 @@ For now, stay away.","  Let me count the things that don't work....I can't downl
 Originalty
 Packaging
 Quality",{}
-ELECTRONICS,LAPTOPS,5,Dell,positive,"  This is a perfect lil Chromebook.. With expandable storage.. 2 HDMI ports.. Clear bright screen, not touchscreen... I've had two other Chromebooks in the past and prefer these,, tried doing a tablet but they failed compared to this...I will always recommend a Chromebook",117,0,154,"  This is a perfect lil Chromebook.. With expandable storage.. 2 HDMI ports.. Clear bright screen, not touchscreen...",,"I've had two other Chromebooks in the past and prefer these,, tried doing a tablet but they failed compared to this...I will always recommend a Chromebook","Cargo
+ELECTRONICS,LAPTOPS,1,MICROSOFT,positive,"  Purchased this item trying to make sure I got the right item and non-defective so I went with the one sold by Amazon.com. I opened it and started filling out all my information, applying a screen protector and all of this for nothing but madness. I wasted many hours out of my day just to end up returning this item. This was actually labeled with a label printer as Surface Pro 7 on the box but I wanted to make sure I got the right product which I didn't! I actually got a Surface Pro 6. I did not know if this was an intentional scam for all customers or I just had a fluke. Anyways here are the pictures and now I'll be exchanging the item for this same exact one... I mean an actual Surface Pro 7. MAKE SURE TO CHECK YOUR MODEL ONCE YOU RECEIVE THIS ITEM!",447,156,157,"  Purchased this item trying to make sure I got the right item and non-defective so I went with the one sold by Amazon.com.
+I opened it and started filling out all my information, applying a screen protector and all of this for nothing but madness.
+This was actually labeled with a label printer as Surface Pro 7 on the box but I wanted to make sure I got the right product which I didn't!
+MAKE SURE TO CHECK YOUR MODEL ONCE YOU RECEIVE THIS ITEM!","I actually got a Surface Pro 6.
+Anyways here are the pictures and now I'll be exchanging the item for this same exact one...
+I mean an actual Surface Pro 7.","I wasted many hours out of my day just to end up returning this item.
+I did not know if this was an intentional scam for all customers or I just had a fluke.","Cargo
 Originalty
 Packaging
-Quality","{'CHROMEBOOK': ['PERFECT'], 'SCREEN': ['CLEAR', 'BRIGHT'], 'TOUCHSCREEN': ['CLEAR', 'BRIGHT']}"
-ELECTRONICS,LAPTOPS,5,HP,positive,"  This laptop is exactly what I needed. Plenty of memory and Ram. I didn't want touchscreen because i have used them before on a laptop and was always accidentally hitting the screen.  Plus, the screen always looks dirty.  But this laptop has a nice large touchpad that is that best I've used.  Windows 10 is really versatile and I'm enjoying it also.  The battery seems pretty good.  About 6 to 7 hours from what I can tell.  Also,  has hdmi port so I can just plug it into my tv and display my screen.  I loved watching my Netflix and Lodi in HD.",202,183,154,"But this laptop has a nice large touchpad that is that best I've used.
-Windows 10 is really versatile and I'm enjoying it also.
-The battery seems pretty good.
-I loved watching my Netflix and Lodi in HD.","  This laptop is exactly what I needed.
-Plenty of memory and Ram.
-About 6 to 7 hours from what I can tell.
-Also,  has hdmi port so I can just plug it into my tv and display my screen.","I didn't want touchscreen because i have used them before on a laptop and was always accidentally hitting the screen.
-Plus, the screen always looks dirty.","Cargo
-Originalty
-Packaging
-Quality",{'TOUCHPAD': ['NICE']}
-ELECTRONICS,LAPTOPS,4,Dell,positive,"  I wanted to enter the world of chromebooks, since so many of my students have them (but almost always forget to bring them to tutor sessions). I didn't want to invest a lot of money as I already have a nice desktop PC and a small tablet for entertainment streaming. I also have a nice Dell 11.6 Windows laptop 2 in 1, purchased 4 years ago for tutor use, but it is noticeably slow as Windows is always pokey to load, or chooses to update when I wake the thing, or has to wind through a virus protector, THEN load Chrome with Google docs or slides (even on a desktop shortcut).  That's not so fun when you've got a room full of high schoolers looking for an excuse to get distracted. So I was intrigued by those ads that showed the speed and ease of chromebook for Goggle Docs and Slides. To test my theory, one student and I had a loading race with their chromebook and my older windows 10 Dell (updated, memory cleaned, debugged...so lean and mean as its going to get), and hands down, the chromebook left my old Dell Inspiron 3000 windows 10 in the dust.That brought me to Amazon and this chromebook.This Dell N3481 (as it says on the box) chromebook 11, NON TOUCHSCREEN, is an excellent economical student chromebook which is why I gave it 4 stars. It is a nice back pack size, overall sturdy (though the screen-lid feels like it bends a little which is a bit disturbing but probably harmless), from sleep loads to chrome menu incredibly fast, then opens Google docs or slides incredibly fast, plus has a long life battery. Don't expect to run your favorite Windows programs as this is not that kind of computer. It is a glorified Android (chrome) tablet with nice touch dedicated keyboard for those who are tired of typing with their thumbs for longer composition essays in the Google doc/slide or mobile app formats. So for a student notebook, it is excellent and an extremely good buy at the price of about $160 new (at this time).What it is not: It is not for a professional tutoring business where 2 students, or a small group club, have to look at the same screen at angles. This is NOT IPS nor is it in any way multidirectional. The description where it says it can lay flat to view is an exaggeration at best, misleading in truth. The moment you leave dead center, with an otherwise decent to good quality screen that is bright and sharp enough for Netflix surfing and definitely any browsing or document work, you enter the world of shadows and rank invisibility. That won't make a a bit of difference if you are a single student using your computer to sit at your desk to do homework. It DOES make a BIG difference if you need to be able to view it at off angles.  In order to do that, upgrade to the Dell touchscreen model which includes IPS technology so that the screen is bright and sharp at all angles...flat, tented, side by side two people, small club, etc.The sound is decent to good for one student, and loud enough to listen to over a newer dishwasher while you video watch while cooking. It is tinny and somewhat indistinguishable if you put it up to full so that a group can listen to the video. Buying a reasonably inexpensive USB speaker will clean that up (which I had on hand for proof).And yet...I returned it. The deal breaker was lack of screen angle for my purposes.I love the chrome environment as it fits my tutor needs. If this were for my child to go to high school or even college....I would have been happy. However for what I need in my tutoring business and club coaching, I have returned it to upgrade to the Dell Inspiron Chromebook 11, 2 in 1, touchscreen.  It will be like my old Dell windows 2 in 1 just without the clunky windows 10 bogging down efforts to get to Google work.",2953,518,249,"I didn't want to invest a lot of money as I already have a nice desktop PC and a small tablet for entertainment streaming.
-I also have a nice Dell 11.6 Windows laptop 2 in 1, purchased 4 years ago for tutor use, but it is noticeably slow as Windows is always pokey to load, or chooses to update when I wake the thing, or has to wind through a virus protector, THEN load Chrome with Google docs or slides (even on a desktop shortcut).
-So I was intrigued by those ads that showed the speed and ease of chromebook for Goggle Docs and Slides.
-To test my theory, one student and I had a loading race with their chromebook and my older windows 10 Dell (updated, memory cleaned, debugged...so lean and mean as its going to get), and hands down, the chromebook left my old Dell Inspiron 3000 windows 10 in the dust.That brought me to Amazon and this chromebook.This Dell N3481 (as it says on the box) chromebook 11, NON TOUCHSCREEN, is an excellent economical student chromebook which is why I gave it 4 stars.
-It is a nice back pack size, overall sturdy (though the screen-lid feels like it bends a little which is a bit disturbing but probably harmless), from sleep loads to chrome menu incredibly fast, then opens Google docs or slides incredibly fast, plus has a long life battery.
-Don't expect to run your favorite Windows programs as this is not that kind of computer.
-It is a glorified Android (chrome) tablet with nice touch dedicated keyboard for those who are tired of typing with their thumbs for longer composition essays in the Google doc/slide or mobile app formats.
-So for a student notebook, it is excellent and an extremely good buy at the price of about $160 new (at this time).What it is not: It is not for a professional tutoring business where 2 students, or a small group club, have to look at the same screen at angles.
-The description where it says it can lay flat to view is an exaggeration at best, misleading in truth.
-The moment you leave dead center, with an otherwise decent to good quality screen that is bright and sharp enough for Netflix surfing and definitely any browsing or document work, you enter the world of shadows and rank invisibility.
-In order to do that, upgrade to the Dell touchscreen model which includes IPS technology so that the screen is bright and sharp at all angles...flat, tented, side by side two people, small club, etc.The sound is decent to good for one student, and loud enough to listen to over a newer dishwasher while you video watch while cooking.
-Buying a reasonably inexpensive USB speaker will clean that up (which I had on hand for proof).And yet...I returned it.
-The deal breaker was lack of screen angle for my purposes.I love the chrome environment as it fits my tutor needs.
-If this were for my child to go to high school or even college....I would have been happy.
-It will be like my old Dell windows 2 in 1 just without the clunky windows 10 bogging down efforts to get to Google work.","This is NOT IPS nor is it in any way multidirectional.
-That won't make a a bit of difference if you are a single student using your computer to sit at your desk to do homework.
-It DOES make a BIG difference if you need to be able to view it at off angles.
-It is tinny and somewhat indistinguishable if you put it up to full so that a group can listen to the video.
-However for what I need in my tutoring business and club coaching, I have returned it to upgrade to the Dell Inspiron Chromebook 11, 2 in 1, touchscreen.","  I wanted to enter the world of chromebooks, since so many of my students have them (but almost always forget to bring them to tutor sessions).
-That's not so fun when you've got a room full of high schoolers looking for an excuse to get distracted.","Cargo
-Originalty
-Packaging
-Quality","{'PC': ['NICE'], 'LAPTOP': ['NICE'], 'CHROMEBOOK': ['EXCELLENT'], 'SIZE': ['NICE'], 'PROGRAM': ['FAVORITE'], 'KEYBOARD': ['NICE'], 'BUY': ['GOOD'], 'SCREEN': ['GOOD', 'BRIGHT'], 'CENTER': ['DEAD']}"
-ELECTRONICS,LAPTOPS,4,HP,positive,  I have had one lap top but this one is so nice and so easy to use the buttons are big enough to see I will buy again carom amazon for all my computer needs,157,0,0,  I have had one lap top but this one is so nice and so easy to use the buttons are big enough to see I will buy again carom amazon for all my computer needs,,,"Cargo
-Originalty
-Packaging
-Quality",{'ONE': ['NICE']}
-ELECTRONICS,LAPTOPS,3,Dell,positive,"  Just unboxed this little ditty nd completed the initial set up once I got connected to the internet. That process took less time than it took to open the boxes! First critique is that there is no charging light or indicator - that would be useful so I would know if the Unit was operating or even charging. A backlight to the power ON key would have been useful in a similar vein. It's weight and size is perfect for what I wanted and the touch screen is quite nice and reactive. The keyboard is not quite as springy as I am used to but given the laptop's size and weight that can be forgiven. I wanted something light and portable and I have definitely found that. The most major critique I have however is that contrary to what was advertised on this site - this particular device comes with Windows 10S and NOT Windows. Of course this was only discovered when I tried to make the switch to the much preferred Chrome Browser as opposed to WIndows Edge. I mean they did try to hard sell the Edge browser during set up, but I would much rather prefer Chrome due to it's user friendliness and accessibility across my devices. I feel somewhat hoodwinked by the seller! So now to consult You Tube and Google on how to switch out of S Mode and go about my business. With some more usage I may update this review.",674,635,0,"First critique is that there is no charging light or indicator - that would be useful so I would know if the Unit was operating or even charging.
-A backlight to the power ON key would have been useful in a similar vein.
-It's weight and size is perfect for what I wanted and the touch screen is quite nice and reactive.
-The keyboard is not quite as springy as I am used to but given the laptop's size and weight that can be forgiven.
-I wanted something light and portable and I have definitely found that.
-I mean they did try to hard sell the Edge browser during set up, but I would much rather prefer Chrome due to it's user friendliness and accessibility across my devices.","  Just unboxed this little ditty nd completed the initial set up once I got connected to the internet.
-That process took less time than it took to open the boxes!
-The most major critique I have however is that contrary to what was advertised on this site - this particular device comes with Windows 10S and NOT Windows.
-Of course this was only discovered when I tried to make the switch to the much preferred Chrome Browser as opposed to WIndows Edge.
-I feel somewhat hoodwinked by the seller!
-So now to consult You Tube and Google on how to switch out of S Mode and go about my business.
-With some more usage I may update this review.",,"Cargo
-Originalty
-Packaging
-Quality","{'BACKLIGHT': ['USEFUL'], 'WEIGHT': ['PERFECT', 'NICE'], 'SIZE': ['PERFECT'], 'SCREEN': ['NICE']}"
-ELECTRONICS,LAPTOPS,3,HP,negative,"  I'm not sure if it's just my computer, but I've had it for a month now and I still have problems. From the first day I received it my audio and video fall out of sync when using the internet, no matter what site I am on. I have to pause a video multiple times through out so that the video will catch back up with the audio. However, Netflix and Hulu do not have the same problems. I have noticed that Netflix will get slightly out of sync, but if I quickly pause it the video catches up in just a few seconds. Otherwise, the laptop is a pretty good laptop (besides there being a small black border on the bottom and left side of the screen that can be irritating to perfectionists).",172,232,279,"Otherwise, the laptop is a pretty good laptop (besides there being a small black border on the bottom and left side of the screen that can be irritating to perfectionists).","I have to pause a video multiple times through out so that the video will catch back up with the audio.
-I have noticed that Netflix will get slightly out of sync, but if I quickly pause it the video catches up in just a few seconds.","  I'm not sure if it's just my computer, but I've had it for a month now and I still have problems.
-From the first day I received it my audio and video fall out of sync when using the internet, no matter what site I am on.
-However, Netflix and Hulu do not have the same problems.","Cargo
-Originalty
-Packaging
-Quality","{'PROBLEM': ['NOT SAME'], 'LAPTOP': ['GOOD']}"
-ELECTRONICS,LAPTOPS,2,Dell,negative,"  For some reason, this Chromebook model is very slow. It can take 45 seconds or longer to load Gmail or Google Drive, and it has been slow on loading Amazon pages as well. I know it is not my wi-fi connection because I have other computers that load normally. I've also had some weird functionality problems with Amazon on this computer - I can't always select check-boxes. I've used three different models of Dell Chromebooks over the last three years, and I am a big fan of them, which is why I bought this model. I'm not sure what is different, but it is very frustrating to use this one. I'm probably going to return it.",259,175,189,"It can take 45 seconds or longer to load Gmail or Google Drive, and it has been slow on loading Amazon pages as well.
-I've used three different models of Dell Chromebooks over the last three years, and I am a big fan of them, which is why I bought this model.","  For some reason, this Chromebook model is very slow.
-I know it is not my wi-fi connection because I have other computers that load normally.
-I'm probably going to return it.","I've also had some weird functionality problems with Amazon on this computer - I can't always select check-boxes.
-I'm not sure what is different, but it is very frustrating to use this one.","Cargo
-Originalty
-Packaging
-Quality","{'PROBLEM': ['WEIRD'], 'FAN': ['BIG']}"
-ELECTRONICS,LAPTOPS,2,HP,negative,"  It is a nice external looking laptop, but I am really disappointed with its performance, it was bought for educational purposes, in order to give opportunities for low-income artist children in Venezuela to learn design applications, but from the beginning the computer came with pixels dead on the screen and unfortunately the processor has not been enough for tasks that our old i5 computers that we have if they could do. I hope in the future the HP brand can recover its prestige, at the moment we are considering buying another pc for next year",124,0,426,"I hope in the future the HP brand can recover its prestige, at the moment we are considering buying another pc for next year",,"  It is a nice external looking laptop, but I am really disappointed with its performance, it was bought for educational purposes, in order to give opportunities for low-income artist children in Venezuela to learn design applications, but from the beginning the computer came with pixels dead on the screen and unfortunately the processor has not been enough for tasks that our old i5 computers that we have if they could do.","Cargo
-Originalty
-Packaging
-Quality","{'LAPTOP': ['DISAPPOINTED', 'NICE'], 'CHILD': ['LOW-'], 'PIXEL': ['DEAD']}"
-ELECTRONICS,LAPTOPS,1,Dell,neutral,  I purchased a touchscreen but received a regular laptop. Shipping was on time but not what I paid for.,0,104,0,,"  I purchased a touchscreen but received a regular laptop.
-Shipping was on time but not what I paid for.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-ELECTRONICS,LAPTOPS,1,HP,negative,  battery does not work. I got a replacement battery and still after a week it stop working.,0,24,67,,  battery does not work.,I got a replacement battery and still after a week it stop working.,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,5,Band-Aid,positive,"  Manufacturers make so many different types of medical tape now that it's hard to keep up with what's on the market. I needed some waterproof tape and I was glad to see that it was the same Johnson & Johnson tape that I remember from my childhood. I do believe it's a little thinner now, but it serves its purpose. It did everything that I required it to do. If you're in need of waterproof medical tape, you can't go wrong with ordering this product.",223,110,117,"I needed some waterproof tape and I was glad to see that it was the same Johnson & Johnson tape that I remember from my childhood.
-If you're in need of waterproof medical tape, you can't go wrong with ordering this product.","I do believe it's a little thinner now, but it serves its purpose.
-It did everything that I required it to do.",  Manufacturers make so many different types of medical tape now that it's hard to keep up with what's on the market.,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,5,ComfyBrace,positive,"  UPDATE!!!  February 18, 2019I reviewed these arthritis gloves a couple of months ago, and I feel that an update would be necessary. I think my review underestimated the gloves and that's why I want to clarify. These are the best arthritis gloves around! After trying numerous different brands I can confidently tell you that this one is a definite winner!! It's super soft and comfortable for all day wear. I wear it to work and it doesn't interfere with my typing and paperwork at all.These gloves provide me with the perfect compression in my fingers so I finally have some pain relief when I wear them. I was so excited with this find, I make sure to share this big secret with all my family, friends, and acquaintances that might benefit from it. My cousin doesn't stop thanking me, she says these gloves changed her whole life. I totally believe her.The quality is top grade. I am constantly washing it and drying it, and by just looking at the gloves you would think it's brand new. I am going to place an order right now for an additional pair so I can switch off between the two at night.I recommend these highly and I will continue to do so. I hope with this I can bring relief to soo many people that are desperately looking for it.Don't hesitate! Buy your pair right now!!!",939,268,77,"These are the best arthritis gloves around!
-After trying numerous different brands I can confidently tell you that this one is a definite winner!!
-It's super soft and comfortable for all day wear.
-I wear it to work and it doesn't interfere with my typing and paperwork at all.These gloves provide me with the perfect compression in my fingers so I finally have some pain relief when I wear them.
-I was so excited with this find, I make sure to share this big secret with all my family, friends, and acquaintances that might benefit from it.
-My cousin doesn't stop thanking me, she says these gloves changed her whole life.
-I totally believe her.The quality is top grade.
-I am going to place an order right now for an additional pair so I can switch off between the two at night.I recommend these highly and I will continue to do so.
-I hope with this I can bring relief to soo many people that are desperately looking for it.Don't hesitate!","  UPDATE!!!
-February 18, 2019I reviewed these arthritis gloves a couple of months ago, and I feel that an update would be necessary.
-I am constantly washing it and drying it, and by just looking at the gloves you would think it's brand new.
-Buy your pair right now!!
-!",I think my review underestimated the gloves and that's why I want to clarify.,"Cargo
-Originalty
-Packaging
-Quality","{'GLOVE': ['GOOD'], 'WINNER': ['DEFINITE'], 'COMPRESSION': ['PERFECT'], 'GRADE': ['TOP']}"
-SPORTS,General,5,Fit Simplify,positive,"  The rubber in these bands is great quality and very durable. I purchased another brand before these and it was much thinner and I stretched it out in a matter of a few months.  I feel like the thicker gauge rubber will make these last much longer!  Plus, for a little more money I got a variety pack of band strengths and the other brand I purchased I only got one band!",255,114,0,"  The rubber in these bands is great quality and very durable.
-I feel like the thicker gauge rubber will make these last much longer!
-Plus, for a little more money I got a variety pack of band strengths and the other brand I purchased I only got one band!",I purchased another brand before these and it was much thinner and I stretched it out in a matter of a few months.,,"Cargo
-Originalty
-Packaging
-Quality",{'QUALITY': ['GREAT']}
-SPORTS,General,5,Fitbit,positive,"  I absolutely love this band.  It has gotten softer the more I wear it and is so easy to get on and off.  I generally use the band my fitbit came with for work outs, kayaking, riding horses etc., so it is important that attachment and removal is quick and easy.  Looks great with any outfit and makes my fitbit look more stylish for dresser events (because I am addicted and MUST wear it all the time!).  Buy the band, you won't regret it.",436,0,0,"  I absolutely love this band.
-It has gotten softer the more I wear it and is so easy to get on and off.
-I generally use the band my fitbit came with for work outs, kayaking, riding horses etc., so it is important that attachment and removal is quick and easy.
-Looks great with any outfit and makes my fitbit look more stylish for dresser events (because I am addicted and MUST wear it all the time!).
-Buy the band, you won't regret it.",,,"Cargo
-Originalty
-Packaging
-Quality","{'ATTACHMENT': ['QUICK', 'EASY'], 'REMOVAL': ['EASY']}"
-SPORTS,General,5,Hoyle,positive,"  We like these cards, they are able to be used outdoors, in the pool, or inside.  They wash up well, and aren't ruined if you get greasy fingerprints on them during a picnic or while eating.  They are very reasonably priced, however, it takes some getting used to shuffling without spraying cards all over the table (it is good for a few laughs though)!  They are somewhat slippery holding them, especially if you have a lot (10+) in your hand and they slide around in the card holders we have.  Not sure if that is the cards' fault or the holder design.Overall, for the price they are not a bad purchase.  To be honest, we have others, somewhat textured, that we like better.But the design is very fun, and different.",604,0,109,"  We like these cards, they are able to be used outdoors, in the pool, or inside.
-They wash up well, and aren't ruined if you get greasy fingerprints on them during a picnic or while eating.
-They are very reasonably priced, however, it takes some getting used to shuffling without spraying cards all over the table (it is good for a few laughs though)!
-They are somewhat slippery holding them, especially if you have a lot (10+) in your hand and they slide around in the card holders we have.
-To be honest, we have others, somewhat textured, that we like better.But the design is very fun, and different.",,"Not sure if that is the cards' fault or the holder design.Overall, for the price they are not a bad purchase.","Cargo
-Originalty
-Packaging
-Quality","{'LAUGH': ['FEW'], 'PURCHASE': ['NOT BAD'], 'DESIGN': ['FUN']}"
-SPORTS,General,5,OKELA,positive,"  This swim cap is Strong materia, good quality, stretches well and holds all of my hair with room, covers my ears well which is great to help prevent water getting in.",168,0,0,"  This swim cap is Strong materia, good quality, stretches well and holds all of my hair with room, covers my ears well which is great to help prevent water getting in.",,,"Cargo
-Originalty
-Packaging
-Quality","{'MATERIA': ['STRONG'], 'QUALITY': ['GOOD']}"
-SPORTS,General,5,TaylorMade,neutral,  So far so good. I have used it a few times at speeds of up to 40 mph for 45 minutes. The flag and this mount have held up. No problems so far.,17,106,19,  So far so good.,"I have used it a few times at speeds of up to 40 mph for 45 minutes.
-The flag and this mount have held up.",No problems so far.,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,4,Band-Aid,negative,"  I was not able to view back of box where size is shown.  Some reviews stated 1” x 3”.  Not so.  The width is 3/4”, with actual width of gauze pad being only 1/2”.  Band-Aid brand, so you know they work. Deducting 1 star because of unclear description (size).  I needed a full 1” x 3”.",0,225,55,,"  I was not able to view back of box where size is shown.
-Some reviews stated 1” x 3”.
-Not so.
-The width is 3/4”, with actual width of gauze pad being only 1/2”.
-Band-Aid brand, so you know they work.
-I needed a full 1” x 3”.",Deducting 1 star because of unclear description (size).,"Cargo
-Originalty
-Packaging
-Quality",{'DESCRIPTION': ['UNCLEAR']}
-SPORTS,General,4,Fit Simplify,positive,"  I really just wanted bands to help with form and resistance while doing leg press, but with the WAP release of Cardi B, I felt undying need of making the booty pop. I wanted something that would be twerk worthy, but science said that most of that is genetics. I could gain more weight, but that would probably go straight to the tummy and make it stick out farther than my breasts. At least these bands help my booty workout, so someday you'll be able to bounce a quarter off it.",481,0,0,"  I really just wanted bands to help with form and resistance while doing leg press, but with the WAP release of Cardi B, I felt undying need of making the booty pop.
-I wanted something that would be twerk worthy, but science said that most of that is genetics.
-I could gain more weight, but that would probably go straight to the tummy and make it stick out farther than my breasts.
-At least these bands help my booty workout, so someday you'll be able to bounce a quarter off it.",,,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,4,Fitbit,positive,"  I'm a bit surprised by the negative reviews here, I am happy with the band. I previously bought a cheap knockoff that was terribly made, and this is much, much nicer (of course, considering the price, it should be good). I haven't had any problems with rashes or the clasp as others mentioned...",152,0,144,"  I'm a bit surprised by the negative reviews here, I am happy with the band.
-I haven't had any problems with rashes or the clasp as others mentioned...",,"I previously bought a cheap knockoff that was terribly made, and this is much, much nicer (of course, considering the price, it should be good).","Cargo
-Originalty
-Packaging
-Quality",{'REVIEW': ['NEGATIVE']}
-SPORTS,General,4,Hoyle,positive,"  I thought this deck would be a nice addition to my collection. However, when the deck arrived it didn't look like the photo on the page. It's still a nice-looking deck, as Hoyle/Bicycle decks tend to be, but be advised that it's a standard deck that is a mid-to-dark pink instead of red or blue.",64,158,73,  I thought this deck would be a nice addition to my collection.,"It's still a nice-looking deck, as Hoyle/Bicycle decks tend to be, but be advised that it's a standard deck that is a mid-to-dark pink instead of red or blue.","However, when the deck arrived it didn't look like the photo on the page.","Cargo
-Originalty
-Packaging
-Quality","{'ADDITION': ['NICE'], 'LOOK': ['NICE']}"
-SPORTS,General,4,OKELA,positive,"  If you want a swim cap that fits, doesn't rip easily, and is just a swim cap... this is great.  I was hoping for a miracle cap to keep my hair dry and protected from the chlorine since I was swimming every day and having to color my hair more often than not due to the chlorine.  Have yet to find one!  But, this cap is truly a great cap for swimmers if your main focus is not protecting your hair as mine is.  :)",389,21,0,"  If you want a swim cap that fits, doesn't rip easily, and is just a swim cap... this is great.
-I was hoping for a miracle cap to keep my hair dry and protected from the chlorine since I was swimming every day and having to color my hair more often than not due to the chlorine.
-But, this cap is truly a great cap for swimmers if your main focus is not protecting your hair as mine is.
-:)",Have yet to find one!,,"Cargo
-Originalty
-Packaging
-Quality",{'CAP': ['GREAT']}
-SPORTS,General,4,TaylorMade,positive,  easy to mount,15,0,0,  easy to mount,,,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,3,Band-Aid,positive,"  I used this tape to secure my big toe (turf toe). I wrapped the tape around my foot three times. Not too tight. Unfortunately, when the day was over, I unwrapped my foot and found that the tape tore off my skin.",51,61,99,  I used this tape to secure my big toe (turf toe).,"I wrapped the tape around my foot three times.
-Not too tight.","Unfortunately, when the day was over, I unwrapped my foot and found that the tape tore off my skin.","Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,3,Fit Simplify,positive,"  I have had these bands for several weeks, I use them daily, and thus far they have been perfect. I had never really integrated resistance band exercises into my routine but I am glad i did. These bands are great for a bunch of very effective workouts on your upper and lower body. I wasn't sure how best to use them but luckily they come with a very straightforward pamphlet that covers a bunch of great excercises. The carrying case is also a nice plus because without it they would add clutter for sure. I definitely recommend! Edit: unfortunately after a month or so my heavy has ripped...so not quite as durable as I had hoped.",633,0,0,"  I have had these bands for several weeks, I use them daily, and thus far they have been perfect.
-I had never really integrated resistance band exercises into my routine but I am glad i did.
-These bands are great for a bunch of very effective workouts on your upper and lower body.
-I wasn't sure how best to use them but luckily they come with a very straightforward pamphlet that covers a bunch of great excercises.
-The carrying case is also a nice plus because without it they would add clutter for sure.
-I definitely recommend!
-Edit: unfortunately after a month or so my heavy has ripped...so not quite as durable as I had hoped.",,,"Cargo
-Originalty
-Packaging
-Quality","{'BAND': ['GREAT'], 'WORKOUT': ['EFFECTIVE'], 'BODY': ['LOW'], 'EXCERCISE': ['GREAT'], 'PLUS': ['NICE']}"
-SPORTS,General,3,Fitbit,positive,"  This band was great for 9 months...until the plastic connectors broke.  I am so frustrated with FitBit bands.  I bought the FitBit Alta HR because I have had 2 FitBit Charge trackers and the bands bubbled up and eventually broke on both of them.  I thought a changeable band would make he tracker last longer.  Well, it did, but now I have to buy a new band every 6-9 months.  I would love for there be a quality product that lasts.",193,62,172,"  This band was great for 9 months...until the plastic connectors broke.
-Well, it did, but now I have to buy a new band every 6-9 months.
-I would love for there be a quality product that lasts.",I thought a changeable band would make he tracker last longer.,"I am so frustrated with FitBit bands.
-I bought the FitBit Alta HR because I have had 2 FitBit Charge trackers and the bands bubbled up and eventually broke on both of them.","Cargo
-Originalty
-Packaging
-Quality",{'BAND': ['GREAT']}
-SPORTS,General,3,Hoyle,positive,"  These cards look really awesome, however I noticed that the United States playing Card company has not given each jack, queen, and king their own unique look.  Instead the King of Hearts is used for every king, the queen of hearts is used for every queen, and the jack of diamonds is used for every jack.  No one-eyed jack, or one-eyed king, and every king turns suicidal.  The colors are interesting being both orange and lime.  The quality of the cards themselves are also quite nice.  The beautiful Hoyle Shellback is also used.  A good deck, but could be improved upon.MDH",360,144,66,"  These cards look really awesome, however I noticed that the United States playing Card company has not given each jack, queen, and king their own unique look.
-The colors are interesting being both orange and lime.
-The quality of the cards themselves are also quite nice.
-The beautiful Hoyle Shellback is also used.
-A good deck, but could be improved upon.MDH","Instead the King of Hearts is used for every king, the queen of hearts is used for every queen, and the jack of diamonds is used for every jack.","No one-eyed jack, or one-eyed king, and every king turns suicidal.","Cargo
-Originalty
-Packaging
-Quality","{'STATE': ['UNITED'], 'COLOR': ['INTERESTING'], 'QUALITY': ['NICE'], 'HOYLE': ['BEAUTIFUL'], 'DECK': ['GOOD']}"
-SPORTS,General,3,OKELA,negative,"  Se siente cómodo y es un buen material , pero , se moja mi cabello de todas maneras. He leído otras reseñas que le mantiene el cabello seco , ese no es mi caso. Le daría 5 estrellas , pero no es lo que busco. Quiero un gorro que aunque mantenga la mayoría del cabello seco aunque se moje un poco las esquinas , voy regularmente a la piscina y quiero proteger mi cabello.",0,248,123,,"  Se siente cómodo y es un buen material , pero , se moja mi cabello de todas maneras.
-Quiero un gorro que aunque mantenga la mayoría del cabello seco aunque se moje un poco las esquinas , voy regularmente a la piscina y quiero proteger mi cabello.","He leído otras reseñas que le mantiene el cabello seco , ese no es mi caso.
-Le daría 5 estrellas , pero no es lo que busco.","Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,3,TaylorMade,positive,"  I really wanted to like this golf glove, but it wasn't very durable and started coming apart prematurely after just a couple uses. Your mileage may vary...",132,24,0,"  I really wanted to like this golf glove, but it wasn't very durable and started coming apart prematurely after just a couple uses.",Your mileage may vary...,,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,2,Band-Aid,negative,"  Maybe I got a bad batch or something because every one of these is a pain to get open.  The white removable paper doesn't come off easily, so it requires some fiddling about to get it loose.  One applied, it seems fine.",27,0,191,"One applied, it seems fine.",,"  Maybe I got a bad batch or something because every one of these is a pain to get open.
-The white removable paper doesn't come off easily, so it requires some fiddling about to get it loose.","Cargo
-Originalty
-Packaging
-Quality",{'BATCH': ['BAD']}
-SPORTS,General,2,Fit Simplify,positive,  These bands roll up as soon as you put them on and start moving. Making then feel more like a tourniquet than a resistance band.,63,66,0,Making then feel more like a tourniquet than a resistance band.,  These bands roll up as soon as you put them on and start moving.,,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,2,Fitbit,positive,"  I like the Fitbit and the band but The band keeps coming off. This is my second band on the Fitbit and doing the same thing (last one ordered May18, 2018 through Amazon. At $28 a pop, this isn't cost effective. I may try a cheaper brand to see if it is any better. Luckily I haven't lost the Fitbit but it's scratched from falling on the ground when band suddenly pops off.",334,0,40,"  I like the Fitbit and the band but The band keeps coming off.
-This is my second band on the Fitbit and doing the same thing (last one ordered May18, 2018 through Amazon.
-I may try a cheaper brand to see if it is any better.
-Luckily I haven't lost the Fitbit but it's scratched from falling on the ground when band suddenly pops off.",,"At $28 a pop, this isn't cost effective.","Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,2,Hoyle,positive,"  Hoyle, if you're reading this--do two things: add a texture to the cards so they're not so slippery, and make the case slightly taller so the whole deck can sit in the ""well"" while playing or taking a break. These cards look good (but not great, a little cheap looking) but I've gotten similar or better cards for less $. Was hoping the brand-name would bring higher quality.",377,0,0,"  Hoyle, if you're reading this--do two things: add a texture to the cards so they're not so slippery, and make the case slightly taller so the whole deck can sit in the ""well"" while playing or taking a break.
-These cards look good (but not great, a little cheap looking) but I've gotten similar or better cards for less $.
-Was hoping the brand-name would bring higher quality.",,,"Cargo
-Originalty
-Packaging
-Quality",{'CARD': ['GOOD']}
-SPORTS,General,2,OKELA,negative,  This is not made for a person with a lot of hair my daughter is Ethnic and has to take swim class that was the reason for the purchase but it broke soon as she tried to put it on.,0,0,181,,,  This is not made for a person with a lot of hair my daughter is Ethnic and has to take swim class that was the reason for the purchase but it broke soon as she tried to put it on.,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,2,TaylorMade,positive,"  I'm a 8 handicap and was looking to buy some balls that I didn't mind playing when practicing and or when the drives are not going great.  I've used other cheap balls and other than around the green I can't tell much difference than the premium balls.  This one just lacks in all areas to me.And I'm not sure why it carries the ""distance"" logo.  I hit my normal ball at least 10-15 yards further than this hard ball plus it is pretty bad around the green.  It will stop with a lob wedge on soft greens like Bent, but on hard Bermuda greens, good luck.So for me, I definitely will not buy again even if cheap.  I bought two dozen and gave the last dozen away.",151,161,341,"It will stop with a lob wedge on soft greens like Bent, but on hard Bermuda greens, good luck.So for me, I definitely will not buy again even if cheap.","I've used other cheap balls and other than around the green I can't tell much difference than the premium balls.
-I bought two dozen and gave the last dozen away.","  I'm a 8 handicap and was looking to buy some balls that I didn't mind playing when practicing and or when the drives are not going great.
-This one just lacks in all areas to me.And I'm not sure why it carries the ""distance"" logo.
-I hit my normal ball at least 10-15 yards further than this hard ball plus it is pretty bad around the green.","Cargo
-Originalty
-Packaging
-Quality","{'BALL': ['HARD'], 'GREEN': ['HARD'], 'LUCK': ['GOOD']}"
-SPORTS,General,1,Band-Aid,positive,"  I purchased a box of Band-Aid Brand Tru-Stay Clear Spots Bandages for Discreet First Aid, All One Size, 50 Count and I was so surprised with the low quality of the product.  I have been buying band-aid brand bandages for years and years and have always been pleased with the results until now. First, it was difficult to open the individual bandages and I had to tear a circle around the whole thing to get it out.  Next, it was challenging to get the plastic things off the bandage.  Third, the band-aid did a horrible job sticking. I understand that these are not waterproof but one tiny drop of water and it came right off.  Again, I have been buying band-aid brand products for years and have been pleased in the past which is why I was surprised with the very low quality.",512,0,262,"  I purchased a box of Band-Aid Brand Tru-Stay Clear Spots Bandages for Discreet First Aid, All One Size, 50 Count and I was so surprised with the low quality of the product.
-I have been buying band-aid brand bandages for years and years and have always been pleased with the results until now.
-Next, it was challenging to get the plastic things off the bandage.
-Again, I have been buying band-aid brand products for years and have been pleased in the past which is why I was surprised with the very low quality.",,"First, it was difficult to open the individual bandages and I had to tear a circle around the whole thing to get it out.
-Third, the band-aid did a horrible job sticking.
-I understand that these are not waterproof but one tiny drop of water and it came right off.","Cargo
-Originalty
-Packaging
-Quality","{'SPOTS': ['CLEAR'], 'QUALITY': ['LOW'], 'JOB': ['HORRIBLE'], 'DROP': ['TINY']}"
-SPORTS,General,1,Fit Simplify,negative,"  Very short and thin, they just roll up and down my limbs and I'm 5'3” so I have no idea how anyone taller could use them and I am very afraid they're going to break and snap me",0,0,178,,,"  Very short and thin, they just roll up and down my limbs and I'm 5'3” so I have no idea how anyone taller could use them and I am very afraid they're going to break and snap me","Cargo
-Originalty
-Packaging
-Quality",{}
+Quality",{'SCAM': ['INTENTIONAL']}
 SPORTS,General,1,Fitbit,negative,  Left a strange rash which a week later I still have. Horrible product! Save your money!!,16,1,72,Save your money!,!,"  Left a strange rash which a week later I still have.
 Horrible product!","Cargo
 Originalty
 Packaging
 Quality","{'RASH': ['STRANGE'], 'PRODUCT': ['HORRIBLE']}"
-SPORTS,General,1,Hoyle,neutral,  The cards that I received are in different packaging than those in the photo representing the product.,0,104,0,,  The cards that I received are in different packaging than those in the photo representing the product.,,"Cargo
-Originalty
-Packaging
-Quality",{}
-SPORTS,General,1,OKELA,positive,"  This product works too well. It gave a great lift and appearance, & my friend and I wore it on a night out; however when taking the tape off carefully, it ripped not only mine but my friends skin off. I have scars all over my boobs and so does she—my skin has been raw for days. DO NOT use this product if you are unaware of the risks from the adhesive or tape. DO NOT use this product if you have sensitive or delicate skin. Although this product works, I am giving it a 1 star review due to the injury it caused for both of us.",266,77,186,"  This product works too well.
-It gave a great lift and appearance, & my friend and I wore it on a night out; however when taking the tape off carefully, it ripped not only mine but my friends skin off.
-DO NOT use this product if you have sensitive or delicate skin.",I have scars all over my boobs and so does she—my skin has been raw for days.,"DO NOT use this product if you are unaware of the risks from the adhesive or tape.
-Although this product works, I am giving it a 1 star review due to the injury it caused for both of us.","Cargo
-Originalty
-Packaging
-Quality","{'LIFT': ['GREAT'], 'APPEARANCE': ['GREAT'], 'SKIN': ['DELICATE']}"
-SPORTS,General,1,TaylorMade,positive,"  On patrol and flying patrol flag from antenna.  Moving along at 20 knts and flag looked good, several minutes later it's gone.  Would not buy again.  Fastened securely but would not hold.  Surprised for a Taylor Made item.  $9.95 for clips and $26.00 for a new flag. Ouch!",150,118,0,"Moving along at 20 knts and flag looked good, several minutes later it's gone.
-Fastened securely but would not hold.
-Surprised for a Taylor Made item.","  On patrol and flying patrol flag from antenna.
-Would not buy again.
-$9.95 for clips and $26.00 for a new flag.
-Ouch!",,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,5,Brita,positive,  Fits perfectly and does the job.,34,0,0,  Fits perfectly and does the job.,,,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,5,EveryDrop by Whirlpool,positive,  This Every Drop Whirlpool Refrigerator filter fit my refrigerator perfectly. I was concerned since Whilrlpool no longer makes their own filters. I had tried a generic one previously and it became stuck in the housing. The whole housing needed to be replaced so I won't try that again.,78,66,140,  This Every Drop Whirlpool Refrigerator filter fit my refrigerator perfectly.,The whole housing needed to be replaced so I won't try that again.,"I was concerned since Whilrlpool no longer makes their own filters.
-I had tried a generic one previously and it became stuck in the housing.","Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,5,Tenmiro,positive,  We hooked these up to our Tenmiro 65 foot set for an extension and they work perfectly. The connectors are the same match and the remote control works for these too. From what I can tell they are exactly the same spools.,89,132,0,  We hooked these up to our Tenmiro 65 foot set for an extension and they work perfectly.,"The connectors are the same match and the remote control works for these too.
-From what I can tell they are exactly the same spools.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,4,Brita,positive,  works well,12,0,0,  works well,,,"Cargo
-Originalty
-Packaging
-Quality",{}
 TOOLS & HOME IMPROVEMENT,General,4,EveryDrop by Whirlpool,positive,  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators.  The price on Amazon was competitive and delivery can't be beat.  I only gave 4 stars because it didn't fit up quite as good as in the past.,138,129,0,"The price on Amazon was competitive and delivery can't be beat.
 I only gave 4 stars because it didn't fit up quite as good as in the past.",  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators.,,"Cargo
 Originalty
 Packaging
 Quality",{'PRICE': ['COMPETITIVE']}
-TOOLS & HOME IMPROVEMENT,General,4,Tenmiro,positive,"  installation is so simple and I like that is USB so it can be removed and charge or place it in different places, not bright as I trough but still good, motion sensor is weird sometimes it works really good, many times you think that it has not charge cause don't react and you have to wave closer to make it work, but when it works is really nice you just have to move closer and they turn on, that's convenient and helpful when you cooking or cleaning.Pros: so easy to use and you can place it anywhere, is bright enough as a second light like for late nite kitchen uses, maybe in a closet can be really helpful.Cons: not so bright so if you have a long kitchen you will need more then one, motion can be better, a little ticker.",733,0,0,"  installation is so simple and I like that is USB so it can be removed and charge or place it in different places, not bright as I trough but still good, motion sensor is weird sometimes it works really good, many times you think that it has not charge cause don't react and you have to wave closer to make it work, but when it works is really nice you just have to move closer and they turn on, that's convenient and helpful when you cooking or cleaning.Pros: so easy to use and you can place it anywhere, is bright enough as a second light like for late nite kitchen uses, maybe in a closet can be really helpful.Cons: not so bright so if you have a long kitchen you will need more then one, motion can be better, a little ticker.",,,"Cargo
-Originalty
-Packaging
-Quality","{'INSTALLATION': ['GOOD', 'NOT BRIGHT', 'NICE'], 'SENSOR': ['WEIRD'], 'MOTION': ['GOOD']}"
-TOOLS & HOME IMPROVEMENT,General,3,Brita,positive,"  Tbh I was skeptical of these from the beginning with the way they were packaged when they came and the fact that they were bone dry (which does not necessarily mean they are bad). But I used them none the same. I thought it was my imagination that the water tasted different which perhaps it is, but since the filter hardly lasted 2 months before being at 0% (not 25%) I think I would've been better off to go directly with the Brita filters.  The filters I got directly from Brita each lasted 4-6 months, the water tasted cleaner and they were damp when I got them not sure if that makes a difference in the quality (I did some reading and the verdict was split). They were not that much more so the extra cost would be worth the extra life. It's also not like I just increased my water intake if anything I've been drinking less water.",530,30,276,"I thought it was my imagination that the water tasted different which perhaps it is, but since the filter hardly lasted 2 months before being at 0% (not 25%) I think I would've been better off to go directly with the Brita filters.
-The filters I got directly from Brita each lasted 4-6 months, the water tasted cleaner and they were damp when I got them not sure if that makes a difference in the quality (I did some reading and the verdict was split).
-They were not that much more so the extra cost would be worth the extra life.",But I used them none the same.,"  Tbh I was skeptical of these from the beginning with the way they were packaged when they came and the fact that they were bone dry (which does not necessarily mean they are bad).
-It's also not like I just increased my water intake if anything I've been drinking less water.","Cargo
-Originalty
-Packaging
-Quality",{'COST': ['WORTH']}
 TOOLS & HOME IMPROVEMENT,General,3,EveryDrop by Whirlpool,negative,"  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400. Product arrived in like-new condition and appeared to have not been installed, as I had suspected. On attempting to install the filter, it would insert but not rotate into place. Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place. No leaks and water tastes fine. Without having to hand fit, it would be 5 stars.",126,318,130,  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400.,"On attempting to install the filter, it would insert but not rotate into place.
 Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place.
 Without having to hand fit, it would be 5 stars.","Product arrived in like-new condition and appeared to have not been installed, as I had suspected.
 No leaks and water tastes fine.","Cargo
 Originalty
 Packaging
-Quality","{'LEAK': ['FINE'], 'TASTE': ['FINE']}"
-TOOLS & HOME IMPROVEMENT,General,3,Tenmiro,positive,"  Easy to install! The connection between the remote and sensor pad can be a little glitchy. It's not as bright as we wanted but gives off some light. Not meant for illumination, more of an added affect",18,125,57,  Easy to install!,"The connection between the remote and sensor pad can be a little glitchy.
-Not meant for illumination, more of an added affect",It's not as bright as we wanted but gives off some light.,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,2,Brita,negative,"  I was a little skeptical when I saw the picture of these on Amazon, because the top of these filters slightly vary to the original filter that came with the pitcher, but as the product states that it is a replacement for Brita pitchers, I thought this would work just as well (I think the incompatibility exception was only in relation to a more specialized pitcher unit, which I don't have). However, as others customers have noted, the filter does not have a sealed/tight fit at all. In fact, if the pitcher is filled to 3/4 or more full, the water displaces the filter, so that it actually rises out of the slot. In addition, I am suspicious of the fact that the water filters a lot quicker than the original filter. End result is that it is a pain. I wouldn't buy these again.",394,157,229,"  I was a little skeptical when I saw the picture of these on Amazon, because the top of these filters slightly vary to the original filter that came with the pitcher, but as the product states that it is a replacement for Brita pitchers, I thought this would work just as well (I think the incompatibility exception was only in relation to a more specialized pitcher unit, which I don't have).","In fact, if the pitcher is filled to 3/4 or more full, the water displaces the filter, so that it actually rises out of the slot.
-I wouldn't buy these again.","However, as others customers have noted, the filter does not have a sealed/tight fit at all.
-In addition, I am suspicious of the fact that the water filters a lot quicker than the original filter.
-End result is that it is a pain.","Cargo
-Originalty
-Packaging
-Quality","{'FILTER': ['NOT ORIGINAL', 'ORIGINAL']}"
-TOOLS & HOME IMPROVEMENT,General,2,EveryDrop by Whirlpool,negative,"  This replacement filter did not last as long as our original filter which came with the ice machine. Our original filter lasted 7 months, this one only lasted 4 months. We had a repair man come to service our ice machine because it stopped making ice. We thought our ice machine was broken but turned out this filter was already clogged. He said these filters have problems with clogging too soon. He also said you can run the ice machine without the filter. This is what we will do because buying a filter every four months is not economical.",170,145,228,"  This replacement filter did not last as long as our original filter which came with the ice machine.
-Our original filter lasted 7 months, this one only lasted 4 months.","He also said you can run the ice machine without the filter.
-This is what we will do because buying a filter every four months is not economical.","We had a repair man come to service our ice machine because it stopped making ice.
-We thought our ice machine was broken but turned out this filter was already clogged.
-He said these filters have problems with clogging too soon.","Cargo
-Originalty
-Packaging
-Quality",{'FILTER': ['ORIGINAL']}
-TOOLS & HOME IMPROVEMENT,General,2,Tenmiro,negative,  The power box stopped working after one night of use and the lights were not nearly as bright as they should have been.,0,0,121,,,  The power box stopped working after one night of use and the lights were not nearly as bright as they should have been.,"Cargo
-Originalty
-Packaging
-Quality",{'LIGHT': ['NOT BRIGHT']}
-TOOLS & HOME IMPROVEMENT,General,1,Brita,negative,  The top plastic broke off when I was cleaning it,0,0,50,,,  The top plastic broke off when I was cleaning it,"Cargo
-Originalty
-Packaging
-Quality",{'PLASTIC': ['TOP']}
+Quality","{'TASTE': ['FINE'], 'LEAK': ['FINE']}"
 TOOLS & HOME IMPROVEMENT,General,1,EveryDrop by Whirlpool,positive,"  I sent back to get credit for this item, it doesn't fit, looking at your info it said it would fit my refreg. , it doesn't  I need a return slip as UPS  won't  accept it , I need you to pick up as I'm 80 years old and not suppose to go out. My friend took it back today and UPS said they need  a return bar, so You need  to pick it up.Please contact me ASAP",116,0,242,"My friend took it back today and UPS said they need  a return bar, so You need  to pick it up.Please contact me ASAP",,"  I sent back to get credit for this item, it doesn't fit, looking at your info it said it would fit my refreg.
 , it doesn't  I need a return slip as UPS  won't  accept it , I need you to pick up as I'm 80 years old and not suppose to go out.","Cargo
 Originalty
 Packaging
 Quality",{}
-TOOLS & HOME IMPROVEMENT,General,1,Tenmiro,negative,  I get adapter I did get a plug how I Connect I don't like it,0,0,62,,,  I get adapter I did get a plug how I Connect I don't like it,"Cargo
+TOOLS & HOME IMPROVEMENT,General,1,EveryDrop by Whirlpool,negative,"  Filter did not fit in by 2004 Kitchen Aid refrigerator (KTRC22EMBT01) as advertised.  After removing the old one, this new one when inserted could not go in all the way and even pusng a little, it could not be turned into position. I didn't want to force too much for fear of breaking the plastic cap/cover.  I had bought a few years ago, so I had a stockpile ofEvery Drop Whirlpool Water replacement filters.  The boxes a quite the same in appearance to the 2019 filter I just received (see pictures).  I took a picture of the shape of the engagement points at the front of the filter (see attached pictures).  They are close in shape, but obviously not close enough to fit in and be turned.  I then tried another vendor on Amazon for their EveryDrop by Whirlpool EDR6D1 Refrigerator Water Filter 6  (which costs only $12 vs $40 for this one) and it fit right in with no real effort.",378,237,263,"I took a picture of the shape of the engagement points at the front of the filter (see attached pictures).
+They are close in shape, but obviously not close enough to fit in and be turned.
+I then tried another vendor on Amazon for their EveryDrop by Whirlpool EDR6D1 Refrigerator Water Filter 6  (which costs only $12 vs $40 for this one) and it fit right in with no real effort.","After removing the old one, this new one when inserted could not go in all the way and even pusng a little, it could not be turned into position.
+The boxes a quite the same in appearance to the 2019 filter I just received (see pictures).","  Filter did not fit in by 2004 Kitchen Aid refrigerator (KTRC22EMBT01) as advertised.
+I didn't want to force too much for fear of breaking the plastic cap/cover.
+I had bought a few years ago, so I had a stockpile ofEvery Drop Whirlpool Water replacement filters.","Cargo
 Originalty
 Packaging
 Quality",{}
-TOOLS & HOME IMPROVEMENT,General,5,Bissell,positive,"  Getting harder to find my belt. Found them here for a good price. Arrived a couple of days earlier than expected. A little softer than the old belt but tighter fit, worked well and expect them to last. Will buy again and refer others.",121,114,0,"Found them here for a good price.
-A little softer than the old belt but tighter fit, worked well and expect them to last.","  Getting harder to find my belt.
-Arrived a couple of days earlier than expected.
-Will buy again and refer others.",,"Cargo
+TOOLS & HOME IMPROVEMENT,General,1,EveryDrop by Whirlpool,positive,"  Does not fit 2005 Whirlpool Et1fhtxmq02.  Tried contacting Whirlpool via phone and chat but the experience was nothing less than a waste of time as I was never able to get to an actual human.  The system keeps resetting before you get done. However, this Amazon transaction was good—shipped quickly, returned easily.",225,47,42,"Tried contacting Whirlpool via phone and chat but the experience was nothing less than a waste of time as I was never able to get to an actual human.
+However, this Amazon transaction was good—shipped quickly, returned easily.",The system keeps resetting before you get done.,  Does not fit 2005 Whirlpool Et1fhtxmq02.,"Cargo
 Originalty
 Packaging
-Quality","{'PRICE': ['GOOD'], 'FIT': ['TIGHT']}"
-TOOLS & HOME IMPROVEMENT,General,5,Brita,positive,  This is the perfect size for me! The water tastes great!,58,0,0,"  This is the perfect size for me!
-The water tastes great!",,,"Cargo
-Originalty
-Packaging
-Quality",{'SIZE': ['PERFECT']}
-TOOLS & HOME IMPROVEMENT,General,5,Command,positive,  Used these on my apartment balcony to hang lights non-permanently. It's been over a month and they still are holding strong. This was the highest weight rated outdoor hook I could find which is why I purchased.The hook actually moves which was not specified in the product description. You can see in my photo the metal hook is not flat to the plastic back. This works in my application as it actually moves in the breeze vs. being more rigid. If it didnt move it would add tension on the plastic back and break easier.If this hook can hold decorative lights on a patio ceiling it definitely can hold some tongs. Just be sure to follow the pre cleaning instructions.,280,301,85,"It's been over a month and they still are holding strong.
-If it didnt move it would add tension on the plastic back and break easier.If this hook can hold decorative lights on a patio ceiling it definitely can hold some tongs.
-Just be sure to follow the pre cleaning instructions.","  Used these on my apartment balcony to hang lights non-permanently.
-This was the highest weight rated outdoor hook I could find which is why I purchased.The hook actually moves which was not specified in the product description.
-You can see in my photo the metal hook is not flat to the plastic back.",This works in my application as it actually moves in the breeze vs. being more rigid.,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,5,Flux Phenom,positive,  This makes it so much easier for my dogs to go in and out with no bugs getting in. Works great for me.,104,0,0,"  This makes it so much easier for my dogs to go in and out with no bugs getting in.
-Works great for me.",,,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,4,Bissell,positive,  Probably the best deal on these belts.,40,0,0,  Probably the best deal on these belts.,,,"Cargo
-Originalty
-Packaging
-Quality",{'DEAL': ['GOOD']}
-TOOLS & HOME IMPROVEMENT,General,4,Brita,positive,  This model allows you to fill it quickly.  The pour flap is better designed. My last one kept popping off.  Be aware that the water pours farther away from the pitcher than expected.  Practice in the sink before you actually use it.  Warn anybody before you pour or you have a pool to clean up.  Enjoy.ps:  Isn't it horrible we cannot drink sink water without filtering it first?,178,197,0,"The pour flap is better designed.
-Warn anybody before you pour or you have a pool to clean up.
-Enjoy.ps:  Isn't it horrible we cannot drink sink water without filtering it first?","  This model allows you to fill it quickly.
-My last one kept popping off.
-Be aware that the water pours farther away from the pitcher than expected.
-Practice in the sink before you actually use it.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,4,Command,positive,"  These work great on any metal surfaces or doors. However, I was trying to use them to hang some lights on my balcony. Definitely do not stick to stucco. I figured but wanted to try anyway. Only buy these if you're going to adhere them to any FLAT surfaces. Work great but not for what I needed.",123,172,0,"  These work great on any metal surfaces or doors.
-Definitely do not stick to stucco.
-Work great but not for what I needed.","However, I was trying to use them to hang some lights on my balcony.
-I figured but wanted to try anyway.
-Only buy these if you're going to adhere them to any FLAT surfaces.",,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,3,Bissell,negative,  The two belts had NO numbers or writing on them so how do you know that they are #32015 OEM ?I hope they last & don't break after brief use !,0,0,143,,,  The two belts had NO numbers or writing on them so how do you know that they are #32015 OEM ?I hope they last & don't break after brief use !,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,3,Brita,positive,"  Well, I'm not sure what to say about the dispenser's ""flavor"" or ""sheerness"".Ease of use....haven't used it yet because it didn't come with a filter (yes I checked the entire box). I placed an order for some filters, but they are not available, and I've been given no zero indication of when they will be sent.I did call Brita and they sent me 3 filters at no charge, which is the only reason I'm giving this item 3 stars. I'll update my review once I've tried it out.The dispenser itself is very slim & fits nicely in my fridge. It seems of decent quality, but I can't speak to its durability because again, I haven't used it yet.To summarize, it seems that the replacement filters are hard to get, and they are expensive, so in retrospect, I probably wouldn't get this type of dispenser.",106,182,501,I'll update my review once I've tried it out.The dispenser itself is very slim & fits nicely in my fridge.,"  Well, I'm not sure what to say about the dispenser's ""flavor"" or ""sheerness"".Ease of use....haven't used it yet because it didn't come with a filter (yes I checked the entire box).","I placed an order for some filters, but they are not available, and I've been given no zero indication of when they will be sent.I did call Brita and they sent me 3 filters at no charge, which is the only reason I'm giving this item 3 stars.
-It seems of decent quality, but I can't speak to its durability because again, I haven't used it yet.To summarize, it seems that the replacement filters are hard to get, and they are expensive, so in retrospect, I probably wouldn't get this type of dispenser.","Cargo
-Originalty
-Packaging
-Quality",{'FILTER': ['HARD']}
-TOOLS & HOME IMPROVEMENT,General,3,Command,positive,"  I suppose these would work in a 100% dry environment, but I got these to hang some very lightweight things on the walls in my bathroom (a showercap, headband, and a small handheld mirror). The walls in there are the same as the walls in my room, with the same type of paint on them etc. However this is my bathroom I use every day, and when the shower is used obvi there is going to be steam in the room, like in any normal bathroom when someone takes a shower. I put up one, left it to settle for 24hrs as per the instructions, and then hung the small mirror on it, probably weighing less than 1lbs, and the package for the hooks say it holds 2lbs. It stayed up and stayed put just fine, no issue (yet). I then put up another one in a different location in the bathroom, but still on same type of wall. I left it to settle, but then heard it fall not five mins later. I went and put it back up with a new sticky tab, and same thing happened, so I gave up on that one. Took a shower today for the first time since hanging up the first hook with the mirror, and maybe 20min after my shower I've just heard that one fall too...luckily the mirror is both cheap and sturdy...I think even the mirror part is made of plastic lol, and I didn't hear it break, so I'm sure it's fine. But these hooks just do not stay up at all in the bathroom.",480,800,54,"However this is my bathroom I use every day, and when the shower is used obvi there is going to be steam in the room, like in any normal bathroom when someone takes a shower.
-Took a shower today for the first time since hanging up the first hook with the mirror, and maybe 20min after my shower I've just heard that one fall too...luckily the mirror is both cheap and sturdy...I think even the mirror part is made of plastic lol, and I didn't hear it break, so I'm sure it's fine.","  I suppose these would work in a 100% dry environment, but I got these to hang some very lightweight things on the walls in my bathroom (a showercap, headband, and a small handheld mirror).
-The walls in there are the same as the walls in my room, with the same type of paint on them etc.
-I put up one, left it to settle for 24hrs as per the instructions, and then hung the small mirror on it, probably weighing less than 1lbs, and the package for the hooks say it holds 2lbs.
-I then put up another one in a different location in the bathroom, but still on same type of wall.
-I left it to settle, but then heard it fall not five mins later.
-I went and put it back up with a new sticky tab, and same thing happened, so I gave up on that one.
-But these hooks just do not stay up at all in the bathroom.","It stayed up and stayed put just fine, no issue (yet).","Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,3,Flux Phenom,positive,"  Last Spring I purchased a magnetic screen for my  96"" by 36"" patio door.  It was easy to install; basically just adhering the Velcro tape and using a several tacks to reinforce it. A few months later we hired a painter to paint and refinish all exterior doors. This required taking down the Velcro tape holding up the screen door. I ordered the 20 feet new installation kit to reinstall my screen door. It was fine except IT WAS ONLY 17 FEET, not the 20 feet it was supposed to be. I needed a total of 19.5 feet for my installation. I literally had to salvage several small pieces of the old Velcro tape to make it 19.5 linear feet that I needed to reinstall my magnetic screen door. The kit itself was fine if it had actually contained 20 feet, rather than 17 feet. Now I have the worry that instead of using three long new Velcro pieces, I have three new long pieces and three reused short pieces of Velcro holding up my screen door. I hope the used pieces last but it would not have been necessary if they had not shorted me 36 inches of Velcro tape.",386,498,168,"It was easy to install; basically just adhering the Velcro tape and using a several tacks to reinforce it.
-It was fine except IT WAS ONLY 17 FEET, not the 20 feet it was supposed to be.
-The kit itself was fine if it had actually contained 20 feet, rather than 17 feet.
-I hope the used pieces last but it would not have been necessary if they had not shorted me 36 inches of Velcro tape.","  Last Spring I purchased a magnetic screen for my  96"" by 36"" patio door.
-A few months later we hired a painter to paint and refinish all exterior doors.
-This required taking down the Velcro tape holding up the screen door.
-I ordered the 20 feet new installation kit to reinstall my screen door.
-I needed a total of 19.5 feet for my installation.
-I literally had to salvage several small pieces of the old Velcro tape to make it 19.5 linear feet that I needed to reinstall my magnetic screen door.","Now I have the worry that instead of using three long new Velcro pieces, I have three new long pieces and three reused short pieces of Velcro holding up my screen door.","Cargo
-Originalty
-Packaging
-Quality",{'KIT': ['FINE']}
-TOOLS & HOME IMPROVEMENT,General,2,Bissell,neutral,  Brand new vacuum and I am breaking at least one of these belts a month,0,72,0,,  Brand new vacuum and I am breaking at least one of these belts a month,,"Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,2,Brita,positive,"  In less than six months use this Brita Pitcher started to leak.  At first I thought it was from overfill pouring into the hollow handle and then ultimately coming out on the bottom.  I decided to not fill it as high and to focus on not letting water to flow near the handle.  In fact, the problem became worse.  Finally, I did an examination of the pitcher and found numerous small nicks (1/2"" or so) on the bottom that may be the result of a heavy pitcher hitting a granite countertop after refill.  At this point, I let the pitcher dry completely overnight and then put super glue in each crack.  I then placed the refilled pitcher in a dish to contain leakage.  24 hours later there was no dampness. It became clear that the small cracks were the problem.  At this point, I started to use the pitcher, but after about a week the glued pitcher started to leak again.  I would recommend that Brita add a cushioning layer on the bottom of their product.  I did not abuse this pitcher. It should have lasted longer.",210,547,247,"At this point, I let the pitcher dry completely overnight and then put super glue in each crack.
-I would recommend that Brita add a cushioning layer on the bottom of their product.
-I did not abuse this pitcher.","At first I thought it was from overfill pouring into the hollow handle and then ultimately coming out on the bottom.
-I decided to not fill it as high and to focus on not letting water to flow near the handle.
-Finally, I did an examination of the pitcher and found numerous small nicks (1/2"" or so) on the bottom that may be the result of a heavy pitcher hitting a granite countertop after refill.
-I then placed the refilled pitcher in a dish to contain leakage.
-It became clear that the small cracks were the problem.
-It should have lasted longer.","  In less than six months use this Brita Pitcher started to leak.
-In fact, the problem became worse.
-24 hours later there was no dampness.
-At this point, I started to use the pitcher, but after about a week the glued pitcher started to leak again.","Cargo
-Originalty
-Packaging
-Quality",{'GLUE': ['SUPER']}
-TOOLS & HOME IMPROVEMENT,General,2,Command,positive,"  The adhesion and strudiness of these clips seem to be pretty good, but the shape of the hooks actually prevent you from using them to hang certain things from them. Towels, clothes, and similar items slip right off due to the fact that the hooks have not much of an angle. They only slightly point upwards",166,140,0,"  The adhesion and strudiness of these clips seem to be pretty good, but the shape of the hooks actually prevent you from using them to hang certain things from them.","Towels, clothes, and similar items slip right off due to the fact that the hooks have not much of an angle.
-They only slightly point upwards",,"Cargo
-Originalty
-Packaging
-Quality",{'THING': ['CERTAIN']}
-TOOLS & HOME IMPROVEMENT,General,1,Bissell,negative,"  Compatibility system says this filter fits my Bissell 6700 vacuum. I bought it and it doesn't fit. It is flimsy, thin, and too small on both dimensions. I would recommend contacting the seller before purchasing anything and verifying that the filter will work on your vacuum as the compatibility system apparently cannot be trusted. (If you rely on the compatibility system, and the filter won't fit, it's your fault, apparently, when dealing with a return.)",0,302,157,,"  Compatibility system says this filter fits my Bissell 6700 vacuum.
-It is flimsy, thin, and too small on both dimensions.
-I would recommend contacting the seller before purchasing anything and verifying that the filter will work on your vacuum as the compatibility system apparently cannot be trusted.","I bought it and it doesn't fit.
-(If you rely on the compatibility system, and the filter won't fit, it's your fault, apparently, when dealing with a return.)","Cargo
-Originalty
-Packaging
-Quality",{}
-TOOLS & HOME IMPROVEMENT,General,1,Brita,negative,  Product itself is good but arrived with broken spout,0,0,54,,,  Product itself is good but arrived with broken spout,"Cargo
-Originalty
-Packaging
-Quality",{'PRODUCT': ['GOOD']}
-TOOLS & HOME IMPROVEMENT,General,1,Command,negative,"  I purchased a massive amount of different types of command strips in the first part of 2019.  We were painting the inside of our old house to sell it.  I wanted to put things back up on the wall so there were no holes when I took them down.We moved to our new house in July 2019.  I used Command Strips on almost everything that went on the wall except for the very heaviest things.  My walls have a texture but it is mostly flat so I did my best to make sure the Strips were placed where they would have a flat surface.  I also wiped down the walls with alcohol per the instructions.  3M says they are only for use on flat surfaces.  Good grief!  Where does any house have a completely flat surface other than on cabinets?Anyway, I overestimated the weight of everything and used bigger Command Strips and put a Strip on every corner of everything, except for the hooks.  In October 2020 my things began falling off the walls.  I wrote to 3M and, basically, it was my fault for using them on textured walls.  I proceeded to screw and nail up my wall decor.  However, I had a temporary, light-weight decoration to hang so I peeled a Command Strip and found it had no more adhesive whatsoever!  I pulled out a different size and it was the same thing!  I started checking them all and most of them had no more adhesive!  No wonder my things were falling!There's no expiration date on them so should they poop out like that?  I don't think so.  I wrote back to 3M saying I no longer wanted to use their product and wanted to send everything I had left to them so they could send me a refund.  They sent me a label so I'm returning everything!By the way, I kept them inside the house so they weren't exposed to sunlight or temperature extremes.",287,663,773,"My walls have a texture but it is mostly flat so I did my best to make sure the Strips were placed where they would have a flat surface.
-They sent me a label so I'm returning everything!By the way, I kept them inside the house so they weren't exposed to sunlight or temperature extremes.","  I purchased a massive amount of different types of command strips in the first part of 2019.
-We were painting the inside of our old house to sell it.
-I used Command Strips on almost everything that went on the wall except for the very heaviest things.
-I also wiped down the walls with alcohol per the instructions.
-3M says they are only for use on flat surfaces.
-Where does any house have a completely flat surface other than on cabinets?Anyway, I overestimated the weight of everything and used bigger Command Strips and put a Strip on every corner of everything, except for the hooks.
-I pulled out a different size and it was the same thing!
-I don't think so.","I wanted to put things back up on the wall so there were no holes when I took them down.We moved to our new house in July 2019.
-Good grief!
-In October 2020 my things began falling off the walls.
-I wrote to 3M and, basically, it was my fault for using them on textured walls.
-I proceeded to screw and nail up my wall decor.
-However, I had a temporary, light-weight decoration to hang so I peeled a Command Strip and found it had no more adhesive whatsoever!
-I started checking them all and most of them had no more adhesive!
-No wonder my things were falling!There's no expiration date on them so should they poop out like that?
-I wrote back to 3M saying I no longer wanted to use their product and wanted to send everything I had left to them so they could send me a refund.","Cargo
-Originalty
-Packaging
-Quality",{'GRIEF': ['GOOD']}
+Quality",{'TRANSACTION': ['GOOD']}

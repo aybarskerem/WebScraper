@@ -1,6 +1,6 @@
 import stanza
-from unicode_safe_print import unicode_safe_print
-from polarity_sentiment_analysis import get_overall_sentimentPolarity
+from .unicode_safe_print import unicode_safe_print
+from .polarity_sentiment_analysis import get_overall_sentimentPolarity
 
 stanzaPipeline = stanza.Pipeline('en')
 def aspectBased_sentiment_analysis(inputString):
