@@ -19,3 +19,10 @@ Processed 0.1% of the file.
 #of repeats is: 1
 Script execution start date: 28/07/2021, 23:33:34
 Average script execution duration: 0 days 0 hours 0 minutes 45.6567515 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 4
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 28/07/2021, 23:46:49
+Average script execution duration: 0 days 0 hours 0 minutes 33.6472431 seconds

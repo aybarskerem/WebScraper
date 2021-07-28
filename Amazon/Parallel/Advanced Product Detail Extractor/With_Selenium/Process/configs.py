@@ -1,4 +1,4 @@
-IS_MULTIPROCESSED = False # Whether we use mpi4py to run the code in parallel or we run the code in serial
+IS_MULTIPROCESSED = True # Whether we use mpi4py to run the code in parallel or we run the code in serial
 READING_RATIO_FOR_INPUT_CSVs = 0.001 # It represents how much of the input files (in csv format for now) we should process. MUST BE BETWEEN [0, 1]. For example 0.1 means; process 1/10th of each of the input files (in terms of rows) and 1 means read them all.
 
 NUMBER_OR_REPEATS_TIMEIT = 1

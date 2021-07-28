@@ -96,7 +96,7 @@ def process():
     all_dfs['Subcategory'] = subcategory_for_each_row
     all_dfs = all_dfs[all_dfs['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category) 
     all_dfs['Product Ratings']=pd.to_numeric(all_dfs['Product Ratings'], downcast='integer')
-    
+
     print("Total #of rows to process is: " + str(all_dfs.shape[0]))
 
     wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis  = get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(all_dfs)
@@ -147,9 +147,6 @@ def loadBalance_dataframe_toProcesses(df_to_distribute, numberOfSlaveProcesses):
   return distributed_dfs
 
 def get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows):
-  global lemma, tokenizer
-  lemma = nltk.wordnet.WordNetLemmatizer()
-  tokenizer = nltk.data.load('tokenizers/punkt/english.pickle') 
 
   # print("category is: " + category)
   # print("subcategory is: " + subcategory)

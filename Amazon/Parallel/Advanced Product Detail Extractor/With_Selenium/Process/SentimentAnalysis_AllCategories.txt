@@ -21,8 +21,8 @@
                   "PRESENT"
                 ],
                 "THING": [
-                  "GOOD",
-                  "WORTH"
+                  "WORTH",
+                  "GOOD"
                 ],
                 "KICKSTAND": [
                   "MAGNIFICENT"
@@ -296,83 +296,6 @@
           ]
         }
       },
-      "2": {
-        "MICROSOFT": {
-          "#of positive reviews": 1,
-          "#of neutral reviews": 0,
-          "#of negative reviews": 0,
-          "Reviews": [
-            {
-              "Review polarity-based sentiment": "positive",
-              "Review aspect-based sentiment": {
-                "RATIO": [
-                  "GOOD"
-                ],
-                "FAN": [
-                  "QUIET"
-                ],
-                "LIFE": [
-                  "BAD"
-                ],
-                "DISPLAY": [
-                  "BAD"
-                ],
-                "KEYBOARD": [
-                  "HARD",
-                  "GOOD",
-                  "COMFORTABLE"
-                ],
-                "KEY": [
-                  "BETTER"
-                ],
-                "LAYOUT": [
-                  "BETTER"
-                ],
-                "HOME": [
-                  "BETTER"
-                ],
-                "EGPU": [
-                  "GREAT"
-                ],
-                "PEN": [
-                  "GOOD"
-                ],
-                "LAPTOP": [
-                  "PERFECT"
-                ]
-              },
-              "Content": "  Comparing Dell XPS 13, Lenovo Yoga C940 14 and Surface Pro 7 2-in-1's all with i7-1065G7 CPU/GPU.[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3\" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option. The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14\" > XPS 13.4\" > SP7 12.3\"-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers. Rotating soundbar with Dolby Atmos sounds amazing! Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large \"chin\" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming. Not available on SP7. eGPU great for gaming, allows modular upgradability of graphics cards in the future, although they lose ~20% FPS compared to PCIe.[PRICING:]For i7, 16GB, 512GB with Windows 10 Home:YOGA 4K $1785 > XPS 4K + pen $1900 > SP7 FHD + type cover + pen $2160[CONCLUSION:]The SP7 was the most expensive when you add the keyboard and pen. The XPS FHD with 32GB RAM came in at $1730. I would like to see a 32GB 4K 512GB option since I don't need that much on-device storage.All have performance improvements over their predecessors thanks to the new 10th gen Intel i7 processors, LPDDR4x RAM and WiFi 6. The Surface Book 2 is too dated to compare here and is clunkier.It's a toss up between the XPS for its 32GB RAM with taller screen, or the Yoga with its USB-A port, better keyboard, and garaged pen, among other things. The extra RAM comes in useful since the integrated graphics will use some of that. The 16GB models easily ran up to 80% CPU, RAM and GPU when driving 2 external monitors and simultaneously running Chrome with tabs, Office apps, iTunes and light gaming. It often sits at 8GB RAM under normal use.Some may appreciate all the ports being on one side as with the Yoga, or having ports on either side as with the XPS. The dedicated volume rockers on the SP7 comes in handy. The lighter weight of the SP7 made it the first to be grabbed on the go for content consumption or note taking, but I prefer the Yoga for content creation with it's larger screen and comfy keyboard. If you're docking all day and only occasionally need to be on the go then I recommend the XPS for its 32GB RAM. The perfect laptop is not quite here yet.",
-              "Sentences": {
-                "Sentences sentiment statistics": "#of positive sentences: 13 - #of neutral sentences:  4 - #of negative sentences: 1",
-                "Positive sentences": [
-                  "The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14\" > XPS 13.4\" > SP7 12.3\"-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers.",
-                  "Rotating soundbar with Dolby Atmos sounds amazing!",
-                  "Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large \"chin\" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming.",
-                  "eGPU great for gaming, allows modular upgradability of graphics cards in the future, although they lose ~20% FPS compared to PCIe.",
-                  "I would like to see a 32GB 4K 512GB option since I don't need that much on-device storage.All have performance improvements over their predecessors thanks to the new 10th gen Intel i7 processors, LPDDR4x RAM and WiFi 6.",
-                  "The Surface Book 2 is too dated to compare here and is clunkier.It's a toss up between the XPS for its 32GB RAM with taller screen, or the Yoga with its USB-A port, better keyboard, and garaged pen, among other things.",
-                  "The extra RAM comes in useful since the integrated graphics will use some of that.",
-                  "The 16GB models easily ran up to 80% CPU, RAM and GPU when driving 2 external monitors and simultaneously running Chrome with tabs, Office apps, iTunes and light gaming.",
-                  "It often sits at 8GB RAM under normal use.Some may appreciate all the ports being on one side as with the Yoga, or having ports on either side as with the XPS.",
-                  "The dedicated volume rockers on the SP7 comes in handy.",
-                  "The lighter weight of the SP7 made it the first to be grabbed on the go for content consumption or note taking, but I prefer the Yoga for content creation with it's larger screen and comfy keyboard.",
-                  "If you're docking all day and only occasionally need to be on the go then I recommend the XPS for its 32GB RAM.",
-                  "The perfect laptop is not quite here yet."
-                ],
-                "Neutral sentences": [
-                  "  Comparing Dell XPS 13, Lenovo Yoga C940 14 and Surface Pro 7 2-in-1's all with i7-1065G7 CPU/GPU.",
-                  "Not available on SP7.",
-                  "[PRICING:]For i7, 16GB, 512GB with Windows 10 Home:YOGA 4K $1785 > XPS 4K + pen $1900 > SP7 FHD + type cover + pen $2160[CONCLUSION:]The SP7 was the most expensive when you add the keyboard and pen.",
-                  "The XPS FHD with 32GB RAM came in at $1730."
-                ],
-                "Negative sentences": [
-                  "[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3\" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option."
-                ]
-              }
-            }
-          ]
-        }
-      },
       "1": {
         "MICROSOFT": {
           "#of positive reviews": 1,
@@ -426,6 +349,83 @@
             }
           ]
         }
+      },
+      "2": {
+        "MICROSOFT": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "RATIO": [
+                  "GOOD"
+                ],
+                "FAN": [
+                  "QUIET"
+                ],
+                "LIFE": [
+                  "BAD"
+                ],
+                "DISPLAY": [
+                  "BAD"
+                ],
+                "KEYBOARD": [
+                  "COMFORTABLE",
+                  "HARD",
+                  "GOOD"
+                ],
+                "LAYOUT": [
+                  "BETTER"
+                ],
+                "HOME": [
+                  "BETTER"
+                ],
+                "KEY": [
+                  "BETTER"
+                ],
+                "EGPU": [
+                  "GREAT"
+                ],
+                "PEN": [
+                  "GOOD"
+                ],
+                "LAPTOP": [
+                  "PERFECT"
+                ]
+              },
+              "Content": "  Comparing Dell XPS 13, Lenovo Yoga C940 14 and Surface Pro 7 2-in-1's all with i7-1065G7 CPU/GPU.[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3\" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option. The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14\" > XPS 13.4\" > SP7 12.3\"-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers. Rotating soundbar with Dolby Atmos sounds amazing! Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large \"chin\" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming. Not available on SP7. eGPU great for gaming, allows modular upgradability of graphics cards in the future, although they lose ~20% FPS compared to PCIe.[PRICING:]For i7, 16GB, 512GB with Windows 10 Home:YOGA 4K $1785 > XPS 4K + pen $1900 > SP7 FHD + type cover + pen $2160[CONCLUSION:]The SP7 was the most expensive when you add the keyboard and pen. The XPS FHD with 32GB RAM came in at $1730. I would like to see a 32GB 4K 512GB option since I don't need that much on-device storage.All have performance improvements over their predecessors thanks to the new 10th gen Intel i7 processors, LPDDR4x RAM and WiFi 6. The Surface Book 2 is too dated to compare here and is clunkier.It's a toss up between the XPS for its 32GB RAM with taller screen, or the Yoga with its USB-A port, better keyboard, and garaged pen, among other things. The extra RAM comes in useful since the integrated graphics will use some of that. The 16GB models easily ran up to 80% CPU, RAM and GPU when driving 2 external monitors and simultaneously running Chrome with tabs, Office apps, iTunes and light gaming. It often sits at 8GB RAM under normal use.Some may appreciate all the ports being on one side as with the Yoga, or having ports on either side as with the XPS. The dedicated volume rockers on the SP7 comes in handy. The lighter weight of the SP7 made it the first to be grabbed on the go for content consumption or note taking, but I prefer the Yoga for content creation with it's larger screen and comfy keyboard. If you're docking all day and only occasionally need to be on the go then I recommend the XPS for its 32GB RAM. The perfect laptop is not quite here yet.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 13 - #of neutral sentences:  4 - #of negative sentences: 1",
+                "Positive sentences": [
+                  "The white interior option keyboard is hard to see with the white backlighting-No far field microphones for Alexa or other assistants-Included charger is only 45W (less than 65W with Yoga/SP7)[YOGA PROS:]-Best screen-to-body ratio (89%) > XPS 84.9% > SP7 76.76%; although the hinge factors into this-Largest screen 14\" > XPS 13.4\" > SP7 12.3\"-Deepest key travel, most comfortable keyboard > XPS > SP7-Better Arrow Keys + Home/End/Pg Up/Pg Down layout-INCLUDED garaged pen with internal charging > magnetically attached and not included with purchase on others-Best in class speakers.",
+                  "Rotating soundbar with Dolby Atmos sounds amazing!",
+                  "Gets loud!-Built-in camera shutter-Coolest under heavy load > SP7 gets warm > XPS hottest-Fastest Rapid charge (2 hours in 15 minutes)-Largest 65 WHr battery > XPS 51 WHr > SP7 45 WHr[YOGA CONS:]-Shortest 16:9 aspect ratio with large \"chin\" bezel at bottom of screen face-No MicroSD slot compared to others-Anti-glare customizable option no longer available[CONS OF ALL:]-No HDMI-No dedicated GPU option, though Thunderbolt 3 on XPS and Yoga allows external GPUs for gaming.",
+                  "eGPU great for gaming, allows modular upgradability of graphics cards in the future, although they lose ~20% FPS compared to PCIe.",
+                  "I would like to see a 32GB 4K 512GB option since I don't need that much on-device storage.All have performance improvements over their predecessors thanks to the new 10th gen Intel i7 processors, LPDDR4x RAM and WiFi 6.",
+                  "The Surface Book 2 is too dated to compare here and is clunkier.It's a toss up between the XPS for its 32GB RAM with taller screen, or the Yoga with its USB-A port, better keyboard, and garaged pen, among other things.",
+                  "The extra RAM comes in useful since the integrated graphics will use some of that.",
+                  "The 16GB models easily ran up to 80% CPU, RAM and GPU when driving 2 external monitors and simultaneously running Chrome with tabs, Office apps, iTunes and light gaming.",
+                  "It often sits at 8GB RAM under normal use.Some may appreciate all the ports being on one side as with the Yoga, or having ports on either side as with the XPS.",
+                  "The dedicated volume rockers on the SP7 comes in handy.",
+                  "The lighter weight of the SP7 made it the first to be grabbed on the go for content consumption or note taking, but I prefer the Yoga for content creation with it's larger screen and comfy keyboard.",
+                  "If you're docking all day and only occasionally need to be on the go then I recommend the XPS for its 32GB RAM.",
+                  "The perfect laptop is not quite here yet."
+                ],
+                "Neutral sentences": [
+                  "  Comparing Dell XPS 13, Lenovo Yoga C940 14 and Surface Pro 7 2-in-1's all with i7-1065G7 CPU/GPU.",
+                  "Not available on SP7.",
+                  "[PRICING:]For i7, 16GB, 512GB with Windows 10 Home:YOGA 4K $1785 > XPS 4K + pen $1900 > SP7 FHD + type cover + pen $2160[CONCLUSION:]The SP7 was the most expensive when you add the keyboard and pen.",
+                  "The XPS FHD with 32GB RAM came in at $1730."
+                ],
+                "Negative sentences": [
+                  "[SP7 PROS:]-Best 3:2 aspect ratio is better for productivity (but screen is uncomfortably small) > XPS 16:10 > Yoga 16:9-IR camera for Windows Hello face sign-in, though not useful when docked or when screen is not at the correct angle-Least weight 2.4 lbs > 3 lbs for others-Quietest fan > Yoga > XPS (loudest)[SP7 CONS:]-Worst battery life (even worse than SP6)-Smallest 12.3\" display with thick bezels-No 4K UHD option (but I recommend FHD with any brand/model for battery life, you can always dock to a larger monitor)-No Thunderbolt 3 with PD/DP (no eGPU)-Keyboard and pen sold separately[XPS PROS:]-Up to 32GB RAM > 16GB on others-Slimmest-Fingerprint reader on power button > Yoga on palmrest > SP7 on non-included $160 Type Cover with Fingerprint ID[XPS CONS:]-No USB-A (deal breaker for me)-No black exterior option."
+                ]
+              }
+            }
+          ]
+        }
       }
     }
   },
@@ -469,71 +469,6 @@
   },
   "TOOLS & HOME IMPROVEMENT": {
     "General": {
-      "4": {
-        "EveryDrop by Whirlpool": {
-          "#of positive reviews": 1,
-          "#of neutral reviews": 0,
-          "#of negative reviews": 0,
-          "Reviews": [
-            {
-              "Review polarity-based sentiment": "positive",
-              "Review aspect-based sentiment": {
-                "PRICE": [
-                  "COMPETITIVE"
-                ]
-              },
-              "Content": "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators.  The price on Amazon was competitive and delivery can't be beat.  I only gave 4 stars because it didn't fit up quite as good as in the past.",
-              "Sentences": {
-                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  1 - #of negative sentences: 0",
-                "Positive sentences": [
-                  "The price on Amazon was competitive and delivery can't be beat.",
-                  "I only gave 4 stars because it didn't fit up quite as good as in the past."
-                ],
-                "Neutral sentences": [
-                  "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators."
-                ],
-                "Negative sentences": []
-              }
-            }
-          ]
-        }
-      },
-      "3": {
-        "EveryDrop by Whirlpool": {
-          "#of positive reviews": 0,
-          "#of neutral reviews": 0,
-          "#of negative reviews": 1,
-          "Reviews": [
-            {
-              "Review polarity-based sentiment": "negative",
-              "Review aspect-based sentiment": {
-                "TASTE": [
-                  "FINE"
-                ],
-                "LEAK": [
-                  "FINE"
-                ]
-              },
-              "Content": "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400. Product arrived in like-new condition and appeared to have not been installed, as I had suspected. On attempting to install the filter, it would insert but not rotate into place. Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place. No leaks and water tastes fine. Without having to hand fit, it would be 5 stars.",
-              "Sentences": {
-                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  3 - #of negative sentences: 2",
-                "Positive sentences": [
-                  "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400."
-                ],
-                "Neutral sentences": [
-                  "On attempting to install the filter, it would insert but not rotate into place.",
-                  "Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place.",
-                  "Without having to hand fit, it would be 5 stars."
-                ],
-                "Negative sentences": [
-                  "Product arrived in like-new condition and appeared to have not been installed, as I had suspected.",
-                  "No leaks and water tastes fine."
-                ]
-              }
-            }
-          ]
-        }
-      },
       "1": {
         "EveryDrop by Whirlpool": {
           "#of positive reviews": 2,
@@ -597,6 +532,71 @@
                 ],
                 "Negative sentences": [
                   "  Does not fit 2005 Whirlpool Et1fhtxmq02."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "4": {
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 1,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 0,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "positive",
+              "Review aspect-based sentiment": {
+                "PRICE": [
+                  "COMPETITIVE"
+                ]
+              },
+              "Content": "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators.  The price on Amazon was competitive and delivery can't be beat.  I only gave 4 stars because it didn't fit up quite as good as in the past.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 2 - #of neutral sentences:  1 - #of negative sentences: 0",
+                "Positive sentences": [
+                  "The price on Amazon was competitive and delivery can't be beat.",
+                  "I only gave 4 stars because it didn't fit up quite as good as in the past."
+                ],
+                "Neutral sentences": [
+                  "  These EveryDrop water filters are getting harder to get and more expensive every year because they are for older refrigerators."
+                ],
+                "Negative sentences": []
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "EveryDrop by Whirlpool": {
+          "#of positive reviews": 0,
+          "#of neutral reviews": 0,
+          "#of negative reviews": 1,
+          "Reviews": [
+            {
+              "Review polarity-based sentiment": "negative",
+              "Review aspect-based sentiment": {
+                "TASTE": [
+                  "FINE"
+                ],
+                "LEAK": [
+                  "FINE"
+                ]
+              },
+              "Content": "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400. Product arrived in like-new condition and appeared to have not been installed, as I had suspected. On attempting to install the filter, it would insert but not rotate into place. Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place. No leaks and water tastes fine. Without having to hand fit, it would be 5 stars.",
+              "Sentences": {
+                "Sentences sentiment statistics": "#of positive sentences: 1 - #of neutral sentences:  3 - #of negative sentences: 2",
+                "Positive sentences": [
+                  "  Took a chance on a used warehouse deal at half the price to replace the Whirlpool 4396701 filter for a Kenmore 106.74252400."
+                ],
+                "Neutral sentences": [
+                  "On attempting to install the filter, it would insert but not rotate into place.",
+                  "Seeing deformation on the tabs that hold the filter in place, I whittled the leading edge (toward the nozzle) of the tabs down with a sharp pocket knife until the filter rotated into place.",
+                  "Without having to hand fit, it would be 5 stars."
+                ],
+                "Negative sentences": [
+                  "Product arrived in like-new condition and appeared to have not been installed, as I had suspected.",
+                  "No leaks and water tastes fine."
                 ]
               }
             }
