@@ -48,25 +48,12 @@ python process_csv.py
 
 Output files below can be found in OUTPUTS folder.  
 
-- ELECTRONICS_LAPTOPS_with_1 stars.png  
-- ELECTRONICS_LAPTOPS_with_2 stars.png  
-- ELECTRONICS_LAPTOPS_with_3 stars.png  
-- ELECTRONICS_LAPTOPS_with_4 stars.png  
-- ELECTRONICS_LAPTOPS_with_5 stars.png  
-- ELECTRONICS_sentiment_analysis.txt 
-
+- 1 stars.png  
+- 2 stars.png  
+- 3 stars.png  
+- 4 stars.png  
+- 5 stars.png  
+- AllCategories_Sentiments.csv  
+- BagOfWords_AllCategories.txt  
 - ExecutionTimingResults.txt  
-
-- SPORTS_General_with_1 stars.png  
-- SPORTS_General_with_2 stars.png  
-- SPORTS_General_with_3 stars.png  
-- SPORTS_General_with_4 stars.png  
-- SPORTS_General_with_5 stars.png  
-- SPORTS_sentiment_analysis.txt  
- 
-- TOOLS & HOME IMPROVEMENT_General_with_1 stars.png  
-- TOOLS & HOME IMPROVEMENT_General_with_2 stars.png  
-- TOOLS & HOME IMPROVEMENT_General_with_3 stars.png  
-- TOOLS & HOME IMPROVEMENT_General_with_4 stars.png  
-- TOOLS & HOME IMPROVEMENT_General_with_5 stars.png  
-- TOOLS & HOME IMPROVEMENT_sentiment_analysis.txt  
+- SentimentAnalysis_AllCategories.txt  
