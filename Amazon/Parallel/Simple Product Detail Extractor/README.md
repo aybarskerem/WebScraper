@@ -70,7 +70,7 @@ Current page being processed by process 3 to find the next page url is:  8 out o
 Next search url is: https://www.amazon.com/s?i=computers&rh=n%3A565108&fs=true&page=9&qid=1621708134&ref=sr_pg_8  
 Current page being processed by process 3 to find the next page url is:  9 out of 400 pages.
 Next search url is: https://www.amazon.com/s?i=computers&rh=n%3A565108&fs=true&page=10&qid=1621708137&ref=sr_pg_9  
-Current page being processed by process 3 to find the next page url is:  10 out of 400 pages.
+Current page being processed by process 3 to find the next page url is:  10 out of 400 pages.  
 Proccess 0 is responsible for the pages between 0 and 4  
 Proccess 1 is responsible for the pages between 4 and 7  
 Proccess 2 is responsible for the pages between 7 and 10  
