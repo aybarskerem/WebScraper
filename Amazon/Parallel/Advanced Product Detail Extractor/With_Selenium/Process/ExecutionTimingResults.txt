@@ -1,0 +1,64 @@
+*************
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of processes involved is: 1
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 29/07/2021, 23:14:28
+Average script execution duration: 0 days 0 hours 0 minutes 48.153799400000004 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 3
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 29/07/2021, 23:16:23
+Average script execution duration: 0 days 0 hours 0 minutes 39.1159595 seconds
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of processes involved is: 1
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 00:17:06
+Average script execution duration: 0 days 0 hours 0 minutes 52.4749378 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 7
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 00:32:33
+Average script execution duration: 0 days 0 hours 0 minutes 31.340800299999998 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 7
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 01:07:54
+Average script execution duration: 0 days 0 hours 0 minutes 32.940792599999995 seconds
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of processes involved is: 1
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 01:10:19
+Average script execution duration: 0 days 0 hours 0 minutes 47.9168329 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 4
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 01:16:03
+Average script execution duration: 0 days 0 hours 0 minutes 37.9379515 seconds
+*************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+#of processes involved is: 4
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 01:23:47
+Average script execution duration: 0 days 0 hours 0 minutes 35.0243883 seconds
+*************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+#of processes involved is: 1
+Processed 0.1% of the file.
+#of repeats is: 1
+Script execution start date: 30/07/2021, 01:24:45
+Average script execution duration: 0 days 0 hours 0 minutes 46.5245821 seconds

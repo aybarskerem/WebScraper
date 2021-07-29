@@ -40,15 +40,6 @@ def append_sentimentAnalysis_dict(sentimentAnalysis_dict_merged, sentimentAnalys
       sentimentAnalysis_dict_merged.update(sentimentAnalysis_dict)  
 
 
-def appendAndReturn_df_sentimentAnalysis(df_sentimentAnalysis_merged, df_sentimentAnalysis):
-  '''
-  pandas dataframe does not support in-place append; so we return the new dataframe
-  Assign the result to "df_sentimentAnalysis_merged" in the calling function to see the effect (to update the original df_sentimentAnalysis_merged)
-  '''
-  if not df_sentimentAnalysis.empty:
-    return df_sentimentAnalysis_merged.append(df_sentimentAnalysis, ignore_index=not df_sentimentAnalysis_merged.empty)
-  return df_sentimentAnalysis_merged
-
 def create_sentimentAnalysis_dataframe(sentiment_analysis_dict):
   col_category=[]
   col_subcategory=[]

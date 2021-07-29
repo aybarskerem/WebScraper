@@ -6,7 +6,6 @@ import process_helpers.outputter as outputter
 import configs
 
 import pandas as pd
-import nltk
 from collections import OrderedDict
 import re # we can do "import regex" if needed since python re module does not support \K which is a regex resetting the beginning of a match and starts from the current point 
 from datetime import datetime
@@ -15,93 +14,95 @@ import functools
 print = functools.partial(print, flush=True) #flush print functions by default (needed to see outputs of multiple processes in a more correct order)
 
 files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ] # csv files
-startTime = datetime.now()
+START_TIME = datetime.now()
 
 def main():
-  if configs.IS_MULTIPROCESSED:
-    # COMM VARIABLES
-    global comm, nprocs, rank
-    comm = MPI.COMM_WORLD
-    nprocs = comm.Get_size() # there are nprocs-1 slaves and 1 master
-    rank = comm.Get_rank() 
-    print("Parallel execution")  
+  # COMM VARIABLES
+  global comm, nprocs, rank
+  comm = MPI.COMM_WORLD
+  nprocs = comm.Get_size() # for multiprocessing there are nprocs-1 slaves (their ranks are 1, 2, ... nprocs-1)  and 1 master (its rank is 0) whereas for single-processing nprocs is 1 and the process' rank is 0.
+  rank = comm.Get_rank() 
+
+  if nprocs > 1:
+    if rank == configs.MASTER_PROCESS_RANK: # print it only once
+      print("Parallel execution")  
   else:
     print("Serial Execution")
 
   tp = timeit.Timer("process()", "from __main__ import process") 
   average_duration_seconds = tp.timeit(number=configs.NUMBER_OR_REPEATS_TIMEIT) / configs.NUMBER_OR_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OR_REPEATS_TIMEIT times.
 
-  if (not configs.IS_MULTIPROCESSED) or (configs.IS_MULTIPROCESSED and rank == 0): # after all slaves called and finished with the 'process' function (so handed their work to master to be outputted and then master merged these works), we can output the timing )
-    outputter.output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, startTime, nprocs if configs.IS_MULTIPROCESSED else 1)
+  if (nprocs > 1 and rank == configs.MASTER_PROCESS_RANK) or (nprocs == 1 and rank == 0): 
+    outputter.output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, START_TIME, nprocs)
 
 def process():
-  if configs.IS_MULTIPROCESSED:
-    if rank < nprocs-1: # if slave
-      df_correspondingRows = comm.recv(source=nprocs-1) #process the urls assigned to this slave
-      comm.send(get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows) , dest=nprocs-1)
+  if nprocs > 1:
+    if rank != configs.MASTER_PROCESS_RANK: # if slave
+      df_correspondingRows = comm.recv(source=configs.MASTER_PROCESS_RANK) # process the urls assigned to this slave
+      comm.send(get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows) , dest=configs.MASTER_PROCESS_RANK) # send processed results to master
     else: # if master     
-      all_dfs = None
-      category_for_each_row    = []
-      subcategory_for_each_row = []
-      for file_to_read in files_ro_read:
-        curr_df = read_csv_custom(file_to_read)
-        category, subcategory = get_category_subcategory(file_to_read)
-        category_for_each_row.extend([category]*curr_df.shape[0])
-        subcategory_for_each_row.extend([subcategory]*curr_df.shape[0])
-        if all_dfs is not None:
-          all_dfs = all_dfs.append(curr_df, ignore_index=True)
-        else:
-          all_dfs = curr_df
-
-      all_dfs['Category']    = category_for_each_row
-      all_dfs['Subcategory'] = subcategory_for_each_row
-      all_dfs = all_dfs[all_dfs['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category) 
-      all_dfs['Product Ratings']=pd.to_numeric(all_dfs['Product Ratings'], downcast='integer')
-      
+      all_dfs = readAllFiles_and_return_df()  
       print("Total #of rows to process is: " + str(all_dfs.shape[0]))    
       ################## LOAD BALANCE THE DATAFRAME ROWS ACROSS ALL PROCESSES ##################   
-      distributed_dfs = loadBalance_dataframe_toProcesses(all_dfs, nprocs-1)
-      for proc_index in range(nprocs-1):
-        comm.send(distributed_dfs[proc_index], dest=proc_index)
+      distributed_dfs_forEachProcess, startAndEnds_for_distributed_dfs_forEachProcess = loadBalance_dataframe_toProcesses(all_dfs, nprocs-1)
+      
+      distributed_dfs_index = 0
+      for proc_index in range(nprocs):
+        if proc_index != configs.MASTER_PROCESS_RANK:
+          print("Proccess {0} is responsible for the urls between {1} and {2}\n".format(proc_index, *startAndEnds_for_distributed_dfs_forEachProcess[distributed_dfs_index] ) )
+          comm.send(distributed_dfs_forEachProcess[distributed_dfs_index], dest=proc_index)
+          distributed_dfs_index += 1
 
       wordCloudDict_merged          = OrderedDict()
       bagOfWords_dict_merged        = OrderedDict()
       sentimentAnalysis_dict_merged = OrderedDict()
       df_sentimentAnalysis_merged   = pd.DataFrame()
 
-      for proc_index in range(nprocs-1):
-        wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis = comm.recv(source=proc_index) 
-        wordCloud.append_wordCloudDict(wordCloudDict_merged, wordCloudDict)
-        bagOfWords.append_bagOfWords_dict(bagOfWords_dict_merged, bagOfWords_dict)
-        sentimentAnalysis.append_sentimentAnalysis_dict(sentimentAnalysis_dict_merged, sentimentAnalysis_dict)
-        df_sentimentAnalysis_merged = sentimentAnalysis.appendAndReturn_df_sentimentAnalysis(df_sentimentAnalysis_merged, df_sentimentAnalysis)
+      for proc_index in range(nprocs):
+        if proc_index != configs.MASTER_PROCESS_RANK:
+          wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis = comm.recv(source=proc_index) 
+          wordCloud.append_wordCloudDict(wordCloudDict_merged, wordCloudDict)
+          bagOfWords.append_bagOfWords_dict(bagOfWords_dict_merged, bagOfWords_dict)
+          sentimentAnalysis.append_sentimentAnalysis_dict(sentimentAnalysis_dict_merged, sentimentAnalysis_dict)
+          df_sentimentAnalysis_merged = appendAndReturn_df(df_sentimentAnalysis_merged, df_sentimentAnalysis)
 
       outputter.finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict_merged, bagOfWords_dict_merged, sentimentAnalysis_dict_merged, df_sentimentAnalysis_merged)
     
-  else: # IF A SINGLE PROCESS RUNS ONLY
-    all_dfs = None
-    category_for_each_row    = []
-    subcategory_for_each_row = []
-    for file_to_read in files_ro_read:
-      curr_df = read_csv_custom(file_to_read)
-      category, subcategory = get_category_subcategory(file_to_read)
-      category_for_each_row.extend([category]*curr_df.shape[0])
-      subcategory_for_each_row.extend([subcategory]*curr_df.shape[0])
-      if all_dfs is not None:
-        all_dfs = all_dfs.append(curr_df, ignore_index=True)
-      else:
-        all_dfs = curr_df
-
-    all_dfs['Category']    = category_for_each_row
-    all_dfs['Subcategory'] = subcategory_for_each_row
-    all_dfs = all_dfs[all_dfs['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category) 
-    all_dfs['Product Ratings']=pd.to_numeric(all_dfs['Product Ratings'], downcast='integer')
-
+  else: # IF A SINGLE PROCESS RUNS ONLY   
+    all_dfs = readAllFiles_and_return_df()
     print("Total #of rows to process is: " + str(all_dfs.shape[0]))
-
     wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis  = get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(all_dfs)
 
     outputter.finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis)
+
+def readAllFiles_and_return_df():
+  category_for_each_row    = []
+  subcategory_for_each_row = []
+  df_list = []
+  for file_to_read in files_ro_read:
+    curr_df                  = read_csv_custom(file_to_read)
+    df_list                  .append(curr_df)
+    
+    category, subcategory    = get_category_subcategory(file_to_read)
+    category_for_each_row    .extend( [category]    * curr_df.shape[0] )
+    subcategory_for_each_row .extend( [subcategory] * curr_df.shape[0] )
+  
+  all_dfs = pd.concat(df_list, ignore_index=True)
+  all_dfs['Category']        = category_for_each_row
+  all_dfs['Subcategory']     = subcategory_for_each_row
+  all_dfs = all_dfs[all_dfs['Product Ratings']!='Product Ratings'] # remove multiple headers (multiple headers can be produced if we run webscraper multiple times to create the output .csv category) 
+  all_dfs['Product Ratings'] = pd.to_numeric(all_dfs['Product Ratings'], downcast='integer')
+
+  return all_dfs
+
+def appendAndReturn_df(df_merged, df_to_append):
+  '''
+  pandas dataframe does not support in-place append; so we return the new dataframe
+  Assign the result to "df_merged" in the calling function to see the effect (to update the original df_merged)
+  '''
+  if not df_to_append.empty:
+    return df_merged.append(df_to_append, ignore_index=not df_merged.empty)
+  return df_merged
 
 def read_csv_custom(file_to_read):
   '''
@@ -118,33 +119,35 @@ def read_csv_custom(file_to_read):
 def loadBalance_dataframe_toProcesses(df_to_distribute, numberOfSlaveProcesses):
   '''
   Parameters:
-    df_to_distribute (pd.DataFrame object) The whole dataframe to be divided among multiple processes
-    numberOfSlaveProcesses (int):          #of worker processes that the dataframe should be distributed to equally (or almost equally) 
+    - df_to_distribute (pd.DataFrame object) The whole dataframe to be divided among multiple processes
+    - numberOfSlaveProcesses (int):          #of worker processes that the dataframe should be distributed to equally (or almost equally) 
  
   Returns:
-    A list of pd.DataFrame objects for each process respectively (the object at index 0, 1, 2 represents the dataframe to process for process 0, 1, 2 ... etc.)
+    - distributed_dfs_forEachProcess:                  A list of pd.DataFrame objects for each process respectively (the object at index 0, 1, 2 represents the dataframe to process for process 0, 1, 2 ... etc.). At each index, this variable contains a certain portion (some rows) of the 'df_to_distribute' input parameter.
+    - startAndEnds_for_distributed_dfs_forEachProcess: A list of (start, end) index pairs to know starting / ending rows for each process to process.
 
-  NOTE: This function is only meaningful when configs.IS_MULTIPROCESSED is True
+  NOTE: This function is only meaningful when nprocs > 1 is True
   '''
-  distributed_dfs = []
+  distributed_dfs_forEachProcess                  = []
+  startAndEnds_for_distributed_dfs_forEachProcess = []
   number_of_rows_to_process = df_to_distribute.shape[0]
   # number_of_rows_each_process holds the #of rows distributed to each process (e.g. for a total of 299 rows and 3 slave processes: 100, 100 and 99 rows respectively for process 0, 1 and 2 respectively.)
   least_number_of_rows_for_each_process=number_of_rows_to_process // numberOfSlaveProcesses
-  number_of_processes_with_one_extra_url=number_of_rows_to_process % numberOfSlaveProcesses
-  number_of_rows_each_process=[least_number_of_rows_for_each_process+1 if i<number_of_processes_with_one_extra_url
+  number_of_processes_with_one_extra_row=number_of_rows_to_process % numberOfSlaveProcesses
+  number_of_rows_each_process=[least_number_of_rows_for_each_process+1 if i<number_of_processes_with_one_extra_row
                               else least_number_of_rows_for_each_process
                               for i in range(numberOfSlaveProcesses)]
 
   # send relevant portions of the dataframe to corresponding processes (e.g. for 299 dataframes and 3 slave processes:  0:100, 100:200, 200:299 for process 0, 1 and 2 respectively)
   start = 0
   end   = 0
-  for proc_index in range(numberOfSlaveProcesses):
-    end   = number_of_rows_each_process[proc_index] + end
-    print("Proccess " + str(proc_index) + " is responsible for the rows between " + str(start) + " and " + str(end))
-    distributed_dfs.append(df_to_distribute[start:end])
+  for slave_proc_index in range(numberOfSlaveProcesses):
+    end   = number_of_rows_each_process[slave_proc_index] + end
+    startAndEnds_for_distributed_dfs_forEachProcess.append((start, end))
+    distributed_dfs_forEachProcess.append(df_to_distribute[start:end])
     start = end
   
-  return distributed_dfs
+  return distributed_dfs_forEachProcess, startAndEnds_for_distributed_dfs_forEachProcess
 
 def get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows):
 

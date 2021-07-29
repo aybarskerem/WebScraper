@@ -2,7 +2,7 @@ import configs
 from . import wordCloud
 import json # use json dumps to format dictionaries while printing
 
-def output_timing_results(duration_seconds, numberOfRepeats, startTime, numberOfProcesses=None):
+def output_timing_results(duration_seconds, numberOfRepeats, startTime, numberOfProcesses):
   '''
   Parameters:
     duration_seconds (int):                       The duration of each run of the process function in process_csv.py
@@ -23,16 +23,12 @@ def output_timing_results(duration_seconds, numberOfRepeats, startTime, numberOf
   with open("ExecutionTimingResults.txt", mode='a') as outputFile:
     outputFile.write("*************\n")
 
-    if configs.IS_MULTIPROCESSED:
+    if numberOfProcesses > 1:
       outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n")
     else:
       outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n")
     
-    if numberOfProcesses:
-      outputFile.write("#of processes involved is: {}\n".format(numberOfProcesses))
-    else:
-      outputFile.write("#of processes involved is: NA\n") 
-
+    outputFile.write("#of processes involved is: {}\n".format(numberOfProcesses))
     outputFile.write("Processed {}% of the file.\n".format(configs.READING_RATIO_FOR_INPUT_CSVs * 100))
     outputFile.write("#of repeats is: {}\n".format(numberOfRepeats))
     outputFile.write("Script execution start date: {0}\n".format(startTime.strftime("%d/%m/%Y, %H:%M:%S")) )
