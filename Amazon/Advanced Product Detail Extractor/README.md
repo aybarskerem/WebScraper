@@ -1,26 +1,28 @@
 ------------------------------
 # DESCRIPTION:
-
-- A more advanced version of the parallel webscraper in "Simple Product Detail Extractor", implemented for the shopping site of Amazon (https://www.amazon.com/). This script can run in both 'parallel' or 'serial' mode.
-
-- The code extracts the product name, product price and user review information as can be seen in the .csv files.
-
-- This webscraper uses Selenium library to send url requests to the server as well as giving an option to use urllib to make these url requests.
-
+  
+- A more advanced version of the parallel webscraper in "Simple Product Detail Extractor", implemented for the shopping site of Amazon (https://www.amazon.com/). This script can run in both 'parallel' or 'serial' mode.  
+  
+- The code extracts the product name, product price and user review information as can be seen in the .csv files.  
+  
+- This webscraper can either use Selenium library or urllib library to send url requests to the server as well as giving an option to use urllib to make these url requests. The selenium library performed better in my tests in terms of mimicking a real user behaviour and not getting blocked when used with enough sleeps (we put sleeps between each url request to not put a burden on the webserver).  
+  
 - This webscraper is expected to run on multiple different cpu threads and uses "MPI" for parallelization.  
-
+  
 - One example "url" is hard-coded in the configuration file (configs.py). Using this url, the code automatically checks other search results by tracking the urls embedded in the "next buttons" at the end of the search pages traversing all the results in the end (Actually, there are three example urls, brand names and categories of products hard-coded in the config file, but the others are commented out and the comments could be removed for usage.). Hence, please set the "MAIN_URL_TO_PROCESS", "BRAND_NAME" and "CATEGORY" parameters in the config file according to your preferences.
-
+  
 - This code clicks on every product image on the given hard-coded url to locate the comments and hence sends lots of url requests to Amazon website. To avoid getting blocked, high sleep amounts put in the code; so the code is expected to run slow to mimic a human on purpose.
-
+  
 - There is 'SLEEP_BETWEEN_URL_REQUESTS' parameter in configs.py file which is set to True. This makes the corresponding process sleep between 8 and 17 seconds between each of its url request. This is important not to put a burden on the webserver and not to get blocked. The code might seem to run slow; but it is done on purpose. Still, if the code needs to be run quickly, 'SLEEP_BETWEEN_URL_REQUESTS' can be set to False. 
+  
+- The webscraper script outputs three csv files ( ELECTRONICS (LAPTOPS), TOOLS & HOME IMPROVEMENT and SPORTS) which the process script (which resides in the Process folder) uses to process using some NLP techniques.  
 ------------------------------
 # SOME NOTES:
-
-- Note that this script assumes a certain tag to exist on the Amazon webpage's html (accessed by the url) and if Amazon changes taggings; the script should be updated accordingly in the html parsing part. Also, the urls that should be given to this script has the navigation buttons like "1 2 3 ...   400 Next" at the bottom of the page.
-
-- Please set the configuration parameters inside the config.py before running the code and read the descriptions there to understand the parameters better.
-
+  
+- Note that this script assumes a certain tag to exist on the Amazon webpage's html (accessed by the url) and if Amazon changes taggings; the script should be updated accordingly in the html parsing part. Also, the urls that should be given to this script has the navigation buttons like "1 2 3 ...   400 Next" at the bottom of the page.  
+  
+- Please set the configuration parameters inside the config.py before running the code and read the descriptions there to understand the parameters better.  
+  
 ------------------------------
 # DEPENDENCIES:
 
@@ -55,16 +57,16 @@ python webscraper.py
 ------------------------------
 
 # OUTPUT FILES:  
-
-- ELECTRONICS (LAPTOPS).csv, SPORT.csv and TOOLS & HOME IMPROVEMENT.csv files which are produced as a result of running "webscraper.py" script.
-
-------------------------------
-
-# SCRIPT TERMINAL OUTPUTS
   
+- ELECTRONICS (LAPTOPS).csv, SPORT.csv and TOOLS & HOME IMPROVEMENT.csv files which are produced as a result of running "webscraper.py" script.
+  
+------------------------------
+  
+# SCRIPT TERMINAL OUTPUTS
+    
 - Items 5 & 6 can be checked to see the effect of single-processing and multi-processing (30 sec vs 21 sec for 3 pages where we read only one product's review on each of the pages).  
   
-
+  
 1) An example output for a single-processed (IS_MULTIPROCESSED is False) execution using urllib (USE_SELENIUM is False) for a single page where SLEEP_BETWEEN_URL_REQUESTS is True:   
 - Serial execution  
 - The selected user agent is: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36  
