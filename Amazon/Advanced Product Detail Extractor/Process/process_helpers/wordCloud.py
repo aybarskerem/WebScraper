@@ -6,8 +6,8 @@ from configs import *
 def append_wordCloudDict(wordCloudDict_merged, wordCloudDict):
   '''
   Parameters:
-    wordCloudDict_merged ( 'OrderedDict( dict() )' ): An object which merges multiple bagOfWords_dict object in a special way explained in the 'Description' section.
-    wordCloudDict        ( 'OrderedDict (dict() )' )
+    wordCloudDict_merged ( 'dict( dict() )' ): An object which merges multiple wordCloudDict object in a special way explained in the 'Description' section.
+    wordCloudDict        ( 'dict ( dict() )' )
 
   Returns 
     Nothing

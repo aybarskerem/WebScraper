@@ -62,7 +62,7 @@ python webscraper.py
   
 ------------------------------
   
-# SCRIPT TERMINAL OUTPUTS
+# SCRIPT TERMINAL OUTPUT EXAMPLES
     
 - Items 5 & 6 can be checked to see the effect of single-processing and multi-processing (30 sec vs 21 sec for 3 pages where we read only one product's review on each of the pages).  
   

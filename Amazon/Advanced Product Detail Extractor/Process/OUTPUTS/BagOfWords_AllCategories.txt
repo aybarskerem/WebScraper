@@ -3,150 +3,327 @@
     "LAPTOPS": {
       "5": {
         "MICROSOFT": {
-          "USE": 16,
-          "SURFACE": 12,
-          "DEVICE": 12,
-          "WINDOWS": 8,
-          "WORK": 8,
-          "THING": 7,
-          "NEED": 6,
-          "WANT": 6,
-          "SCREEN": 6,
-          "STORE": 5,
-          "LIGHT": 5,
-          "PC": 5,
-          "KEYBOARD": 5,
-          "UPDATE": 4,
-          "PERFORMANCE": 4
+          "’": 88,
+          "SURFACE": 63,
+          "USE": 57,
+          "LAPTOP": 53,
+          "S": 40,
+          "WINDOWS": 31,
+          "WORK": 25,
+          "T": 23,
+          "SCREEN": 22,
+          "KEYBOARD": 22,
+          "MICROSOFT": 19,
+          "PRO": 19,
+          "WANT": 18,
+          "FEEL": 17,
+          "LOOK": 16
         }
       },
       "4": {
         "MICROSOFT": {
-          "’": 33,
-          "T": 11,
+          "’": 51,
+          "LAPTOP": 32,
+          "S": 22,
+          "SURFACE": 21,
+          "PRO": 17,
+          "T": 16,
+          "MICROSOFT": 15,
+          "MACBOOK": 15,
+          "I": 14,
+          "USE": 13,
+          "SCREEN": 13,
+          "KEYBOARD": 12,
           "TABLET": 11,
-          "S": 10,
-          "MICROSOFT": 8,
-          "RE": 6,
-          "DESIGN": 6,
-          "KEYBOARD": 6,
-          "SURFACE": 5,
-          "PRO": 5,
-          "YEAR": 5,
-          "BEZEL": 5,
-          "PUT": 5,
-          "•": 4,
-          "TIME": 4
+          "YEAR": 10,
+          "MODEL": 10
+        }
+      },
+      "3": {
+        "MICROSOFT": {
+          "BATTERY": 6,
+          "HP": 5,
+          "LAPTOP": 5,
+          "USE": 4,
+          "SCREEN": 4,
+          "THOUGHT": 3,
+          "FASTER": 3,
+          "YEAR": 3,
+          "GB": 3,
+          "CHARGE": 2,
+          "ISSUE": 2,
+          "HOPE": 2,
+          "LONGER": 2,
+          "FEEL": 2,
+          "BIT": 2
         }
       },
       "2": {
         "MICROSOFT": {
+          "LAPTOP": 21,
           "XPS": 16,
           "SP7": 12,
           "YOGA": 11,
-          "RAM": 8,
-          "SCREEN": 6,
+          "SCREEN": 10,
+          "BATTERY": 10,
+          "SURFACE": 9,
+          "RAM": 9,
+          "MICROSOFT": 9,
+          "LIFE": 7,
+          "’": 7,
           "OPTION": 6,
           "KEYBOARD": 6,
-          "CONS": 4,
-          "NO": 4,
-          "PROS": 3,
-          "RATIO": 3,
-          "BATTERY": 3,
-          "FHD": 3,
-          "WHR": 3,
-          "COMPARE": 3
+          "WINDOWS": 5,
+          "PURCHASE": 5
         }
       },
       "1": {
         "MICROSOFT": {
-          "ITEM": 5,
-          "ACCESS": 4,
-          "NOTHING": 4,
-          "WORK": 3,
-          "SURFACE": 3,
-          "PRO": 3,
-          "DOWNLOAD": 2,
-          "TRY": 2,
-          "LOGIN": 2,
-          "VIDEO": 2,
-          "DAY": 2,
-          "SURE": 2,
-          "RIGHT": 2,
-          "LABEL": 2,
-          "COUNT": 1
+          "SURFACE": 15,
+          "LAPTOP": 13,
+          "MICROSOFT": 11,
+          "I": 10,
+          "KEY": 9,
+          "TRY": 8,
+          "SCREEN": 8,
+          "PRO": 8,
+          "LABTOP": 8,
+          "WORK": 7,
+          "LINE": 7,
+          "AMAZON": 6,
+          "USE": 6,
+          "ITEM": 6,
+          "MACHINE": 6
         }
       }
     }
   },
   "SPORTS": {
     "General": {
+      "5": {
+        "Fitbit": {
+          "BAND": 10,
+          "FITBIT": 8,
+          "WANT": 4,
+          "CLASP": 4,
+          "FIT": 4,
+          "BRAND": 3,
+          "COLOR": 3,
+          "LOVE": 2,
+          "WEAR": 2,
+          "TIME": 2,
+          "EXCELLENT": 2,
+          "QUALITY": 2,
+          "GLAD": 2,
+          "REVIEW": 2,
+          "MONTH": 2
+        }
+      },
+      "4": {
+        "Fitbit": {
+          "BAND": 2,
+          "REPLACEMENT": 2,
+          "COLOR": 2,
+          "BIT": 1,
+          "REVIEW": 1,
+          "BOUGHT": 1,
+          "CHEAP": 1,
+          "KNOCKOFF": 1,
+          "NICER": 1,
+          "COURSE": 1,
+          "PRICE": 1,
+          "PROBLEM": 1,
+          "RASH": 1,
+          "CLASP": 1,
+          "OTHERS": 1
+        }
+      },
+      "3": {
+        "Fitbit": {
+          "BAND": 5,
+          "FITBIT": 3,
+          "MONTH": 2,
+          "BROKE": 2,
+          "TRACKER": 2,
+          "PLASTIC": 1,
+          "CONNECTOR": 1,
+          "FRUSTRATE": 1,
+          "BOUGHT": 1,
+          "ALTA": 1,
+          "HR": 1,
+          "CHARGE": 1,
+          "THOUGHT": 1,
+          "LONGER": 1,
+          "LOVE": 1
+        }
+      },
+      "2": {
+        "Fitbit": {
+          "BAND": 4,
+          "FITBIT": 3,
+          "’": 3,
+          "POP": 2,
+          "T": 2,
+          "THING": 1,
+          "ORDER": 1,
+          "MAY18": 1,
+          "AMAZON": 1,
+          "ISN": 1,
+          "COST": 1,
+          "TRY": 1,
+          "CHEAPER": 1,
+          "BRAND": 1,
+          "HAVEN": 1
+        }
+      },
       "1": {
         "Fitbit": {
-          "STRANGE": 1,
-          "RASH": 1,
-          "WEEK": 1,
-          "PRODUCT": 1,
-          "MONEY": 1
+          "FITBIT": 16,
+          "PRODUCT": 11,
+          "STRAP": 7,
+          "HR": 7,
+          "MONTH": 6,
+          "BAND": 6,
+          "ALTA": 6,
+          "WARRANTY": 5,
+          "’": 5,
+          "TRACK": 5,
+          "BRAND": 4,
+          "PIN": 4,
+          "DEVICE": 4,
+          "CUSTOMER": 4,
+          "STEP": 4
         }
       }
     }
   },
   "TOOLS & HOME IMPROVEMENT": {
     "General": {
+      "5": {
+        "EveryDrop by Whirlpool": {
+          "FILTER": 40,
+          "WATER": 25,
+          "WHIRLPOOL": 8,
+          "ICE": 8,
+          "TASTE": 7,
+          "REFRIGERATOR": 6,
+          "USE": 6,
+          "SYSTEM": 6,
+          "GALLON": 5,
+          "MONTH": 5,
+          "MAKER": 5,
+          "STANDARD": 5,
+          "FIT": 4,
+          "NEED": 4,
+          "REVIEW": 4
+        },
+        "Tenmiro": {
+          "LIGHT": 8,
+          "WORK": 6,
+          "FUN": 6,
+          "SET": 4,
+          "’": 4,
+          "LOOK": 3,
+          "MUSIC": 3,
+          "DANCE": 3,
+          "TENMIRO": 2,
+          "FOOT": 2,
+          "MATCH": 2,
+          "CONTROL": 2,
+          "INSTALL": 2,
+          "BIT": 2,
+          "PARTY": 2
+        }
+      },
       "4": {
         "EveryDrop by Whirlpool": {
+          "FILTER": 6,
+          "WATER": 3,
+          "AMAZON": 3,
+          "FIT": 3,
+          "PRICE": 2,
+          "W10295370": 2,
+          "TIME": 2,
+          "–": 2,
+          "SEARS": 2,
           "EVERYDROP": 1,
-          "WATER": 1,
-          "FILTER": 1,
           "HARDER": 1,
           "YEAR": 1,
           "REFRIGERATOR": 1,
-          "PRICE": 1,
-          "AMAZON": 1,
           "DELIVERY": 1,
-          "BEAT": 1,
-          "STAR": 1,
-          "FIT": 1,
-          "PAST": 1
+          "BEAT": 1
         }
       },
       "3": {
         "EveryDrop by Whirlpool": {
-          "FILTER": 4,
+          "FILTER": 26,
+          "WATER": 9,
+          "USE": 7,
+          "WORK": 5,
+          "FINE": 4,
+          "FRIDGE": 4,
+          "ICE": 4,
+          "WHIRLPOOL": 3,
           "PLACE": 3,
-          "ROTATE": 2,
-          "TAB": 2,
-          "TOOK": 1,
-          "CHANCE": 1,
-          "USE": 1,
-          "WAREHOUSE": 1,
-          "DEAL": 1,
-          "HALF": 1,
-          "PRICE": 1,
-          "WHIRLPOOL": 1,
-          "KENMORE": 1,
-          "PRODUCT": 1,
-          "LIKENEW": 1
+          "TASTE": 3,
+          "NEED": 3,
+          "TIGHT": 3,
+          "SEEM": 3,
+          "MODEL": 3,
+          "HALF": 2
+        }
+      },
+      "2": {
+        "EveryDrop by Whirlpool": {
+          "FILTER": 34,
+          "WHIRLPOOL": 8,
+          "WORK": 6,
+          "ICE": 5,
+          "MACHINE": 4,
+          "MONTH": 4,
+          "REVIEW": 4,
+          "USE": 4,
+          "REFRIGERATOR": 4,
+          "ISSUE": 4,
+          "WATER": 4,
+          "TOP": 4,
+          "PROBLEM": 3,
+          "NEED": 3,
+          "LOOK": 3
         }
       },
       "1": {
         "EveryDrop by Whirlpool": {
-          "FIT": 6,
-          "FILTER": 5,
-          "NEED": 4,
-          "WHIRLPOOL": 4,
-          "RETURN": 3,
-          "PICTURE": 3,
-          "UPS": 2,
-          "PICK": 2,
-          "YEAR": 2,
-          "CONTACT": 2,
-          "REFRIGERATOR": 2,
-          "TURN": 2,
-          "WATER": 2,
-          "SHAPE": 2,
-          "AMAZON": 2
+          "FILTER": 127,
+          "WATER": 56,
+          "WHIRLPOOL": 26,
+          "AMAZON": 18,
+          "FIT": 15,
+          "REFRIGERATOR": 14,
+          "TASTE": 14,
+          "WORK": 13,
+          "TRY": 11,
+          "USE": 11,
+          "PPM": 10,
+          "FRIDGE": 10,
+          "NEED": 9,
+          "BOUGHT": 9,
+          "CHANGE": 8
+        },
+        "Tenmiro": {
+          "PLUG": 2,
+          "ADAPTER": 1,
+          "CONNECT": 1,
+          "IMAGE": 1,
+          "SHOW": 1,
+          "MAX": 1,
+          "AMP": 1,
+          "ROW": 1,
+          "LIGHT": 1,
+          "WORK": 1,
+          "WANT": 1,
+          "HASSLE": 1,
+          "RETURN": 1
         }
       }
     }

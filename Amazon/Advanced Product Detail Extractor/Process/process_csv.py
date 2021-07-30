@@ -15,6 +15,7 @@ print = functools.partial(print, flush=True) #flush print functions by default (
 
 files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ] # csv files
 START_TIME = datetime.now()
+NUMBER_OF_ROWS_PROCESSED = 0 # set by the master process in multi-processing or by the only process in single-processing in the process() function
 
 def main():
   # COMM VARIABLES
@@ -33,27 +34,30 @@ def main():
   average_duration_seconds = tp.timeit(number=configs.NUMBER_OR_REPEATS_TIMEIT) / configs.NUMBER_OR_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OR_REPEATS_TIMEIT times.
 
   if (nprocs > 1 and rank == configs.MASTER_PROCESS_RANK) or (nprocs == 1 and rank == 0): 
-    outputter.output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, START_TIME, nprocs)
+    outputter.output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, START_TIME, nprocs, NUMBER_OF_ROWS_PROCESSED)
 
 def process():
+  global NUMBER_OF_ROWS_PROCESSED
+
   if nprocs > 1:
     if rank != configs.MASTER_PROCESS_RANK: # if slave
       df_correspondingRows = comm.recv(source=configs.MASTER_PROCESS_RANK) # process the urls assigned to this slave
       comm.send(get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingRows) , dest=configs.MASTER_PROCESS_RANK) # send processed results to master
     else: # if master     
       all_dfs = readAllFiles_and_return_df()  
-      print("Total #of rows to process is: " + str(all_dfs.shape[0]))    
+      NUMBER_OF_ROWS_PROCESSED = all_dfs.shape[0]
+      print("Total #of rows processed is: {0} ({1}% of each of the input csv file rows are processed)\n".format(NUMBER_OF_ROWS_PROCESSED, configs.READING_RATIO_FOR_INPUT_CSVs * 100))   
       ################## LOAD BALANCE THE DATAFRAME ROWS ACROSS ALL PROCESSES ##################   
       distributed_dfs_forEachProcess, startAndEnds_for_distributed_dfs_forEachProcess = loadBalance_dataframe_toProcesses(all_dfs, nprocs-1)
       
       distributed_dfs_index = 0
       for proc_index in range(nprocs):
         if proc_index != configs.MASTER_PROCESS_RANK:
-          print("Proccess {0} is responsible for the urls between {1} and {2}\n".format(proc_index, *startAndEnds_for_distributed_dfs_forEachProcess[distributed_dfs_index] ) )
+          print("Proccess {0} is responsible for the rows between {1} and {2}\n".format(proc_index, *startAndEnds_for_distributed_dfs_forEachProcess[distributed_dfs_index] ) )
           comm.send(distributed_dfs_forEachProcess[distributed_dfs_index], dest=proc_index)
           distributed_dfs_index += 1
 
-      wordCloudDict_merged          = OrderedDict()
+      wordCloudDict_merged          = {}
       bagOfWords_dict_merged        = OrderedDict()
       sentimentAnalysis_dict_merged = OrderedDict()
       df_sentimentAnalysis_merged   = pd.DataFrame()
@@ -68,9 +72,10 @@ def process():
 
       outputter.finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict_merged, bagOfWords_dict_merged, sentimentAnalysis_dict_merged, df_sentimentAnalysis_merged)
     
-  else: # IF A SINGLE PROCESS RUNS ONLY   
+  else: # IF A SINGLE PROCESS RUNS ONLY  (nprocs == 1, process with rank 0) 
     all_dfs = readAllFiles_and_return_df()
-    print("Total #of rows to process is: " + str(all_dfs.shape[0]))
+    NUMBER_OF_ROWS_PROCESSED = all_dfs.shape[0]
+    print("Total #of rows processed is:       {0} ({1}% of each of the input csv file rows are processed)\n".format(NUMBER_OF_ROWS_PROCESSED, configs.READING_RATIO_FOR_INPUT_CSVs * 100))
     wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis  = get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(all_dfs)
 
     outputter.finalize_wordCloud_bagOfWords_sentimentAnalysis_outputs(wordCloudDict, bagOfWords_dict, sentimentAnalysis_dict, df_sentimentAnalysis)
@@ -153,7 +158,7 @@ def get_wordCloud_bagOfWords_dicts_and_getSentimentAnalysis_df(df_correspondingR
 
   # print("category is: " + category)
   # print("subcategory is: " + subcategory)
-  wordCloudDict          = OrderedDict()
+  wordCloudDict          = {}
   bagOfWords_dict        = OrderedDict()
   sentimentAnalysis_dict = OrderedDict()
   df_sentimentAnalysis   = pd.DataFrame()
