@@ -1,195 +1,104 @@
+************************************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+
+- #of processes involved is:         1
+- #of main pages processed is:       1
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 22:45:16
+- Average script execution duration: 0 days 0 hours 0 minutes 43.515927999999995 seconds
+************************************
+SINGLE-PROCESSED (SERIAL) EXECUTION
+
+- #of processes involved is:         1
+- #of main pages processed is:       1
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: False
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 22:46:33
+- Average script execution duration: 0 days 0 hours 0 minutes 40.3207013 seconds
+************************************
 MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 2
-#of repeats is: 1
-Script execution start date: 29/07/2021, 16:30:29
-Average script execution duration: 0 days 0 hours 1 minutes 1.8260138999999995 seconds
-*************
+
+- #of processes involved is:         4
+- #of main pages processed is:       1
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 22:48:39
+- Average script execution duration: 0 days 0 hours 0 minutes 48.239007900000004 seconds
+************************************
 SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 2
-#of repeats is: 1
-Script execution start date: 29/07/2021, 16:46:20
-Average script execution duration: 0 days 0 hours 1 minutes 23.204676899999995 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 1
-#of repeats is: 2
-Script execution start date: 29/07/2021, 17:08:07
-Average script execution duration: 0 days 0 hours 1 minutes 11.887416599999995 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-#of repeats is: 1
-Script execution start date: 29/07/2021, 17:17:39
-Average script execution duration: 0 days 0 hours 0 minutes 52.544423 seconds
-*************
+
+- #of processes involved is:         1
+- #of main pages processed is:       1
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: False
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 22:51:35
+- Average script execution duration: 0 days 0 hours 0 minutes 9.5610805 seconds
+************************************
 MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 17:27:31
-Average script execution duration: 0 days 0 hours 0 minutes 17.0733416 seconds
-*************
+
+- #of processes involved is:         4
+- #of main pages processed is:       1
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: False
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 22:52:39
+- Average script execution duration: 0 days 0 hours 0 minutes 12.3952831 seconds
+************************************
 SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 17:31:19
-Average script execution duration: 0 days 0 hours 0 minutes 25.1080225 seconds
-*************
+
+- #of processes involved is:         1
+- #of main pages processed is:       2
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 23:01:21
+- Average script execution duration: 0 days 0 hours 1 minutes 39.01021589999999 seconds
+************************************
 SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:37:01
-Average script execution duration: 0 days 0 hours 0 minutes 47.596358900000006 seconds
-*************
+
+- #of processes involved is:         1
+- #of main pages processed is:       2
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: True
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   2
+- Script execution start date:       30/07/2021, 23:03:40
+- Average script execution duration: 0 days 0 hours 1 minutes 33.444617750000006 seconds
+************************************
 SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:38:31
-Average script execution duration: 0 days 0 hours 0 minutes 24.7647165 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:42:28
-Average script execution duration: 0 days 0 hours 0 minutes 32.210722100000005 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:42:28
-Average script execution duration: 0 days 0 hours 0 minutes 32.7738685 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:42:28
-Average script execution duration: 0 days 0 hours 0 minutes 49.5020047 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:42:28
-Average script execution duration: 0 days 0 hours 0 minutes 50.6418223 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:44:52
-Average script execution duration: 0 days 0 hours 0 minutes 25.3413304 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 18:46:08
-Average script execution duration: 0 days 0 hours 0 minutes 17.1914624 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request: Yes
-#of repeats is: 1
-Script execution start date: 29/07/2021, 22:28:48
-Average script execution duration: 0 days 0 hours 1 minutes 20.017668999999998 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request: Yes
-#of repeats is: 1
-Script execution start date: 29/07/2021, 22:33:56
-Average script execution duration: 0 days 0 hours 1 minutes 53.849600699999996 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 22:40:01
-Average script execution duration: 0 days 0 hours 0 minutes 30.7439876 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: No
-#of repeats is: 1
-Script execution start date: 29/07/2021, 22:45:02
-Average script execution duration: 0 days 0 hours 0 minutes 33.0132541 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: Yes
-#of repeats is: 1
-Script execution start date: 29/07/2021, 23:05:02
-Average script execution duration: 0 days 0 hours 2 minutes 26.3580551 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 3
-Does the code sleep between each url request: Yes
-#of repeats is: 1
-Script execution start date: 30/07/2021, 00:16:28
-Average script execution duration: 0 days 0 hours 2 minutes 37.08132859999998 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 3
-#of pages processed is: 3
-Does the code sleep between each url request: Yes
-#of repeats is: 1
-Script execution start date: 30/07/2021, 01:26:10
-Average script execution duration: 0 days 0 hours 2 minutes 57.8970372 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 2
-Does the code sleep between each url request?: Yes
-#of repeats is: 1
-Script execution start date: 30/07/2021, 01:31:46
-Average script execution duration: 0 days 0 hours 1 minutes 26.216696199999987 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 3
-Does the code sleep between each url request?: No
-#of repeats is: 1
-Script execution start date: 30/07/2021, 01:38:31
-Average script execution duration: 0 days 0 hours 0 minutes 21.250288100000002 seconds
-*************
-SINGLE-PROCESSED (SERIAL) EXECUTION
-#of processes involved is: 1
-#of pages processed is: 1
-Does the code sleep between each url request?: Yes
-#of repeats is: 1
-Script execution start date: 30/07/2021, 01:40:39
-Average script execution duration: 0 days 0 hours 0 minutes 47.6490595 seconds
-*************
-MULTI-PROCESSED (PARALLEL) EXECUTION
-#of processes involved is: 4
-#of pages processed is: 1
-Does the code sleep between each url request?: No
-#of repeats is: 1
-Script execution start date: 30/07/2021, 01:42:39
-Average script execution duration: 0 days 0 hours 0 minutes 15.3686222 seconds
+
+- #of processes involved is:         1
+- #of main pages processed is:       2
+
+- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: False
+- USE_SELENIUM                       config parameter value is: True
+- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       30/07/2021, 23:09:35
+- Average script execution duration: 0 days 0 hours 10 minutes 26.03176910000002 seconds

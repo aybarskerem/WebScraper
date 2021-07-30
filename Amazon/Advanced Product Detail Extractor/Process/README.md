@@ -70,28 +70,46 @@ Output files below can be found in OUTPUTS folder.
   
 1) Single-process execution where CREATE_WORD_CLOUD, CREATE_BAG_OF_WORDS and CREATE_SENTIMENT_ANALYSIS_RESULTS are True:  
   
-- Serial Execution  
-- Total #of rows processed is: 146 (1.0% of each of the input csv file rows are processed)  
-- Average script execution duration: 0 days 0 hours 4 minutes 24.124343699999997 seconds  
+Serial Execution  
+Total #of rows processed is: 146 (1.0% of each of the input csv file rows are processed)  
+Average script execution duration: 0 days 0 hours 4 minutes 24.124343699999997 seconds  
   
 2) Multi-process (4 processes) execution where CREATE_WORD_CLOUD, CREATE_BAG_OF_WORDS and CREATE_SENTIMENT_ANALYSIS_RESULTS are True:  
   
-- Parallel execution  
-- Total #of rows to process is: 146 (1.0% of each of the input csv file rows are processed) 
-- Proccess 1 is responsible for the rows between 0 and 49  
-- Proccess 2 is responsible for the rows between 49 and 98  
-- Proccess 3 is responsible for the rows between 98 and 146    
-- Average script execution duration: 0 days 0 hours 3 minutes 25.5691377 seconds  
+Parallel execution  
+Total #of rows to process is: 146 (1.0% of each of the input csv file rows are processed) 
+Proccess 1 is responsible for the rows between 0 and 49  
+Proccess 2 is responsible for the rows between 49 and 98  
+Proccess 3 is responsible for the rows between 98 and 146    
+Average script execution duration: 0 days 0 hours 3 minutes 25.5691377 seconds  
   
 3) Multi-process (8 processes) execution where CREATE_WORD_CLOUD, CREATE_BAG_OF_WORDS and CREATE_SENTIMENT_ANALYSIS_RESULTS are True: 
-
-- Parallel execution  
-- Total #of rows processed is: 146 (1.0% of each of the input csv file rows are processed)  
-- Proccess 1 is responsible for the rows between 0 and 21  
-- Proccess 2 is responsible for the rows between 21 and 42  
-- Proccess 3 is responsible for the rows between 42 and 63  
-- Proccess 4 is responsible for the rows between 63 and 84  
-- Proccess 5 is responsible for the rows between 84 and 105  
-- Proccess 6 is responsible for the rows between 105 and 126  
-- Proccess 7 is responsible for the rows between 126 and 146  
+  
+a) Script Terminal Output:  
+Parallel execution  
+Total #of rows processed is: 146 (1.0% of each of the input csv file rows are processed)  
+Proccess 1 is responsible for the rows between 0 and 21  
+Proccess 2 is responsible for the rows between 21 and 42  
+Proccess 3 is responsible for the rows between 42 and 63  
+Proccess 4 is responsible for the rows between 63 and 84  
+Proccess 5 is responsible for the rows between 84 and 105  
+Proccess 6 is responsible for the rows between 105 and 126  
+Proccess 7 is responsible for the rows between 126 and 146  
+Average script execution duration: 0 days 0 hours 2 minutes 57.8988914 seconds  
+  
+b) Corresponding 'ExecutionTimingResults.txt' entry:  
+  
+************************************  
+MULTI-PROCESSED (PARALLEL) EXECUTION  
+  
+- #of processes involved is:         8  
+- Total #of rows processed is:       146 (1.0% of each of the input csv file rows are processed)  
+  
+- CREATE_WORD_CLOUD                  config parameter value is: True  
+- CREATE_BAG_OF_WORDS                config parameter value is: True  
+- CREATE_SENTIMENT_ANALYSIS_RESULTS  config parameter value is: True  
+  
+- #of times the script was run is:   1  
+- Script execution start date:       30/07/2021, 21:51:11  
 - Average script execution duration: 0 days 0 hours 2 minutes 57.8988914 seconds  
+    

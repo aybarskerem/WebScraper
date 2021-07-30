@@ -22,12 +22,12 @@ For timing comparisons, please also make sure that 'MAIN_URL_TO_PROCESS' contain
 '''
 
 ############################# 1st TYPE PARAMETERS #############################
-MASTER_PROCESS_RANK = 0 # Only meaningful if webscraper is run with multiple processes. Here we use rank = 0 for master process; however we can set it to any value in [0, nprocs-1].
-MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE = -1 # How many main pages that the webscraper should scrape. '-1' means traverse all the pages. Note that each main page contains multiple products where each product has a link directing us to its reviews & ratings page; here we only consider the main pages (the pages that are reached on the url indicated by 'MAIN_URL_TO_PROCESS' config parameter by clicking on 1, 2, 3, ..... at the bottom of the page). 
+MASTER_PROCESS_RANK                  = 0     # Only meaningful if webscraper is run with multiple processes. Here we use rank = 0 for master process; however we can set it to any value in [0, nprocs-1].
+MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE = -1    # How many main pages that the webscraper should scrape. '-1' means traverse all the pages. Note that each main page contains multiple products where each product has a link directing us to its reviews & ratings page; here we only consider the main pages (the pages that are reached on the url indicated by 'MAIN_URL_TO_PROCESS' config parameter by clicking on 1, 2, 3, ..... at the bottom of the page). 
 READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE   = False # If True, it limits #of url requests (stops clicking on other products to get the reviews). If False, there occurs no limitation. This can be useful for comparison of parallel and serial running of the script to only test the speed of a subset of the urls.
-NUMBER_OR_REPEATS_TIMEIT             = 1    # How many times 'timeit' module run the script (or process funtion) to time the script.
-USE_SELENIUM                         = True # Whether to use selenium or urllib for webscraping. It should be set to True if Selenium False if urllib
-SLEEP_BETWEEN_URL_REQUESTS           = True # This makes the corresponding process sleep between 8 and 17 seconds between each of its url request. This is important not to put a burden on the webserver and not to get blocked. The code might seem to run slow; but it is done on purpose. Still, if the code needs to be run quickly, 'SLEEP_BETWEEN_URL_REQUESTS' can be set to False. 
+NUMBER_OF_REPEATS_TIMEIT             = 1     # How many times 'timeit' module run the script (or process funtion) to time the script.
+USE_SELENIUM                         = True  # Whether to use selenium or urllib for webscraping. It should be set to True if Selenium False if urllib
+SLEEP_BETWEEN_URL_REQUESTS           = True  # This makes the corresponding process sleep between 8 and 17 seconds between each of its url request. This is important not to put a burden on the webserver and not to get blocked. The code might seem to run slow; but it is done on purpose. Still, if the code needs to be run quickly, 'SLEEP_BETWEEN_URL_REQUESTS' can be set to False. 
 
 ############################# 2nd TYPE PARAMETERS (BLOCK-WISE ACTIVE PARAMETERS) #############################
 # ############################# ELECTRONICS CATEGORY #############################

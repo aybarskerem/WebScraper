@@ -29,10 +29,10 @@ def main():
   else:
     print("Serial execution")
   tp = timeit.Timer("process()", "from __main__ import process")
-  average_duration_seconds = tp.timeit(number=configs.NUMBER_OR_REPEATS_TIMEIT) / configs.NUMBER_OR_REPEATS_TIMEIT
+  average_duration_seconds = tp.timeit(number=configs.NUMBER_OF_REPEATS_TIMEIT) / configs.NUMBER_OF_REPEATS_TIMEIT
 
   if (nprocs > 1 and rank == configs.MASTER_PROCESS_RANK) or (nprocs == 1 and rank == 0): # after all slaves called and finished with the 'process' function (so handed their work to master to be outputted and then master merged these works), we can output the timing )
-    output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, START_TIME, nprocs)
+    output_timing_results(average_duration_seconds)
 
 def process():
   
@@ -226,7 +226,7 @@ def processUrl_or_returnNextUrl(url, mode="processUrl"):
         #totalNumberOfPages=max(int(soup.find_all('li', attrs={'class':'a-disabled', 'aria-disabled':'true'})[-1].text), currPage)
         #unicode_safe_print(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling)
         totalNumberOfPages = max(int(soup.find('li',attrs={'class':'a-last'}).previous_sibling.previous_sibling.text),currPage)
-        print("The total number of pages that exist on the main page is: " + str(totalNumberOfPages))
+        print("The total number of pages that are reachable from the main page is: " + str(totalNumberOfPages))
         
         if configs.MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE != -1:
           numberOfPagesToTraverse = min(totalNumberOfPages, configs.MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE)
@@ -361,13 +361,10 @@ def get_url_parser(url):
     else:
       return None 
 
-def output_timing_results(duration_seconds, numberOfRepeats, startTime, numberOfProcesses=None):
+def output_timing_results(duration_seconds):
   '''
   Parameters:
-    duration_seconds (int):                       The duration of each run of the process function in process_csv.py
-    numberOfRepeats  (int):                       The #of times the process function is called for timeit
-    startTime        (datetime.datetime object):  The time the process script started
-    nprocs           (int):                       #of MPI processes active
+    duration_seconds (int): The duration of each run of the process function in process_csv.py
  
   Returns:
     Nothing
@@ -380,23 +377,23 @@ def output_timing_results(duration_seconds, numberOfRepeats, startTime, numberOf
   days, hours, minutes = map(int, [days, hours, minutes])
 
   with open("ExecutionTimingResults.txt", mode='a') as outputFile:
-    outputFile.write("*************\n")
+    outputFile.write("************************************\n")
 
     if nprocs > 1:
-      outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n")
+      outputFile.write("MULTI-PROCESSED (PARALLEL) EXECUTION\n\n")
     else:
-      outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n")
+      outputFile.write("SINGLE-PROCESSED (SERIAL) EXECUTION\n\n")
     
-    if numberOfProcesses:
-      outputFile.write("#of processes involved is: {}\n".format(numberOfProcesses))
-    else:
-      outputFile.write("#of processes involved is: NA\n") 
+    outputFile.write("- #of processes involved is:         {}\n".format(nprocs))
+    outputFile.write("- #of main pages processed is:       {}\n\n".format(NUMBER_OF_PAGES_TO_PROCESS))
 
-    outputFile.write("#of pages processed is: {}\n".format(NUMBER_OF_PAGES_TO_PROCESS))
-    outputFile.write("Does the code sleep between each url request?: {}\n".format("Yes" if configs.SLEEP_BETWEEN_URL_REQUESTS else "No"))
-    outputFile.write("#of repeats is: {}\n".format(numberOfRepeats))
-    outputFile.write("Script execution start date: {0}\n".format(startTime.strftime("%d/%m/%Y, %H:%M:%S")) )
-    outputFile.write("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds) )
+    outputFile.write("- READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE config parameter value is: {}\n".format(configs.READ_ONLY_ONE_REVIEW_FOR_EACH_PAGE))
+    outputFile.write("- USE_SELENIUM                       config parameter value is: {}\n".format(configs.USE_SELENIUM))
+    outputFile.write("- SLEEP_BETWEEN_URL_REQUESTS         config parameter value is: {}\n\n".format(configs.SLEEP_BETWEEN_URL_REQUESTS))
+
+    outputFile.write("- #of times the script was run is:   {}\n".format(configs.NUMBER_OF_REPEATS_TIMEIT))
+    outputFile.write("- Script execution start date:       {}\n".format(START_TIME.strftime("%d/%m/%Y, %H:%M:%S")) )
+    outputFile.write("- Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds) )
 
     print("Average script execution duration: {0} days {1} hours {2} minutes {3} seconds\n".format(days, hours, minutes, seconds))
     

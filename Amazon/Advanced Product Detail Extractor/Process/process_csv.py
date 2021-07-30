@@ -13,16 +13,16 @@ import timeit
 import functools
 print = functools.partial(print, flush=True) #flush print functions by default (needed to see outputs of multiple processes in a more correct order)
 
-files_ro_read=['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ] # csv files
-START_TIME = datetime.now()
+FILES_TO_READ            = ['ELECTRONICS (LAPTOPS)', 'SPORTS', 'TOOLS & HOME IMPROVEMENT' ] # csv files
+START_TIME               = datetime.now()
 NUMBER_OF_ROWS_PROCESSED = 0 # set by the master process in multi-processing or by the only process in single-processing in the process() function
 
 def main():
   # COMM VARIABLES
   global comm, nprocs, rank
-  comm = MPI.COMM_WORLD
+  comm   = MPI.COMM_WORLD
   nprocs = comm.Get_size() # for multiprocessing there are nprocs-1 slaves (their ranks are 1, 2, ... nprocs-1)  and 1 master (its rank is 0) whereas for single-processing nprocs is 1 and the process' rank is 0.
-  rank = comm.Get_rank() 
+  rank   = comm.Get_rank() 
 
   if nprocs > 1:
     if rank == configs.MASTER_PROCESS_RANK: # print it only once
@@ -31,10 +31,10 @@ def main():
     print("Serial Execution")
 
   tp = timeit.Timer("process()", "from __main__ import process") 
-  average_duration_seconds = tp.timeit(number=configs.NUMBER_OR_REPEATS_TIMEIT) / configs.NUMBER_OR_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OR_REPEATS_TIMEIT times.
+  average_duration_seconds = tp.timeit(number=configs.NUMBER_OF_REPEATS_TIMEIT) / configs.NUMBER_OF_REPEATS_TIMEIT # calls process function (for each process) NUMBER_OF_REPEATS_TIMEIT times.
 
   if (nprocs > 1 and rank == configs.MASTER_PROCESS_RANK) or (nprocs == 1 and rank == 0): 
-    outputter.output_timing_results(average_duration_seconds, configs.NUMBER_OR_REPEATS_TIMEIT, START_TIME, nprocs, NUMBER_OF_ROWS_PROCESSED)
+    outputter.output_timing_results(average_duration_seconds, START_TIME, nprocs, NUMBER_OF_ROWS_PROCESSED)
 
 def process():
   global NUMBER_OF_ROWS_PROCESSED
@@ -84,7 +84,7 @@ def readAllFiles_and_return_df():
   category_for_each_row    = []
   subcategory_for_each_row = []
   df_list = []
-  for file_to_read in files_ro_read:
+  for file_to_read in FILES_TO_READ:
     curr_df                  = read_csv_custom(file_to_read)
     df_list                  .append(curr_df)
     
