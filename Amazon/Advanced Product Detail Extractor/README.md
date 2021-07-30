@@ -68,7 +68,8 @@ python webscraper.py
 - Items 7 & 8 can be checked to see the overhead of using multi-processing unneccessarily (9 sec vs 12 sec for single and multi processing respectively).  
 - Item 9 can be checked to see the script terminal output and correspoonding ExecutionTimingResults.txt entry for that run. Item 9 also traverses all products on each page since its 'MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE' parameter is -1.     
        
-1) An example output for a single-processed (IS_MULTIPROCESSED is False) execution using urllib (USE_SELENIUM is False) for a single page where SLEEP_BETWEEN_URL_REQUESTS is True:   
+1) An example output for a single-processed (IS_MULTIPROCESSED is False) execution using urllib (USE_SELENIUM is False) for a single page where SLEEP_BETWEEN_URL_REQUESTS is True:  
+
 Serial execution  
 The selected user agent is: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36  
 url is: https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_89%3AApple%2Cp_n_condition-type%3A2224371011&s=price-asc-rank&dc&fs=true&qid=1623747634&rnid=2224369011&ref=sr_nr_p_n_condition-type_2  
@@ -206,8 +207,9 @@ Process 3 finished its job successfully
 Average script execution duration: 0 days 0 hours 0 minutes 12.3952831 seconds  
 
 9) An example output for a single-processed (IS_MULTIPROCESSED is False) execution using selenium (USE_SELENIUM is True) for 2 pages where SLEEP_BETWEEN_URL_REQUESTS is False and MAX_NUMBER_OF_MAIN_PAGES_TO_TRAVERSE is -1:  
-a) Script terminal output:   
-  
+
+a) Script terminal output:     
+    
 The total number of pages that are reachable from the main page is: 2  
 Current page being processed by process 0 to find the next page url is: 1 out of 2 pages.  
 Next search url is: https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_89%3AApple%2Cp_n_condition-type%3A2224371011&s=price-asc-rank&dc&fs=true&page=2&qid=1627675793&rnid=2224369011&ref=sr_pg_1  
@@ -219,11 +221,10 @@ The current url being processed by process 0 to find the product details is: htt
 [6560:4224:0730/231136.941:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled  
 The current url being processed by process 0 to find the product details is: https://www.amazon.com/s?i=computers&bbn=565108&rh=n%3A565108%2Cp_89%3AApple%2Cp_n_condition-type%3A2224371011&s=price-asc-rank&dc&fs=true&page=2&qid=1627675793&rnid=2224369011&ref=sr_pg_1  
 Average script execution duration: 0 days 0 hours 10 minutes 26.03176910000002 seconds  
-  
+    
 b) Corresponding 'ExecutionTimingResults.txt' entry:    
-  
-************************************  
-SINGLE-PROCESSED (SERIAL) EXECUTION  
+    
+SINGLE-PROCESSED (SERIAL) EXECUTION   
   
 - #of processes involved is:         1  
 - #of main pages processed is:       2  

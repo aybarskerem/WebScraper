@@ -86,6 +86,7 @@ Average script execution duration: 0 days 0 hours 3 minutes 25.5691377 seconds
 3) Multi-process (8 processes) execution where CREATE_WORD_CLOUD, CREATE_BAG_OF_WORDS and CREATE_SENTIMENT_ANALYSIS_RESULTS are True: 
   
 a) Script Terminal Output:  
+
 Parallel execution  
 Total #of rows processed is: 146 (1.0% of each of the input csv file rows are processed)  
 Proccess 1 is responsible for the rows between 0 and 21  
@@ -98,11 +99,10 @@ Proccess 7 is responsible for the rows between 126 and 146
 Average script execution duration: 0 days 0 hours 2 minutes 57.8988914 seconds  
   
 b) Corresponding 'ExecutionTimingResults.txt' entry:  
+
+MULTI-PROCESSED (PARALLEL) EXECUTION    
   
-************************************  
-MULTI-PROCESSED (PARALLEL) EXECUTION  
-  
-- #of processes involved is:         8  
+- #of processes involved is:         8    
 - Total #of rows processed is:       146 (1.0% of each of the input csv file rows are processed)  
   
 - CREATE_WORD_CLOUD                  config parameter value is: True  
