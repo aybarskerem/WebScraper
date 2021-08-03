@@ -102,3 +102,29 @@ MULTI-PROCESSED (PARALLEL) EXECUTION
 - #of times the script was run is:   1
 - Script execution start date:       30/07/2021, 21:51:11
 - Average script execution duration: 0 days 0 hours 2 minutes 57.8988914 seconds
+************************************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+
+- #of processes involved is:         6
+- Total #of rows processed is:       14919 (100% of each of the input csv file rows are processed)
+
+- CREATE_WORD_CLOUD                  config parameter value is: True
+- CREATE_BAG_OF_WORDS                config parameter value is: True
+- CREATE_SENTIMENT_ANALYSIS_RESULTS  config parameter value is: True
+
+- #of times the script was run is:   1
+- Script execution start date:       03/08/2021, 11:12:19
+- Average script execution duration: 0 days 3 hours 9 minutes 55.43915709999965 seconds
+************************************
+MULTI-PROCESSED (PARALLEL) EXECUTION
+
+- #of processes involved is:         6
+- Total #of rows processed is:       14919 (100% of each of the input csv file rows are processed)
+
+- CREATE_WORD_CLOUD                  config parameter value is: False
+- CREATE_BAG_OF_WORDS                config parameter value is: True
+- CREATE_SENTIMENT_ANALYSIS_RESULTS  config parameter value is: False
+
+- #of times the script was run is:   1
+- Script execution start date:       03/08/2021, 15:19:28
+- Average script execution duration: 0 days 0 hours 12 minutes 8.939955800000007 seconds

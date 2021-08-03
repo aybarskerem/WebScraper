@@ -112,4 +112,25 @@ MULTI-PROCESSED (PARALLEL) EXECUTION
 - #of times the script was run is:   1  
 - Script execution start date:       30/07/2021, 21:51:11  
 - Average script execution duration: 0 days 0 hours 2 minutes 57.8988914 seconds  
+
+4) Multi-process (6 processes) execution where CREATE_WORD_CLOUD, CREATE_BAG_OF_WORDS and CREATE_SENTIMENT_ANALYSIS_RESULTS are True and all rows of input csvs are processed:   
+   
+Parallel execution  
+Total #of rows processed is: 14919 (100% of each of the input csv file rows are processed)  
+Proccess 1 is responsible for the rows between 0 and 2984  
+Proccess 2 is responsible for the rows between 2984 and 5968  
+Proccess 3 is responsible for the rows between 5968 and 8952  
+Proccess 4 is responsible for the rows between 8952 and 11936  
+Proccess 5 is responsible for the rows between 11936 and 14919  
+Average script execution duration: 0 days 3 hours 9 minutes 55.43915709999965 second  
+
+5) Multi-process (6 processes) execution where CREATE_BAG_OF_WORDS is True only and all rows of input csvs are processed:   
     
+Parallel execution  
+Total #of rows processed is: 14919 (100% of each of the input csv file rows are processed)  
+Proccess 1 is responsible for the rows between 0 and 2984  
+Proccess 2 is responsible for the rows between 2984 and 5968  
+Proccess 3 is responsible for the rows between 5968 and 8952  
+Proccess 4 is responsible for the rows between 8952 and 11936  
+Proccess 5 is responsible for the rows between 11936 and 14919  
+Average script execution duration: 0 days 0 hours 12 minutes 8.939955800000007 second  s

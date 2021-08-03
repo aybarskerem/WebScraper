@@ -33,7 +33,7 @@ def append_bagOfWords_dict(bagOfWords_dict_merged, bagOfWords_dict):
 
               bagOfWords_dict_merged[category][subcategory][rating][brand_name] = OrderedDict( sorted(bagOfWords_dict_merged[category][subcategory][rating][brand_name].items(), key=lambda key_value_pair: key_value_pair[1], reverse=True) ) # sort the bag of words dictionary according to the new word counts (from highest occurrent word to lowest occurrent)
     else:
-      bagOfWords_dict_merged = bagOfWords_dict
+      bagOfWords_dict_merged.update(bagOfWords_dict)
     
 def get_bagOfWords_dict(df_correspondingRows):
 
